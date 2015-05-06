@@ -1,0 +1,363 @@
+.pages-index {
+
+    header {
+        margin-bottom: 0;
+    }
+
+    .bg {
+        background: asset-url("bg/homepage_bg.svg") no-repeat left 4.5em;
+        background-size: contain;
+        display: block;
+        left: 0;
+        min-height: em(489);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+
+        @include media( 600px ) {
+            background-position: 0 0;
+        }
+
+        @include media( 700px ) {
+            min-height: 36.5625em;
+        }
+
+        @include media( 850px ) {
+            min-height: 45em;
+        }
+        @include media( $laptop ) {
+            background-position: center -5em;
+            background-size: cover;
+            min-height: 49em;
+        }
+        @include media( 70em ) {
+
+        }
+        @include media( 1250px) {
+            background-image: asset-url("bg/homepage_bg_large.svg");
+            background-position: center 0em;
+            min-height: 55em;
+        }
+    }
+
+    @include media( $tablet ) {
+
+    }
+    @include media( $laptop ) {
+
+    }
+    @include media( $large ) {
+
+    }
+}
+
+main.home {
+    @include outer-container;
+    padding: 0 2em;
+    .intro-copy {
+        margin-top: 2em;
+        text-align: center;
+
+        h1 {
+            font-size: 1.75em;
+            margin-top: 0;
+        }
+        p {
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            max-width: none;
+        }
+    }
+
+    // ICONS STYLING & LAYOUT IN: elements/icons.scss
+
+    blockquote {
+        border: none;
+        color: $text;
+        text-align: center;
+    }
+
+    cite {
+        margin-bottom: 4em;
+    }
+
+    @include media( $tablet ) {
+        blockquote {
+            padding: 0 4em;
+        }
+
+    }
+    @include media( $laptop ) {
+        .intro-copy {
+            margin-top: 8em;
+        }
+        .intro-copy h1 {
+            font-size: 2.5em;
+        }
+    }
+    @include media( $large ) {}
+}
+
+.featured-blog {
+    background: white;
+    margin: 1em 5% 0 5%;
+    padding: 3em 2em;
+    h2, h3 {
+        text-align: center;
+    }
+    h2 {
+        color: $headers;
+        font-family: 'Arvo', serif;
+        font-size: em(20);
+        text-transform: none;
+    }
+    h3 { font-size: 0.875em; }
+    figure {
+        margin: 3em 0 1.5em 0;
+    }
+    img {
+        display: block;
+        border-radius: 60px;
+        margin: 0 auto;
+        max-width: 120px;
+    }
+    p { font-size: 100%; }
+    .button {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        }
+}
+
+.case-study {
+    background: black asset-url("home/case_study_bg_temp.jpg") no-repeat left top;
+    background-size: cover;
+    margin: 0 5% 3em 5%;
+    padding: 3em 2em;
+
+    h2, h3 {
+        text-align: center;
+    }
+    h2 {
+        color: $headers;
+        font-size: 0.875em;
+    }
+    h3 {
+        color: white;
+        font-size: 1.375em;
+        font-weight: normal;
+        letter-spacing: 3px;
+        margin: 2em 0 0 0;
+
+    }
+
+    blockquote {
+        border: 0;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1em;
+        font-style: normal;
+        margin: 0 auto 1.5em 0;
+        padding: 0 2em;
+        text-align: center;
+        &:before {
+            font-size: 4em;
+            text-align: center;
+        }
+        &:after { display: none; }
+        }
+    cite {
+        color: white;
+        margin-bottom: 5em;
+    }
+
+    .button {
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        &:hover, &:focus { color: $text; }
+        &:active { color: #fff; }
+
+    }
+}
+
+.culture {
+    clear: both;
+    margin: 0 5% 2em 5%;
+    h4 {
+        color: $text;
+    }
+    ul {
+        @include row('table');
+        margin: 0;
+    }
+    h4, h5 {
+        font-size: 1em;
+        text-align: center;
+    }
+    li {
+        @include span-columns(6 of 12);
+    }
+    li a {
+        display: block;
+        padding: 0;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+    article {
+        background: $links;
+        clear: both;
+        padding: 2em 0;
+    }
+    a { color: white; }
+    .button {
+        display: block;
+        margin: 1.5em auto 0 auto;
+        width: 200px;
+    }
+    .more {
+        display: none;
+    }
+}
+.home-newsletter {
+    background:$darkgrey;
+    clear: both;
+    padding: 4em 0;
+    margin: 0 0 2.5em 0;
+    h3, label { color: white; }
+    h3 {
+        font-size: 1.3em;
+        font-weight: normal;
+        letter-spacing: 5px;
+        margin-bottom: 1.25em;
+        text-align: center;
+    }
+    label {
+        display: block;
+        font-size: 0.875em;
+        font-weight: normal;
+        margin-bottom: 3em;
+        text-align: center;
+        text-transform: none;
+    }
+    fieldset {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    input[type="email"] {
+        background-color: #959595; /* layer fill content */
+        border: none;
+        float: left;
+        height: em(35px);
+        margin-bottom: 0;
+        max-width: em(245px);
+        text-indent: 0.5em;
+        width: em(245px);
+
+        &:focus {
+            border: 2px solid $links;
+            border-right: none;
+            background-color: #fff;
+        }
+    }
+
+     input[type="submit"] {
+        background: $links;
+        border: none;
+        border-radius: 0;
+        float: left;
+        height: em(35em);
+        margin: 0;
+        min-width: initial;
+        width: em(35em);
+     }
+}
+
+@include media( $tablet ) {
+    .featured-blog, .case-study {
+        padding: 4em;
+    }
+}
+@include media( 850px ) {
+    .culture {
+        .more {
+            display: block;
+        }
+    }
+    .culture li {
+        @include span-columns(3 of 12);
+    }
+}
+@include media( 950px ) {
+    #blog-caseStudy {
+        @include outer-container;
+        @include row(table);
+        padding: 0 2em;
+    }
+    .featured-blog, .case-study {
+        @include span-columns(5);
+        margin-left: 0;
+    }
+    .culture {
+        margin-top: 4em;
+    }
+}
+@include media( $laptop ) {
+    .featured-blog {
+        @include span-columns(6);
+    }
+    .case-study {
+        @include span-columns(4);
+    }
+    .home-newsletter {
+        background: asset-url("bg/radarLaptop.svg") no-repeat -1px bottom;
+        background-size: cover;
+        margin: 4em 0 0 0;
+        min-height: em(283);
+        padding: 9em 0 0 5%;
+        width: 100%;
+        h3, label {
+            margin: 0 0 1em 0;
+            text-align: left;
+        }
+        fieldset {
+            margin: 0;
+        }
+    }
+}
+
+@include media( 1200px ) {
+    .culture {
+        margin: 6em 0 0 0;
+        #culture-wrapper {
+            @include row('table');
+        }
+        ul {
+            @include span-columns(4);
+            vertical-align: top;
+            li {
+                display: block;
+                float: left;
+                width: 25%;
+            }
+        }
+        article {
+            @include span-columns(2);
+            vertical-align: top;
+        }
+    }
+}
+
+@include media( $large ) {
+    .home-newsletter {
+        background-size: initial;
+        min-height: 22em;
+        padding-top: 11em;
+    }
+}

@@ -1,0 +1,53 @@
+<%= content_for :page_title, "Culture Breeds Creativity | Meet the Team to Build Your Brand" %>
+<%= content_for :description, "A strong, supportive culture inspires great creative work. We are proud of our workplace environment and the energy that a fun group of people can create." %>
+
+<div class='wrapper no-bg'>
+  <main class='culture-text'>
+      <h1>Culture Breeds Creativity</h1>
+      <h2>About Current360</h2>
+      <p>Current360 is a full-service marketing agency located in Louisville, KY, and Fort Lauderdale, FL. We offer traditional, digital, social and SEO marketing services—including a 3600 sq. ft. photography and video production studio— all in-house.</p>
+
+      <p>Our founders started this creative journey more than 30 years ago. Since then, CurrentMarketing has evolved into Current360. And we’ve expanded our client base, office space and team.</p>
+
+      <p>Bringing more talented professionals on staff and purchasing Studio NuLu, has kept us from farming out work to third parties, so we can ensure on-time production and on-budget results.</p>
+
+      <p>With a growing team and plenty of space to work and play, we always make sure to get the group together. At the beginning of each workday we all meet around the large studio table for a status meeting, and occasionally, end the day with a drink in the courtyard. We’re also known for our themed Halloween parties and Cocktails in the Courtyard events. And it’s probably no surprise that our annual Current360 Field Day can get very competitive—especially for the best name, logo and poster award.</p>
+
+      <p>So to answer your question: Who is Current360? We’re the team that takes a party bus to networking events and poses as emoji characters on social media. And we wouldn’t have it any other way.</p>
+
+
+      <%= image_tag 'Current360-Culture-people.jpg', :class => 'culture-pic' %>
+
+      <h2>The People of Current360</h2>
+
+      <p>We’ve always strived to maintain a workplace environment that’s inviting and spontaneous. And that starts with our employees. So it’s important to make sure each new hire is a cultural fit. That way we can harness productive team energy and provide exceptional service to our clients.</p>
+      <p>All of our team members are of various ages, backgrounds, and experience levels, making for great collaborations that produce the most forward-thinking and strategic concepts that fit any audience.</p>
+      <p>We’re also well rounded. Many of us explore multiple avenues within the agency. Whether it’s a client service professional helping to develop our SEO process or a graphic artist shooting photography, we embrace growth within our employees and agency. And it doesn’t hurt that every member of our team takes pride in what they do—inside and outside of work.</p>
+
+      <p>We’re not just the people you do business with, we’re the people you might want to hang out with, too.</p>
+      <%= link_to 'Team Bios', bios_path, :class => 'button' %>
+  </main>
+  <aside class="culture-sidebar">
+      <div class="hiring">
+        <h5>Careers</h5>
+        <p>C360 is always on the lookout for talent. <a>View available positions.</a></p>
+      </div>
+      <div class="social-feed">
+        <%= render 'layouts/pictures' %>
+      </div>
+      <article class='recent-posts' id="culture-recent-posts">
+        <header>
+          <h2>Hot off the Blog</h2>
+        </header>
+        <%# render 'layouts/recent_posts' %>
+        <!-- PLACEHODER STUFF FOR STYLING -->
+        <ul>
+          <li><img src="http://lorempixel.com/50/50/" alt=""><a href="">Really long blog titles will look kinda like this if the browser doesn’t round up the values. Stupid browser.</a></li>
+          <li><img src="http://lorempixel.com/50/50/" alt=""><a href="">Sometimes, the title may only run two lines. Which is prolly the average.</a></li>
+          <li><img src="http://lorempixel.com/50/50/" alt=""><a href="">There’s a 6 pixel white border at the top of each of these panels.</a></li>
+        </ul>
+      </article>
+  </aside>
+</div>
+
+<%# render 'layouts/contact' %>

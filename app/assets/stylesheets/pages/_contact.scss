@@ -1,0 +1,129 @@
+/* -----------------------------
+
+      CONTACT PAGE STYLES
+
+----------------------------- */
+.contact {
+  @include outer-container;
+  background:#fff;
+  min-height: em(1050px);
+  position: relative;
+
+  h1 {
+    font-size: em(42em);
+    margin-top: 1em;
+  }
+
+  #map-canvas {
+    min-height: 200px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    position: relative;
+    margin: 0 2em;
+  }
+  input[type=text] {
+    width: 100%;
+  }
+  input[type=text], textarea, select, input[type=checkbox] {
+    margin-bottom: 1em;
+  }
+  input[type=submit] {
+    margin: 2em 0 4em 0;
+  }
+  aside { display: none; }
+
+  @include media( $tablet ) {
+    h1 {
+       @include shift(1);
+    }
+    input[type=text] {
+      width: 90%;
+    }
+
+    #map-canvas {
+      min-height: em(400);
+    }
+
+    form {
+      max-width: em(950);
+      margin: 0 auto;
+
+      fieldset {
+        float: left;
+        width: 50%;
+      }
+
+      #name {
+        margin-bottom: 2.35em;
+      }
+      select {
+        display: inline-block;
+        float: left;
+        margin: 2.35em 2em 0 0;
+        text-transform: uppercase;
+      }
+      input[type=submit] {
+        clear: both;
+        margin: 0 auto;
+      }
+      fieldset#checkbox {
+        margin: 3em 0 2.5em 0;
+      }
+    }
+  }
+  @include media( $laptop ) {
+    form select {
+      margin: 2.35em 9.3em 0 0;
+    }
+    aside {
+      background: #fff;
+      display: block;
+      padding: 0 2em;
+      position: absolute;
+      top: -10em;
+      width: em(280px);
+      margin-left: 0.17106%;
+      z-index: 2;
+
+      article {
+        position: relative;
+        top: -4em;
+        margin-left: 3.5em;
+      }
+
+      #location-icon {
+        position: relative;
+        top: -0.5em;
+      }
+
+      #angle {
+        position: absolute;
+        top: -5.2em;
+        left: 0;
+        width: em(280px);
+        z-index: -1;
+      }
+
+      h5 {
+        color: $text;
+        font-size: 1em;
+        text-transform: none;
+      }
+      span {
+        font-size: 0.875em;
+      }
+
+      .street { display: block; }
+    }
+  }
+  @include media( $large ) {
+    aside {
+      margin-left: 8.17106%;
+    }
+  }
+}
+
+@include reset-all;

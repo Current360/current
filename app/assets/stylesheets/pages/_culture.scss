@@ -1,0 +1,167 @@
+/* -----------------------------
+
+      CULTURE PAGE STYLES
+
+----------------------------- */
+.wrapper {
+  .culture-text {
+    background: #fff;
+    float: left;
+    margin-bottom: 4em;
+    @include pad(2em 10%);
+    @include media($tablet) {
+      width: 70%;
+    }
+
+    p {
+      max-width: em(600);
+    }
+    .culture-pic {
+      margin: 4em 0 4em -20%;
+      width: 132.4%;
+      @include media($tablet) {
+        width: 140%;
+      }
+    }
+
+    .button {
+      @include shift(1.5);
+    }
+  }
+
+  .culture-sidebar {
+    float: right;
+    padding: 6% 0 0 0;
+    @include media($tablet) {
+      width: 30%;
+    }
+  }
+  .social-feed {
+    background: #202020;
+    padding-bottom: 0.375em;
+    margin-bottom: 4em;
+    position: relative;
+    ul {
+      @include fill-parent;
+      clear: both;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      @include media(500px) {
+        float: left;
+        width: 50%;
+      }
+      &:before {
+        display: none;
+      }
+    }
+    img {
+      @include fill-parent;
+      position: relative;
+    }
+    span {
+      @include fill-parent;
+      opacity: 0;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      display: none;
+      }
+    .button {
+      color: #fff;
+
+      margin: 2em auto;
+    }
+  }
+
+  .hiring {
+    @include transition( all 0.3s ease);
+    background: $darkgrey;
+    color: #fff;
+    margin-bottom: 4em;
+    padding: 1em;
+
+    @include media( $laptop ) {
+      padding: 4em 2em 4em 4em;
+    }
+  }
+  .hiring h5, .recent-posts h2 {
+    @include transition( all 0.3s ease);
+    border-left: em(6) solid $headers;
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2em;
+    letter-spacing: 2px;
+    margin: 0 0 2em 0;
+    padding-left: 0.5em;
+
+    @include media( $laptop ) {
+      font-size: 1.25em;
+    }
+  }
+  .hiring p {
+    margin-left: 1.35em;
+    max-width: 80%;
+  }
+  article.recent-posts {
+    header {
+      background: $darkgrey;
+      color: #fff;
+      height: auto;
+      margin-bottom: 0;
+      padding: 1em;
+
+      @include media( $laptop ) {
+        padding: 4em 2em 4em 4em;
+      }
+    }
+    h2 {
+      margin: 0;
+    }
+    ul { margin: 0; }
+    li {
+      background: $lightgrey;
+      border-bottom: em(6) solid #fff;
+      padding: 2em 1em;
+      &:before {
+        display: none;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    a {
+      font-family: 'Arvo', Times, serif;
+    }
+    img, a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      border-radius: 25px;
+      max-width: em(50);
+    }
+    a {
+      @include transition( all 0.3s ease);
+      color: $text;
+      margin-left: 1em;
+      margin-top: 1em;
+      max-width: 70%;
+      @include media( $large ) {
+        margin-top: 0;
+        max-width: 80%;
+      }
+    }
+  }
+}
+@include reset-all;

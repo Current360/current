@@ -1,0 +1,83 @@
+
+
+form {
+  label {
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    text-transform: uppercase;
+  }
+  fieldset {
+    margin-right: 0;
+
+  }
+  input[type=text], textarea {
+    @include transition( all 0.2s ease-in-out);
+    background-color: #e6e6e7; /* layer fill content */
+    border: 2px solid #b8b8b8; /* stroke */
+    padding: 0.5em 0 0.5em 12px;
+
+    &:focus {
+        background-color: #fff;
+        border-color: $headers;
+    }
+
+
+  }
+
+  input[type=text] {
+    height: em(41);
+    max-width: em(417);
+    width: 90%;
+  }
+  textarea {
+    height: em(144px);
+    max-width: em(480);
+    width: 100%;
+  }
+  input[type=submit] {
+    @include transition(all 0.3s ease-in-out);
+    background: transparent;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    border: 3px solid #9bb647; /* stroke */
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; /* border radius */
+    display: block;
+    height: 42px;
+    text-transform: uppercase;
+    width: 201px;
+
+    &:hover, &:focus {
+        background: #9bb647;
+    }
+    &:active {
+        background: shade(#9bb647, 20%);
+        border: 3px solid shade(#9bb647, 20%); /* stroke */
+        color: #fff;
+    }
+
+  }
+
+  select {
+    width: em(310px);
+    height: em(44px);
+    -moz-border-radius: em(6px);
+    -webkit-border-radius: em(6px);
+    border-radius: em(6px); /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #928888; /* layer fill content */
+  }
+
+  input[type=checkout] {
+    width: 16px;
+height: 16px;
+border: 2px solid #b9b9b9; /* stroke */
+  }
+}

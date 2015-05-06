@@ -1,0 +1,107 @@
+main.home {
+
+    section {
+        @include outer-container;
+    }
+    ul {
+        @include row();
+        margin: 2em 0 0 0;
+    }
+    li {
+        background: rgba(239, 71, 35, 0.97);
+        height: 7.4em;
+        float: left;
+        width: 33.3%;
+
+        &:nth-child(3n + 1) {
+            clear: left;
+        }
+        &:before {
+            display: none;
+        }
+
+        a {
+            display: block;
+            height: inherit;
+            padding: 0;
+            position: relative;
+
+            span {
+                @include transition( all 0.3s ease);
+                position: absolute;
+                display: block;
+                height: 8em;
+                left: 0;
+                overflow: hidden;
+                text-align: center;
+                top: 0;
+                width: 0;
+            }
+        }
+    }
+
+    svg {
+        display: block;
+        height: em(48px);
+        margin: 0 auto;
+        position: relative;
+        top: 25%;
+        width: em(48px);
+        polygon, path, rect, circle {
+            fill: #fff;
+        }
+    }
+
+    a:hover svg {
+        polygon, path, rect, circle {
+            fill: #000;
+        }
+    }
+
+    a:hover span {
+        // font-size: 100%;
+        // width: 100%;
+    }
+
+    @include media( $tablet ) {
+        svg {
+            height: em(64px);
+            width: em(64px);
+        }
+        li {
+            height: 10em;
+            width: 25%;
+            &:nth-child(3n + 1) {
+                clear: none;
+            }
+            &:nth-child(4n+1) {
+                clear: left;
+            }
+        }
+    }
+    @include media( $laptop ) {
+        li {
+            width: 16.6%;
+            &:nth-child(3n + 1) {
+                clear: none;
+            }
+            &:nth-child(4n+1) {
+                clear: none;
+            }
+            &:nth-child(6n+1) {
+                clear: left;
+            }
+        }
+        svg {
+            top: 29%;
+        }
+    }
+    @include media( $large ) {
+        li {
+            height: 12.4em;
+        }
+        svg {
+            top: 32%;
+        }
+    }
+}

@@ -1,0 +1,960 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"tex",
+				"textarea"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"page",
+				"page-id-35"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"check",
+				"checkmark-icon"
+			],
+			[
+				"maxs",
+				"maxstrum-logo"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"tal",
+				"ta-l	text-align: left;"
+			],
+			[
+				"page-id",
+				"page-id-56"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"page-i",
+				"page-id-27"
+			],
+			[
+				"bgs",
+				"bgsz-cv	background-size: cover;"
+			],
+			[
+				"pro",
+				"product-highlight"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"h",
+				"hgroup"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"fts",
+				"font-size"
+			],
+			[
+				"current",
+				"current360"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"bor",
+				"border-right"
+			],
+			[
+				"i",
+				"inside"
+			],
+			[
+				"se",
+				"serif"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"ls",
+				"list-style"
+			],
+			[
+				"lis",
+				"list-style-image"
+			],
+			[
+				"imp",
+				"important"
+			],
+			[
+				"fi",
+				"font-size"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"n",
+				"no-repeat"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"imo",
+				"important"
+			],
+			[
+				"is_page",
+				"is_page_template"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"back",
+				"background-origin"
+			],
+			[
+				"conte",
+				"contentWrapper"
+			],
+			[
+				"sponsor",
+				"sponsor-logos"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"fir",
+				"first-child"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"block",
+				"large-block-grid-4"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"cont",
+				"contentWrapper"
+			],
+			[
+				"large",
+				"large-block-grid-3"
+			],
+			[
+				"temp",
+				"template_url"
+			],
+			[
+				"lar",
+				"large-block-grid-4"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pag",
+				"page-id-512"
+			],
+			[
+				"ques",
+				"questionsPhone"
+			],
+			[
+				"tick",
+				"ticketsPageButton2"
+			],
+			[
+				"page-",
+				"page-id-512"
+			],
+			[
+				"border-bl",
+				"border-black"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"education",
+				"educational-opportunities"
+			],
+			[
+				"cruiseDe",
+				"cruiseDescription"
+			],
+			[
+				"cruis",
+				"cruiseCheck"
+			],
+			[
+				"cru",
+				"cruiseCheck"
+			],
+			[
+				"ticket",
+				"ticketsPageButton"
+			],
+			[
+				"the",
+				"theName"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ind",
+				"indexOf"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/layouts/_header.html.erb",
+			"settings":
+			{
+				"buffer_size": 648,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/pages/contact.html.erb",
+			"settings":
+			{
+				"buffer_size": 1260,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/_locations.html.erb",
+			"settings":
+			{
+				"buffer_size": 626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/_header.scss",
+			"settings":
+			{
+				"buffer_size": 3356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/pages/_contact.scss",
+			"settings":
+			{
+				"buffer_size": 1294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/_normalize.scss",
+			"settings":
+			{
+				"buffer_size": 7760,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_global.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_strategy.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_locations.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/strategy.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/application.css.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footerCTA.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_header.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/contact.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_contact.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_culture.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/culture.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footer.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/pages.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/nav.js.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/application.html.erb",
+		"/Users/jerrodlong/Desktop/current/Gemfile",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/application.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/fonts.js.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/bios.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/projects.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/blogs.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_footer.scss",
+		"/Users/jerrodlong/Desktop/current/app/controllers/pages_controller.rb",
+		"/Users/jerrodlong/Desktop/current/config/routes.rb",
+		"/Users/jerrodlong/Desktop/current/app/helpers/application_helper.rb",
+		"/Users/jerrodlong/Desktop/current/config/database.yml",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/index.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_normalize.scss",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/classes/instagram_picture_maker.rb",
+		"/Users/jerrodlong/Desktop/rails/foodInsta/app/models/location_maker.rb",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/javascripts/application.js",
+		"/Users/jerrodlong/Desktop/rails/kaw/Gemfile",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/application.html.erb",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/_header.html.erb",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_nav.scss",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_global.scss",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/controllers/application_controller.rb",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/_footer.html.erb",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/application.css.scss",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_footer.scss",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/_off_nav.html.erb",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_off_nav.scss",
+		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/javascripts/nav.js",
+		"/Users/jerrodlong/Desktop/sites/cbt/wp-content/themes/boilerplate/css/_normalize.scss",
+		"/Users/jerrodlong/Desktop/sites/cbt/wp-content/themes/boilerplate/interior.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/home.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-includes/js/comment-reply.min.js",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-includes/script-loader.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/header.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/style.scss",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/searchform.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/footer.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/page.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/sidebar.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/mailer.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/home.html",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/loop.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/interior.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/search.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/stylesheets/styles.scss",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-config.php",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/sftp-config-alt.json",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/sftp-config.json",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/plugins/my-calendar/templates/inherit.css",
+		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/sftp-config.json",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/interior.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/home.html",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/stylesheets/styles.scss",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/stylesheets/styles.css",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/style.css",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/footer.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/sidebar.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/home.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/header.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/sftp-config.json",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/sftp-config.json",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/.gitignore",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-config.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/searchform.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-livestock.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-cattle.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/page.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/header.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-cron.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/footer.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-swine.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-sheep-goats.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-livestock.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-cattle.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-swine.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-sheep-goats.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/interior-template.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/about-maxstrum.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/faq.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/index.php",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/home-content.php",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/PHP.sublime-settings",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/stylesheets/_normalize.scss",
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/javascripts/script.js",
+		"/Users/jerrodlong/Desktop/Sites2/IE/bands.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/bands.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/style.css",
+		"/Users/jerrodlong/Desktop/Sites2/IE/style.css",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/header.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/header.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/img/band-sidebar-pic.png",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/intNav.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/send_form_email2.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/9-18.csv",
+		"/Users/jerrodlong/Desktop/Sites2/IE/homeNav.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/nav.css",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/homeNav.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/8-8.csv",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/parse2.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/cruiseList.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/eventsList.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/eventsList.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/cruiseList.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/parse2.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/sidebar-int.php",
+		"/Users/jerrodlong/Desktop/Sites2/IE/intPages.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/sidebar-int.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/intPages.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/footer.php",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/sftp-config.json",
+		"/Users/jerrodlong/Desktop/Sites2/Belle/js/foundation.min.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"70%",
+			"checkm",
+			".callout",
+			"rows=\"10\" value=\"\"",
+			"hgroup",
+			"1em",
+			"figure",
+			"textarea",
+			"aside",
+			"main",
+			"form ",
+			"form",
+			".page-id",
+			"comments",
+			"three-cols",
+			"two-cols",
+			"Halstrum, LLC",
+			"<form action=\"<?php bloginfo(template_url);?>/mailer.php\"",
+			"action",
+			"days",
+			"nav li",
+			"scie",
+			".bread",
+			";\n",
+			"../i",
+			"# code...",
+			"(../",
+			"(QUESTION)",
+			"high",
+			"- ",
+			"tria",
+			"aside",
+			"url(",
+			"../",
+			"../images",
+			"../images/",
+			"",
+			"’",
+			"strong",
+			"—",
+			"logo",
+			"\n",
+			"logo",
+			"schedule",
+			"1065",
+			"1087",
+			"Belle of Cin",
+			"fixed_mag",
+			"ul class=\"small-block-grid-1 medium-block-grid-2 large-block-grid-3\"",
+			"Lock and Dam",
+			"Taste the spirit of Kentucky with every sip of Bourbon. Old Forester distillers will walk you through a sampling of some of their finest spirits while you cruise the Ohio River. Experience the rich tradition of Bourbon Country through the rich taste of Kentucky bourbon. Ticket includes four drink samplings. Light appetizers will be available. Must be 21 years of age with valid ID to board the boat.",
+			"Taste the spirit of Kentucky with every sip of Bourbon. Old Forester distillers will walk you through a sampling of some of their finest spirits while you cruise the Ohio River. Experience the rich tradition of Bourbon Country through the rich taste of Kentucky bourbon. Ticket includes four drink samplings. Light appetizers will be available. Must be 21 years of age with valid ID to board the boat. ",
+			"Bourbon ",
+			"Spirit of Jefferson",
+			"Must be 21 years of age with valid ID to board the boat..",
+			"502 Win",
+			"Old 502 Winery, Kentucky's only urban winery, located in downtown Louisville, will be offering Old 502 Wine Cruises throughout the Festival. Using grapes grown by local farmers, Old 502 crafts some of the most eclectic - dare we say funky - wines you'll ever have the pleasure of tasting. Old 502 will be offering a selection of distinct wines including their famous 'Bourbon Barrel Red' and their new 'Belle's Blush' made especially for the Belle's Centennial. Pair your wine with delicious desserts aboard this cruise that can't be missed!",
+			"to board",
+			"There's just something about going through a lock on a riverboat! The original lock, completed in 1830, was designed to provide safe passage around the treacherous Falls of the Ohio. The first lock was also the first of its kind in the country, and it became the prototype for all other locks built in America. With improvements over nearly 200 years, the current lock system includes two 1200' chambers, and is the busiest lock on the Ohio River. This narrated cruise brings out the history of McAlpine Lock and its importance to boat traffic and shipping on the Ohio River.",
+			"Belle of Cin",
+			"Old Forester Bourbon Experience",
+			"1125",
+			"Come aboard and help the Belle of Louisville celebrate her 100th birthday while welcoming bACC your alumni to Homecoming 2014. Enjoy musical entertainment, spirits, unforgettable views, and cheer on the cards while cruising the Ohio River.",
+			"small-block-grid-12",
+			"<figure></figure>",
+			"<div class=\"row\">",
+			"<a",
+			"Must be 21 years of age with valid ID to sample",
+			"must be 21 with valid ID to sample",
+			"cruises",
+			"512",
+			"events",
+			"intN",
+			"mainNav",
+			"nav",
+			"Take a scenic, sightseeing cruise and learn about the Ohio River, famous landmarks, architecture and rich history of Louisville and Southern Indiana.",
+			"U of L",
+			"Old 502 Winery, Kentucky's only urban winery, located in downtown Louisville, will be offering Old 502 Wine Cruises cruises throughout the Festival. Using grapes grown by local farmers, Old 502 crafts some of the most eclectic - dare we say funky - wines you'll ever have the pleasure of tasting. Old 502 will be offering a selection of distinct wines including their famous 'Bourbon Barrel Red' and their new 'Belle's Blush' made especially for the Belle's Centennial. Pair your wine with delicious deserts aboard this cruise that can't be missed!",
+			"Old 502 Wine Cruises,\"<a class=\"\"popOutHeading\"\" href=\"\"http://festivalofriverboats.com/cruises/\"\">Old 502 Wine Cruises</a><img alt=\"\"Taste of Kentucky Pic\"\" class=\"\"ticketsImg\"\" src=\"\"http://festivalofriverboats.com/wp-content/themes/boilerplate/img/cruises/taste.jpg\"\" />Old 502 Winery, Kentucky's only urban winery, located in downtown Louisville, will be offering Old 502 Wine Cruises cruises throughout the Festival. Using grapes grown by local farmers, Old 502 crafts some of the most eclectic - dare we say funky - wines you'll ever have the pleasure of tasting. Old 502 will be offering a selection of distinct wines including their famous 'Bourbon Barrel Red' and their new 'Belle's Blush' made especially for the Belle's Centennial. Pair your wine with delicious deserts aboard this cruise that can't be missed!<a class=\"\"ticketsPageButton\"\" href=\"\"http://festivalofriverboats.com/cruises/\"\">Read More</a>\",Thurs., Oct. 16,9:30 PM,A Taste of Kentucky,$51.00 ,1151,Spirit of Jefferson,\"<a class=\"\"popOutHeading\"\" href=\"\"http://festivalofriverboats.com/riverboats/\"\">Spirit of Jefferson</a><img alt=\"\"Spirit of Jeferrson Pic\"\" class=\"\"ticketsImg\"\" src=\"\"http://festivalofriverboats.com/wp-content/themes/boilerplate/img/steamboats/sojSquare.jpg\"\" />Built in 1963, The Spirit of Jefferson is a charming mix of historic river travel and modern conveniences. With two enclosed decks and outside seating, she is a boat for all seasons and all types of groups.<a class=\"\"ticketsPageButton\"\" href=\"\"http://festivalofriverboats.com/riverboats/\"\">Read More</a>\",8:45 PM,11:30 PM,1,",
+			".page-id-378",
+			"12:00 AM",
+			"1046",
+			"Peoria",
+			"Wine Tasting",
+			"Ice Cream Social",
+			"Wine C",
+			"Wine Tasting &amp; Dessert Cruise",
+			"Beer Tasting",
+			"River",
+			"am",
+			"special",
+			"Taste the spirit of Kentucky with every sip of Bourbon. Old Forester distillers will walk you through a sampling of some of their finest spirits while you cruise the Ohio River. Experience the rich tradition of Bourbon Country through the rich taste of Kentucky bourbon. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
+			"Bourbon",
+			"Bourbon Tasting",
+			"Spirit of Peoria",
+			"Spirit of Peo",
+			"peor",
+			"Dinner",
+			"1061",
+			"1",
+			"1024",
+			"This cruise is a treat for the whole family. Build your own sundae while you take in all the beautiful sights the Ohio River has to offer. It's sure to be something the whole family will eat up.",
+			"This is not your typical booze cruise. Beer connoisseurs everywhere will appreciate a taste of some of the finest local brews while taking a relaxing cruise down the Ohio River. A representative will be onboard to discuss beer brewing. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
+			"bourbon",
+			"Spirit",
+			"Taste the spirit of Kentucky with every sip of bourbon. Distillers and brand ambassadors will walk you through a sampling of some of the finest spirits in the world while you cruise the Ohio River. Experience the rich tradition of Bourbon Country through the rich taste of Kentucky bourbon. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
+			"bourbon",
+			"1115",
+			"special",
+			"512",
+			"20px",
+			".pageTitle {",
+			".pageTi",
+			"Events ",
+			"River qu",
+			"bour",
+			" \n",
+			"@med",
+			"Cruise Types",
+			"What better way to wind down than with a glass of wine and a sweet treat? Try several featured wines varietals from around the area and enjoy a light dessert sampling while cruising the Ohio River. A representative will be onboard to discuss wine making. Must be 21 years of age with valid ID to sample.",
+			"Wine Tasting &amp; Dessert Cruise,\"<a class=\"\"popOutHeading\"\" href=\"\"http://festivalofriverboats.com/cruises/\"\">Wine Tasting and Dessert Cruise</a><img alt=\"\"Taste of Kentucky Pic\"\" class=\"\"ticketsImg\"\" src=\"\"http://festivalofriverboats.com/wp-content/themes/boilerplate/img/cruises/taste.jpg\"\" />What better way to wind down than with a glass of wine and a sweet treat? Try several featured wines varietals from around the area and enjoy a light dessert sampling while cruising the Ohio River. A representative will be onboard to discuss wine making. Must be 21 years of age with valid ID to sample.<a class=\"\"ticketsPageButton\"\" href=\"\"http://festivalofriverboats.com/cruises/\"\">Read More</a>\",Thurs., Oct. 16,9:30 PM,A Taste of Kentucky,$51.00 ,1151,Spirit of Jefferson,\"<a class=\"\"popOutHeading\"\" href=\"\"http://festivalofriverboats.com/riverboats/\"\">Spirit of Jefferson</a><img alt=\"\"Spirit of Jeferrson Pic\"\" class=\"\"ticketsImg\"\" src=\"\"http://festivalofriverboats.com/wp-content/themes/boilerplate/img/steamboats/sojSquare.jpg\"\" />Built in 1963, The Spirit of Jefferson is a charming mix of historic river travel and modern conveniences. With two enclosed decks and outside seating, she is a boat for all seasons and all types of groups.<a class=\"\"ticketsPageButton\"\" href=\"\"http://festivalofriverboats.com/riverboats/\"\">Read More</a>\",8:45 PM,11:30 PM,1,",
+			"Beer",
+			"Old 502 Winery, Kentucky's only urban winery, located in downtown Louisville, will be offering wine tasting cruises throughout the Festival. Using grapes grown by local farmers, Old 502 crafts some of the most eclectic - dare we say funky - wines you'll ever have the pleasure of tasting. Old 502 is the Official Wine of the Centennial Festival of Riverboats. Old 502 will be offering a selection of distinct wines including their famous 'Bourbon Barrel Red' and their new 'Belle's Blush' made especially for the Belle's Centennial. Join Old 502 and its staff for a wine tasting cruise that can't be missed! Must be 21 years of age with valid ID to sample.",
+			"wine",
+			"Bring your curiosity as you climb aboard a historic tour of the Louisville harbor. Cruise back in time and learn about the river, steamboats and the history of the surrounding cities on this enlightening trip through time.",
+			"Imagine 90% of Southern Indiana and 70% of Louisville under water as you learn about the worst flood ever to hit the Ohio River and Louisville area_The Great Flood of 1937.",
+			"As you cruise past rich scenery and through the McAlpine Lock and Dam system, learn about its history and how its operation continues to make it possible to safely bypass the Falls of the Ohio.",
+			"NEWLO"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/layouts/_header.html.erb",
+					"settings":
+					{
+						"buffer_size": 648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/pages/contact.html.erb",
+					"settings":
+					{
+						"buffer_size": 1260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1227,
+								1227
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/_locations.html.erb",
+					"settings":
+					{
+						"buffer_size": 626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								360
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "app/assets/stylesheets/_header.scss",
+					"settings":
+					{
+						"buffer_size": 3356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1256
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/pages/_contact.scss",
+					"settings":
+					{
+						"buffer_size": 1294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								692,
+								692
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 464.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/stylesheets/_normalize.scss",
+					"settings":
+					{
+						"buffer_size": 7760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7048,
+								7048
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5309.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.426625228102,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 292.0,
+	"status_bar_visible": true
+}

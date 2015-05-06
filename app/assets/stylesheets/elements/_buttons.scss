@@ -1,0 +1,29 @@
+.button {
+    @include transition(all 0.3s ease-in-out);
+    background: transparent;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    border: em(3px) solid $links; /* stroke */
+    -moz-border-radius: em(7px);
+    -webkit-border-radius: em(7px);
+    border-radius: em(7px); /* border radius */
+    color: $text;
+    display: block;
+    height: em(42px);
+    line-height: em(35);
+    text-align: center;
+    text-transform: uppercase;
+    width: em(201px);
+
+    &:hover, &:focus {
+        background: $links;
+        color: $text;
+    }
+    &:active {
+        background: $headers;
+        border: em(3px) solid $headers;
+        // box-shadow: inset em(0) em(0) em(3) rgba(0,0,0, 0.3);
+        color: #fff;
+    }
+}

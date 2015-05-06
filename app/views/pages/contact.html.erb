@@ -1,0 +1,67 @@
+<%= content_for :page_title, "Contact Current360 for Digital & Traditional Marketing Services" %>
+<%= content_for :description, "Whether you’re looking for a full-service marketing agency to help build your brand or you’re interested in joining our team, we’d love to hear from you." %>
+
+
+<main class="contact">
+  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.950330499529!2d-85.72726199999997!3d38.25745799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886972dfa7560f43%3A0x7b886adb759e0206!2s1324+E+Washington+St!5e0!3m2!1sen!2sus!4v1404768032228" width="1400" height="800" frameborder="0" style="border:0" scrollwheel="false"></iframe> -->
+
+<div id="map-canvas"></div>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7cwx6do_Gh29duX-Iw5wQAWTn7md9tj0">
+    </script>
+
+    <script type="text/javascript">
+
+      var mapOptions = {
+          center: { lat: 38.257435, lng: -85.727206},
+          zoom: 15,
+          scrollwheel: false,
+      };
+
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: { lat: 38.257435, lng: -85.727206 },
+          map: map
+      });
+
+      var infoContent = '<div class="infoWindow"><h2>Current360 Office</h2><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress" class="street">1324 E Washington St</span><br><span itemprop="addressLocality">Louisville</span>, <span itemprop="addressRegion">KY</span><span itemprop="postalCode">40206</span></div><br><a itemprop="telephone" href="tel:1-502-589-3567">502 589 3567</a></div>';
+
+      var infowindow = new google.maps.InfoWindow({
+          content: infoContent
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+      });
+
+      google.maps.event.addDomListener(window, 'resize', function() {
+          var center = map.getCenter();
+          google.maps.event.trigger(map, "resize");
+          map.setCenter(center);
+      });
+
+    </script>
+  <div class="row">
+    <h1>Contact Current360</h1>
+    <aside>
+        <svg version="1.1" x="0px" y="0px" id="angle"
+        width="280px" height="83px" viewBox="-40 58.5 280 83" perserveAspectRatio="xMinyMin meet">
+            <polygon fill="#FFFFFF" points="240,141.462 240,117.925 -40,58.733 -40,141.462 "/>
+        </svg>
+
+         <svg version="1.1" id="location-icon" x="0px" y="0px"
+             width="32px" height="32px" viewBox="0 0 32 32" >
+            <path fill="#403C3B" d="M16,0C7.163,0,0,7.163,0,16s7.163,16,16,16s16-7.163,16-16S24.837,0,16,0z M16,29C8.82,29,3,23.18,3,16
+                S8.82,3,16,3s13,5.82,13,13S23.18,29,16,29z"/>
+            <path fill="#F55219" d="M19,13l-9-5H8v2l5,9l9,5h2v-2L19,13z M16,18c-1.105,0-2-0.895-2-2s0.895-2,2-2s2,0.895,2,2S17.105,18,16,18z
+                "/>
+        </svg>
+
+        <%= render 'layouts/locations' %>
+    </aside>
+    <%= render 'layouts/contactForm' %>
+  </div>
+</main>

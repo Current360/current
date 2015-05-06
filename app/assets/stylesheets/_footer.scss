@@ -1,0 +1,133 @@
+footer {
+    @include row('table');
+    background: $text;
+    color: #fff;
+    min-height: 15em;
+    padding: 4em 0 1em 0;
+
+    .footer-logo a {
+        // background: asset-url("logos/Current360-mark-footer.png", image) no-repeat left top;
+        display: block;
+        height: em(70px);
+        margin: 0 auto 2.5em auto;
+        width: 5.925em;
+
+        span {
+            @include hide-text;
+            display: block;
+            height: em(70px);
+        }
+
+        &:hover {
+            background: none;
+        }
+
+        &:hover svg path, &:hover svg polygon {
+            fill: $mediumgrey;
+        }
+
+        // Expand the height for the adjusted font-size
+        @include media( $type ) {
+            height: 5.175em;
+        }
+
+
+      }
+
+    article {
+        @include row;
+        text-align: center;
+    }
+    .location {
+        margin-bottom: 3em;
+        .name {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-bottom: 0;
+            text-transform: none;
+        }
+        span {
+            // line-height: $lineheight + .3;
+            line-height: 1.8em;
+        }
+    }
+
+    h5 { margin-top: 0; }
+
+    ul {
+        @include row('table');
+        margin: 2em auto;
+        padding: 0;
+        max-width: em(235px);
+    }
+
+    li {
+        @include span-columns(4);
+        &:before { display: none; }
+    }
+
+    aside a {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: em(45);
+
+        span {
+            @include hide-text;
+            display: block;
+            height: em(45px);
+        }
+
+        &:hover {
+            background: none;
+        }
+
+        &:hover svg path {
+            fill: $links;
+        }
+
+        // USE FOR PNG FALL BACK
+        // background: asset-url("icons/social-icons.png", image) no-repeat;
+        // height: em(45px);
+        // width: em(45px);
+    }
+    // USE FOR PNG FALL BACK
+    // #tw { background-position: -62px 0; }
+    // #gp { background-position: -124px 0; }
+    // #ln { background-position: -187px 0; }
+    // li a:hover { background: asset-url("icons/social-icons.png", image) no-repeat; }
+
+    .street { display: block; }
+
+    p {
+        color: shade($lightgrey, 45%);
+        font-size: em(12px);
+        line-height: em(75px);
+        margin-bottom: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    @include media( $laptop ) {
+        @include reset-all;
+        figure, article, aside { vertical-align: top; }
+        figure {
+            @include span-columns(1);
+            @include shift(0.25);
+        }
+        article {
+            @include span-columns(3);
+            text-align: left;
+        }
+        aside {
+            @include span-columns(3);
+            @include shift(2.75);
+            ul { margin-top: 0; }
+        }
+        .location {
+            text-align: left;
+        }
+    }
+}
+@include reset-all;

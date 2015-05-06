@@ -1,0 +1,223 @@
+header {
+    background: $text asset-url('logos/Current360-mark-header.png') center center no-repeat;
+    min-height: em(72px);
+    margin-bottom: 3em;
+
+    #open {
+        @include hide-text;
+        background: asset-url("icons/burger.png", image);
+        background-color: $links;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 22px 20px;
+        border: none;
+        display: block;
+        float: left;
+        height: em(72px);
+        outline: none;
+        position: relative;
+        width: em(72px);
+
+        span {
+            @include triangle(6px, $text, right);
+            position: absolute;
+            left: 70%;
+            top: 46%;
+        }
+
+        @include media( $laptop ) {
+            display: none;
+        }
+    }
+
+    .logo {
+        position: relative;
+        z-index: 9999;
+
+        a { display: none; }
+
+        @include media( $laptop ) {
+            display: block;
+            top: -1.5em;
+            a {
+                @include hide-text;
+
+                display: block;
+                padding: 0;
+                svg {
+                    position: absolute;
+                }
+
+                // USE FOR PNG FALLBACK
+                // background: asset-url('logos/Current360-logo-desktop.png') center top no-repeat;
+                // height: em(161px);
+                // width: 14.5em;
+            }
+        }
+        @include media( $large ) {
+            width: 17.5em;
+        }
+    }
+
+    nav {
+        background: $text;
+        height: 0;
+        overflow: hidden;
+        width: 0;
+
+        &.expanded {
+            height: auto;
+            overflow: visible;
+            position: absolute;
+            top: 4.5em;
+            width: 50%;
+            z-index: 9;
+        }
+
+        ul {
+            bottom: 0;
+            margin: 0;
+        }
+        .nav-form, li:before { display: none; }
+
+        li:hover {
+            background: $links;
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            height: 6em;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            line-height: 6.1em;
+            text-transform: uppercase;
+        }
+
+        form {
+            margin: 0 auto;
+            height: em(72px);
+            width: em(239px);
+
+            & input {
+                margin-top: 1.65em;
+            }
+        }
+
+        input[type=text] {
+            border: 2px solid #fdc12f; /* stroke */
+            background-color: transparent;
+            float: left;
+            height: 27px;
+            width: 212px;
+
+            &:focus {
+                background-color: #fff;
+                border: 2px solid #fdc12f; /* stroke */
+            }
+        }
+        input[type=submit] {
+            background: #fec130 asset-url('icons/icon-search.svg') center center no-repeat;
+            background-size: contain;
+            border: none;
+            border-radius: 0;
+            display: block;
+            float: left;
+            height: em(27);
+            min-width: initial;
+            text-indent: -9999px;
+            width: em(27);
+            &:hover, &:focus {
+                background: #9bb647 asset-url('icons/icon-search.svg') center center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    @include media( $laptop ) {
+        background: $text;
+        height: 4.5em;
+        margin-top: 1.5em;
+        figure {
+            @include span-columns(2);
+            @include shift(0.25);
+        }
+        nav {
+            @include span-columns(7);
+            @include shift(3);
+            position: absolute;
+            height: inherit;
+
+            &.expanded {
+                position: static;
+                width: auto;
+            }
+
+            ul { height: em(72px); }
+            li {
+                display: block;
+                float: left;
+            }
+            .home-link { display: none; }
+            .nav-form {
+                background: asset-url("bg/background-c360-grid.jpg", image) repeat-x left -2px;
+                @include hidpi(1.5) {
+                    background: asset-url("bg/background-c360-grid-2x.jpg", image) repeat-x left -2px;
+                }
+                display: block;
+                position: relative;
+                min-height: em(72px);
+                width: em(283px);
+            }
+
+            a {
+                display: block;
+                padding: 0 1.2em;
+            }
+
+            form {
+                input {
+                    background: transparent;
+                    border: 2px solid $links;
+                    display: block;
+                    max-width: em(214px);
+                }
+            }
+        }
+    }
+
+    @include media( $large ) {
+        figure {
+            @include shift(1);
+        }
+        nav {
+            @include span-columns(6);
+            @include shift(3.25);
+            max-width: em(600px);
+
+            a {
+                // font-size: 0.875em;
+            }
+
+            .nav-form {
+                width: 17.6875em;
+            }
+        }
+    }
+
+    @include media( 1760px ) {
+        nav {
+            margin-left: 35em;
+        }
+    }
+}
+
+.pages-index header nav form {
+    background: transparent;
+}
+
+.pages-index header nav .nav-form {
+    background: #403C3B;
+}
+
+@include reset-all;

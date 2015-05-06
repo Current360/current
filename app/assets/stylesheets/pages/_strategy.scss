@@ -1,0 +1,195 @@
+/* -----------------------------
+
+      STRATEGY PAGE STYLES
+
+----------------------------- */
+.wrapper {
+  @include outer-container;
+  .strategy {
+    @include span-columns(6);
+    @include reset-display();
+    background:#fff;
+    padding: 12% 10% 0 10%;
+  }
+}
+.slider-wrapper {
+    padding: 2em 0;
+    position: relative;
+    .active {
+      visibility: visible!important;
+    }
+    .slide {
+      @include outer-container;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // visibility: hidden;
+      height: 26.250em;
+      margin-bottom: 2em;
+      aside {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        @include span-columns(4);
+        @include omega;
+        height: 26.250em;
+        padding-left: 2.84259%;
+      }
+      .slide-count {
+        color: #c0c1c4;
+        font-size: 1.250em;
+      }
+      // .current-slide { color: #ec4226; }
+    }
+    .case-study-block {
+      @include outer-container;
+      background: #202020;
+      p { color: #fff; }
+      p.header2 { color: #fdc12f; }
+      height: 19.625em;
+      position: relative;
+      .slide-text {
+        margin-top: 7em;
+      }
+      aside {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        @include span-columns(4);
+        @include omega;
+        height: 26.250em;
+        padding-left: 2.84259%;
+      }
+      aside h2 {
+        color: #fdc12f;
+        margin-top: 3.5em;
+        font-family: 'Open Sans', sans-serif;
+      }
+      aside ul {
+        padding: 0;
+        margin-top: 2em;
+      }
+      aside li {
+        margin-bottom: .25em;
+        line-height: 1em;
+      }
+      aside a {
+        color: #eb4126;
+        font-size: 14px;
+      }
+    }
+    .triangle{
+      @include triangle(84px, #009edd #202020, down);
+      position: absolute;
+      top: 0px;
+    }
+    #conversation {
+      background-color: #f4f4f4;
+      aside {
+        background: shade(#f4f4f4,10%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center top no-repeat;
+      }
+    }
+    #homework {
+      background-color: #fec130;
+      aside {
+        background: shade(#fec130,10%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -200px no-repeat;
+      }
+    }
+    #strategy {
+      background-color: #202020;
+      p { color: #fff; }
+      aside {
+        background: shade(#202020,50%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -400px no-repeat;
+      }
+    }
+    #creative {
+      background-color: #f4f4f4;
+      aside {
+        background: shade(#f4f4f4,10%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -600px no-repeat;
+      }
+    }
+    #gotowork {
+      background-color: #009edd;
+      aside {
+        background: shade(#009edd,20%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -800px no-repeat;
+      }
+    }
+    #present {
+      background-color: #202020;
+      p { color: #fff; }
+      aside {
+        background: shade(#202020,50%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -1000px no-repeat;
+      }
+    }
+    #test {
+      background-color: #fec130;
+      aside {
+        background: shade(#fec130,20%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -1200px no-repeat;
+      }
+    }
+    #execute {
+      background-color: #f4f4f4;
+      aside {
+        background: shade(#f4f4f4,10%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -1400px no-repeat;
+      }
+    }
+    #track {
+      background-color: #009edd;
+      margin-bottom: 0;
+      aside {
+        background: shade(#009edd,20%);
+      }
+      figure {
+        background: asset-url('current360-strategy-icons.png', image) center -1600px no-repeat;
+      }
+    }
+    .slide-text {
+      @include span-columns(5);
+      @include shift(1);
+      @include omega;
+      p {
+        width: 82%;
+      }
+      .down-arrow {
+        margin: initial;
+        text-align: center;
+      }
+    }
+    figure {
+      height: 200px;
+      margin-top: 20%;
+    }
+  }
+.work-trigger {
+    // 480 PX
+    @include reset-display();
+    min-height: 34.375em;
+
+    text-align: center;
+    .header1 {
+      background: asset-url("strategy-icon.png", image) no-repeat center 100px;
+      padding-top: 200px;
+    }
+  }

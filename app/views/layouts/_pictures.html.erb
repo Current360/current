@@ -1,0 +1,12 @@
+<ul>
+    <% @pictures.each do |picture| %>
+    <li>
+        <span class='caption'><%= picture.caption %></span>
+        <span class='likes'><%= picture.likes %></span>
+        <%= image_tag picture.url %>
+
+    </li>
+    <% end %>
+    <br class="clear">
+</ul>
+<%= link_to 'Load More', '', :class => 'button yellow' %>

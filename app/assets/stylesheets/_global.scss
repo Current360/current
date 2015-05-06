@@ -1,0 +1,198 @@
+/* ---------------------------
+
+        COLORS
+
+--------------------------- */
+$headers: #ef4723; /* fire */
+$links: #fec130; /* yellow */
+$text: #202020; /* black */
+$submit: #95bf3d; /* green */
+$footerLinks: #009edd; /* blue */
+$darkgrey: #403c3b; /* sidebars-bgs */
+$mediumgrey: #a4a4a4;
+$lightgrey: #f4f4f4; /* panels-callouts */
+
+/* ---------------------------
+
+        BREAKPOINTS
+
+--------------------------- */
+$type: new-breakpoint(max-width 28em);
+$tablet: new-breakpoint(min-width 48em); // 768px
+$laptop: new-breakpoint(min-width 64em); // 1024px
+$large: new-breakpoint(min-width 87.5em); // 1400px
+
+//1150 Culture Cutoff
+$culture: new-breakpoint(min-width 71.875em 6);
+
+/* ---------------------------
+
+        LAYOUT
+
+--------------------------- */
+
+body {
+    background: asset-url("bg/background-c360-grid.jpg", image);
+    @include hidpi(1.5) {
+        background: asset-url("bg/background-c360-grid-2x.jpg", image);
+    }
+}
+.row { @include row; }
+.clear { clear: both; }
+*:focus { outline: none; }
+figure, ul { margin: 0; padding: 0; }
+.inline { display: inline; }
+
+.wrapper {
+    @include outer-container;
+}
+
+/* ---------------------------
+
+        LINKS
+
+--------------------------- */
+
+a {
+    @include transition(all 0.3s ease-in-out);
+    color: $links;
+    padding: 2px 4px;
+    text-decoration: none;
+    &:hover, &:focus {
+        background: $links;
+        color: $text;
+    }
+    &:active {
+        background: $headers;
+        color: white;
+    }
+}
+
+svg, svg *, input {
+    @include transition(all 0.3s ease-in-out);
+}
+
+/* ---------------------------
+
+        TYPOGRPAHY
+
+--------------------------- */
+
+.arvo { font-family: 'Arvo', serif; }
+.open-sans { font-family: 'Open Sans', sans-serif; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    @include media( $type ) {
+        font-size: 90%;
+    }
+}
+
+.bg { display:  none; }
+
+h1, h2, h3, h4, h5, h6, .header1, .header2, .header3, .header4, .header5, .header6 {
+    color: $headers;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin-bottom: 0.618em;
+}
+
+h1, .header1 {
+    font-size: 2em;
+}
+
+h2, .header2 {
+    color: $text;
+    font-size: 1.476em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ----------- BODY COPY ELEMENTS----------------- */
+
+p {
+    font-size: 0.912em;
+    line-height: 1.676;
+    margin-bottom: 2em;
+    max-width: 650px;
+}
+
+blockquote {
+    border-bottom: 5px solid $headers;
+    border-top: 5px solid $headers;
+    color: $mediumgrey;
+    font-family: 'Arvo', serif;
+    font-size: 1.618em;
+    font-style: italic;
+    line-height: 1.4em;
+    margin: 1.5em 0 0 0;
+    quotes: "“" "”" "‘" "’";
+    }
+    blockquote:before {
+        display: block;
+        content: open-quote;
+        font-size: 2em;
+        padding-top: 0.5em;
+        text-align: left;
+    }
+    blockquote:after {
+        display: block;
+        content: close-quote;
+        font-size: 2em;
+        margin-top: -0.35em;
+        text-align: right;
+    }
+    cite {
+        color: $text;
+        display: block;
+        font-size: 1em;
+        margin-top: 0.5em;
+        text-align: center;
+        font-style: normal;
+        }
+        cite:before {
+            content: ' - ';
+        }
+
+
+ul, ol {
+
+    line-height: 1.476em;
+
+    margin-left: 0.5em;
+
+    li {
+        // font-size: 0.912em;
+        list-style-position: inside;
+    }
+}
+
+.no-disc { margin-left: 0; }
+.no-disc li { list-style: none; list-style-type: none; }
+/* REMOVES THE BULLET AS WE HAVE REMOVED IT NORMALLY */
+.no-disc li:before { display: none; }
+
+ul {
+    list-style: none;
+    list-style-type: none
+}
+ul li:before {
+    color: $headers;
+    content: '\2022';
+    font-size: 1.5em;
+    padding-right: 0.25em;
+    position: relative;
+    top: .15em;
+
+    }
+ol {
+    list-style: decimal;
+}
