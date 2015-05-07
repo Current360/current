@@ -168,6 +168,13 @@ header {
                 position: relative;
                 min-height: em(72px);
                 width: em(283px);
+
+                &:hover {
+                    background: asset-url("bg/background-c360-grid.jpg", image) repeat-x left -2px;
+                    @include hidpi(1.5) {
+                        background: asset-url("bg/background-c360-grid-2x.jpg", image) repeat-x left -2px;
+                    }
+                }
             }
 
             a {
