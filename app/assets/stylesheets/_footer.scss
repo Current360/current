@@ -44,6 +44,7 @@ footer {
             color: #fff;
             font-size: 1.2em;
             font-weight: normal;
+            line-height: 1.8;
             margin-bottom: 0;
             text-transform: none;
         }
@@ -51,6 +52,11 @@ footer {
             // line-height: $lineheight + .3;
             line-height: 1.8em;
         }
+        a {
+            font-size: 0.875em;
+            line-height: 1.8;
+        }
+        div { font-size: 0.875em; }
     }
 
     h5 { margin-top: 0; }

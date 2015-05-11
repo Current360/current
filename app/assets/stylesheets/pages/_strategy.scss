@@ -4,59 +4,101 @@
 
 ----------------------------- */
 .wrapper {
-  @include outer-container;
+  padding: 0 2em;
+  margin-bottom: 2em;
   .strategy {
-    @include span-columns(6);
-    @include reset-display();
+
     background:#fff;
-    padding: 12% 10% 0 10%;
+    // padding: 12% 10% 0 10%;
+    padding: 2em;
+  }
+
+  @include media( $tablet ) {
+    padding: 0;
+    .strategy {
+      padding-left: 7.28426%;
+      width: 59.86297%;
+    }
   }
 }
 .slider-wrapper {
-    padding: 2em 0;
+    @include outer-container;
     position: relative;
     .active {
       visibility: visible!important;
     }
     .slide {
-      @include outer-container;
-      // position: absolute;
-      // left: 0;
-      // top: 0;
-      // visibility: hidden;
-      height: 26.250em;
-      margin-bottom: 2em;
+      @include row(table);
+      min-height: 26.250em;
+      article, aside {
+        vertical-align: top;
+      }
       aside {
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
         @include span-columns(4);
         @include omega;
-        height: 26.250em;
+        min-height: 26.250em;
+        height: 100%;
         padding-left: 2.84259%;
+      }
+      svg {
+        position: absolute;
       }
       .slide-count {
+        // background: asset-url('icons/icon-step-indicator.svg') no-repeat center center;
         color: #c0c1c4;
         font-size: 1.250em;
+        left: 1.5em;
+        position: relative;
+        top: 1em;
+
+        @include media(28em) {
+          font-size: em(18);
+        }
+
       }
-      // .current-slide { color: #ec4226; }
+      article {
+        @include span-columns(6);
+        @include omega;
+        padding: 2em 0 2em 7.5%;
+        p {
+          width: 82%;
+        }
+        .down-arrow {
+          margin: initial;
+          text-align: center;
+        }
+        .header2 {
+          margin-top: 3em;
+        }
+      }
+      .current-slide { color: #ec4226; }
+      .down-arrow {
+        @include hide-text;
+        background: asset-url('icons/icon-down-arrow.svg') no-repeat left top;
+        display: block;
+        height: 1.8215em;
+      }
+      @include media( $tablet ) {
+
+      }
+      @include media( $laptop ) {
+
+      }
+      @include media( $large ) {
+
+      }
     }
     .case-study-block {
-      @include outer-container;
-      background: #202020;
-      p { color: #fff; }
-      p.header2 { color: #fdc12f; }
+      @include row('table');
+      background: $darkgrey;
       height: 19.625em;
+      padding-bottom: 3.5em;
       position: relative;
-      .slide-text {
-        margin-top: 7em;
-      }
-      aside {
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        @include span-columns(4);
-        @include omega;
-        height: 26.250em;
-        padding-left: 2.84259%;
+      // padding: 0 2em;
+      p { color: #fff; }
+      p.header2 {
+        color: $headers;
+        margin-top: 3.5em;
       }
       aside h2 {
         color: #fdc12f;
@@ -64,132 +106,147 @@
         font-family: 'Open Sans', sans-serif;
       }
       aside ul {
-        padding: 0;
+        padding: 0 0 0 5%;
         margin-top: 2em;
       }
       aside li {
-        margin-bottom: .25em;
+        margin-bottom: 1em;
         line-height: 1em;
+        &:before { display: none; }
       }
       aside a {
-        color: #eb4126;
         font-size: 14px;
+      }
+      article {
+        padding: 0 7.5%;
+      }
+
+      @include media( $tablet ) {
+        padding-bottom: 7em;
+        p.header2 {
+          margin-top: 7em;
+        }
+        article {
+          @include span-columns(6);
+        }
+        aside {
+          @include span-columns(4);
+          @include omega;
+          // padding-left: 2.84259%;
+
+          ul {
+            padding: 0;
+          }
+        }
+      }
+      @include media( $laptop ) {
+        aside {
+          li {
+              display: inline-block;
+              width: 45%;
+            }
+        }
       }
     }
     .triangle{
-      @include triangle(84px, #009edd #202020, down);
+      @include triangle(84px, #009edd $darkgrey, down);
       position: absolute;
       top: 0px;
     }
     #conversation {
       background-color: #f4f4f4;
       aside {
-        background: shade(#f4f4f4,10%);
+        background: shade(#f4f4f4,10%) asset-url('icons/icon-strategy1.svg') center center no-repeat;
       }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center top no-repeat;
-      }
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center center no-repeat;
+      // }
+
     }
     #homework {
       background-color: #fec130;
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -200px no-repeat;
+      // }
       aside {
-        background: shade(#fec130,10%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -200px no-repeat;
+        background: shade(#fec130,10%) asset-url('icons/icon-strategy2.svg') center center no-repeat;
       }
     }
     #strategy {
       background-color: #202020;
       p { color: #fff; }
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -400px no-repeat;
+      // }
       aside {
-        background: shade(#202020,50%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -400px no-repeat;
+        background: shade(#202020,50%) asset-url('icons/icon-strategy3.svg') center center no-repeat;
       }
     }
     #creative {
       background-color: #f4f4f4;
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -600px no-repeat;
+      // }
       aside {
-        background: shade(#f4f4f4,10%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -600px no-repeat;
+        background: shade(#f4f4f4,10%) asset-url('icons/icon-strategy4.svg') center center no-repeat;
       }
     }
     #gotowork {
       background-color: #009edd;
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -800px no-repeat;
+      // }
       aside {
-        background: shade(#009edd,20%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -800px no-repeat;
+        background: shade(#009edd,20%) asset-url('icons/icon-strategy5.svg') center center no-repeat;
       }
     }
     #present {
       background-color: #202020;
       p { color: #fff; }
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -1000px no-repeat;
+      // }
       aside {
-        background: shade(#202020,50%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -1000px no-repeat;
+        background: shade(#202020,50%) asset-url('icons/icon-strategy6.svg') center center no-repeat;
       }
     }
     #test {
       background-color: #fec130;
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -1200px no-repeat;
+      // }
       aside {
-        background: shade(#fec130,20%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -1200px no-repeat;
+        background: shade(#fec130,20%) asset-url('icons/icon-strategy7.svg') center center no-repeat;
       }
     }
     #execute {
       background-color: #f4f4f4;
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -1400px no-repeat;
+      // }
       aside {
-        background: shade(#f4f4f4,10%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -1400px no-repeat;
+        background: shade(#f4f4f4,10%) asset-url('icons/icon-strategy8.svg') center center no-repeat;
       }
     }
     #track {
       background-color: #009edd;
       margin-bottom: 0;
+      // PNG BACKUPS
+      // figure {
+      //   background: asset-url('icons/current360-strategy-icons.png', image) center -1600px no-repeat;
+      // }
       aside {
-        background: shade(#009edd,20%);
-      }
-      figure {
-        background: asset-url('icons/current360-strategy-icons.png', image) center -1600px no-repeat;
+        background: shade(#009edd, 10%) asset-url('icons/icon-strategy9.svg') center center no-repeat;
       }
     }
-    .slide-text {
-      @include span-columns(5);
-      @include shift(1);
-      @include omega;
-      p {
-        width: 82%;
-      }
-      .down-arrow {
-        margin: initial;
-        text-align: center;
-      }
-    }
-    figure {
-      height: 200px;
-      margin-top: 20%;
-    }
-  }
-.work-trigger {
-    // 480 PX
-    @include reset-display();
-    min-height: 34.375em;
+}
 
-    text-align: center;
-    .header1 {
-      background: asset-url("strategy-icon.png", image) no-repeat center 100px;
-      padding-top: 200px;
-    }
-  }
+@include reset-display();
