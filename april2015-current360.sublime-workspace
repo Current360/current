@@ -4,32 +4,92 @@
 		"selected_items":
 		[
 			[
-				"pos",
-				"pos-a	position: absolute;"
+				"at",
+				"auto"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
-				"no",
-				"no-repeat"
-			],
-			[
-				"pa",
-				"padding"
+				"max",
+				"max-width"
 			],
 			[
 				"fon",
 				"font-size"
 			],
 			[
-				"min-",
-				"min-width"
+				"mar",
+				"margin"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"mr",
+				"margin-right"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-box"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"marg",
+				"margin"
 			],
 			[
 				"tex",
-				"textarea"
+				"text-decoration"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"home",
+				"homepage-bg"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"no",
+				"no-repeat"
 			],
 			[
 				"ba",
@@ -100,14 +160,6 @@
 				"min-height"
 			],
 			[
-				"h",
-				"hgroup"
-			],
-			[
-				"fo",
-				"form"
-			],
-			[
 				"te",
 				"text-indent"
 			],
@@ -144,10 +196,6 @@
 				"font-family"
 			],
 			[
-				"marg",
-				"margin-bottom"
-			],
-			[
 				"b",
 				"block"
 			],
@@ -168,20 +216,8 @@
 				"font-size"
 			],
 			[
-				"inl",
-				"inline-block"
-			],
-			[
 				"n",
 				"no-repeat"
-			],
-			[
-				"max",
-				"max-width"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"imo",
@@ -194,10 +230,6 @@
 			[
 				"ov",
 				"overflow"
-			],
-			[
-				"back",
-				"background-origin"
 			],
 			[
 				"conte",
@@ -320,50 +352,58 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/_header.html.erb",
+			"file": "app/views/blogs/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 648,
+				"buffer_size": 832,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/pages/contact.html.erb",
+			"file": "app/views/blogs/_original_roll.html.erb",
 			"settings":
 			{
-				"buffer_size": 1260,
+				"buffer_size": 582,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_locations.html.erb",
+			"file": "app/controllers/blogs_controller.rb",
 			"settings":
 			{
-				"buffer_size": 626,
+				"buffer_size": 969,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/_header.scss",
+			"file": "app/assets/stylesheets/pages/_strategy.scss",
 			"settings":
 			{
-				"buffer_size": 3356,
+				"buffer_size": 6264,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/pages/_contact.scss",
+			"file": "app/assets/stylesheets/pages/_culture.scss",
 			"settings":
 			{
-				"buffer_size": 1294,
+				"buffer_size": 3002,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/_normalize.scss",
+			"file": "app/assets/stylesheets/_global.scss",
 			"settings":
 			{
-				"buffer_size": 7760,
+				"buffer_size": 3925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/blog/_blog.scss",
+			"settings":
+			{
+				"buffer_size": 6603,
 				"line_ending": "Unix"
 			}
 		}
@@ -371,9 +411,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -383,7 +431,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 471.0
 	},
 	"console":
 	{
@@ -400,34 +448,71 @@
 	},
 	"file_history":
 	[
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_footer.scss",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/SCSS.sublime-settings",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_home.scss",
+		"/Users/jerrodlong/Desktop/current/config/locales/en.yml",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_header.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/application.css.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/strategy.html.erb",
 		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_global.scss",
 		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_strategy.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_locations.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/strategy.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/application.css.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footerCTA.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_header.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/contact.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_contact.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_culture.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/culture.html.erb",
+		"/Users/jerrodlong/Desktop/current/Gemfile",
+		"/Users/jerrodlong/Desktop/current/db/seeds.rb",
+		"/Users/jerrodlong/Desktop/current/db/schema.rb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/nav.js",
 		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footer.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_contact.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/contact.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/application.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/map.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/animations/animate.css",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/application.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/fonts.js",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/icons/icon-compass.svg",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_locations.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/icons/info-angle.svg",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/index.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/bg/info-angle.svg",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_icons.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_header.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/bg/radarLaptop.svg",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_buttons.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/bg/homepage_bg.svg",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_forms.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/home/case_study_bg_temp.jpg",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_normalize.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/homepage_bg.svg",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_culture.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/c360-social-icons.html",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/C360 SVGs.html",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/c360-logo-container.html",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/homepage-background.html",
+		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/c360-footer-logo.html",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/culture.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_variables.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_pictures.html.erb",
+		"/Users/jerrodlong/Desktop/current/config/initializers/instagram.rb",
+		"/Users/jerrodlong/Desktop/current/config/dribbble.rb",
+		"/Users/jerrodlong/Desktop/current/app/controllers/pages_controller.rb",
+		"/Users/jerrodlong/Desktop/current/app/classes/picture.rb",
+		"/Users/jerrodlong/Desktop/current/config/application.rb",
+		"/Users/jerrodlong/Desktop/current/app/classes/dribbble_picture_maker.rb",
+		"/Users/jerrodlong/Desktop/current/app/classes/instagram_picture_maker.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_contactForm.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footerCTA.html.erb",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/pages.js",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/nav.js.erb",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/application.html.erb",
-		"/Users/jerrodlong/Desktop/current/Gemfile",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/application.js",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/fonts.js.erb",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/bios.js",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/projects.js",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/blogs.js",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_footer.scss",
-		"/Users/jerrodlong/Desktop/current/app/controllers/pages_controller.rb",
 		"/Users/jerrodlong/Desktop/current/config/routes.rb",
 		"/Users/jerrodlong/Desktop/current/app/helpers/application_helper.rb",
 		"/Users/jerrodlong/Desktop/current/config/database.yml",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/index.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_normalize.scss",
 		"/Users/jerrodlong/Desktop/rails/kaw/app/classes/instagram_picture_maker.rb",
 		"/Users/jerrodlong/Desktop/rails/foodInsta/app/models/location_maker.rb",
 		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/javascripts/application.js",
@@ -490,44 +575,7 @@
 		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-livestock.php",
 		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-cattle.php",
 		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-swine.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-sheep-goats.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/interior-template.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/about-maxstrum.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/faq.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/index.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/home-content.php",
-		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/PHP.sublime-settings",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/stylesheets/_normalize.scss",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/javascripts/script.js",
-		"/Users/jerrodlong/Desktop/Sites2/IE/bands.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/bands.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/style.css",
-		"/Users/jerrodlong/Desktop/Sites2/IE/style.css",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/header.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/header.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/img/band-sidebar-pic.png",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/intNav.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/send_form_email2.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/9-18.csv",
-		"/Users/jerrodlong/Desktop/Sites2/IE/homeNav.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/nav.css",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/homeNav.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/8-8.csv",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/parse2.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/cruiseList.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/eventsList.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/eventsList.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/cruiseList.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/parse2.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/sidebar-int.php",
-		"/Users/jerrodlong/Desktop/Sites2/IE/intPages.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/sidebar-int.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/intPages.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/footer.php",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/sftp-config.json",
-		"/Users/jerrodlong/Desktop/Sites2/Belle/js/foundation.min.js"
+		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-sheep-goats.php"
 	],
 	"find":
 	{
@@ -545,6 +593,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"space",
+			".blog-feed",
+			"pad",
+			"<article>",
+			"class=\"slide-text\"",
+			"center top",
+			"asset-url('",
+			"172",
+			"400px",
+			"cite",
+			"y=\"0px\"",
+			"yMin",
+			"</svg>",
+			"ve\">",
+			"fill=\"#202020\"",
+			"<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->",
+			"id=\"\"",
+			"id=\"Layer_1\"",
+			"xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"",
+			"version=\"1.1\"",
+			"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">",
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"row",
 			"70%",
 			"checkm",
 			".callout",
@@ -649,30 +720,7 @@
 			"This cruise is a treat for the whole family. Build your own sundae while you take in all the beautiful sights the Ohio River has to offer. It's sure to be something the whole family will eat up.",
 			"This is not your typical booze cruise. Beer connoisseurs everywhere will appreciate a taste of some of the finest local brews while taking a relaxing cruise down the Ohio River. A representative will be onboard to discuss beer brewing. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
 			"bourbon",
-			"Spirit",
-			"Taste the spirit of Kentucky with every sip of bourbon. Distillers and brand ambassadors will walk you through a sampling of some of the finest spirits in the world while you cruise the Ohio River. Experience the rich tradition of Bourbon Country through the rich taste of Kentucky bourbon. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
-			"bourbon",
-			"1115",
-			"special",
-			"512",
-			"20px",
-			".pageTitle {",
-			".pageTi",
-			"Events ",
-			"River qu",
-			"bour",
-			" \n",
-			"@med",
-			"Cruise Types",
-			"What better way to wind down than with a glass of wine and a sweet treat? Try several featured wines varietals from around the area and enjoy a light dessert sampling while cruising the Ohio River. A representative will be onboard to discuss wine making. Must be 21 years of age with valid ID to sample.",
-			"Wine Tasting &amp; Dessert Cruise,\"<a class=\"\"popOutHeading\"\" href=\"\"http://festivalofriverboats.com/cruises/\"\">Wine Tasting and Dessert Cruise</a><img alt=\"\"Taste of Kentucky Pic\"\" class=\"\"ticketsImg\"\" src=\"\"http://festivalofriverboats.com/wp-content/themes/boilerplate/img/cruises/taste.jpg\"\" />What better way to wind down than with a glass of wine and a sweet treat? Try several featured wines varietals from around the area and enjoy a light dessert sampling while cruising the Ohio River. A representative will be onboard to discuss wine making. Must be 21 years of age with valid ID to sample.<a class=\"\"ticketsPageButton\"\" href=\"\"http://festivalofriverboats.com/cruises/\"\">Read More</a>\",Thurs., Oct. 16,9:30 PM,A Taste of Kentucky,$51.00 ,1151,Spirit of Jefferson,\"<a class=\"\"popOutHeading\"\" href=\"\"http://festivalofriverboats.com/riverboats/\"\">Spirit of Jefferson</a><img alt=\"\"Spirit of Jeferrson Pic\"\" class=\"\"ticketsImg\"\" src=\"\"http://festivalofriverboats.com/wp-content/themes/boilerplate/img/steamboats/sojSquare.jpg\"\" />Built in 1963, The Spirit of Jefferson is a charming mix of historic river travel and modern conveniences. With two enclosed decks and outside seating, she is a boat for all seasons and all types of groups.<a class=\"\"ticketsPageButton\"\" href=\"\"http://festivalofriverboats.com/riverboats/\"\">Read More</a>\",8:45 PM,11:30 PM,1,",
-			"Beer",
-			"Old 502 Winery, Kentucky's only urban winery, located in downtown Louisville, will be offering wine tasting cruises throughout the Festival. Using grapes grown by local farmers, Old 502 crafts some of the most eclectic - dare we say funky - wines you'll ever have the pleasure of tasting. Old 502 is the Official Wine of the Centennial Festival of Riverboats. Old 502 will be offering a selection of distinct wines including their famous 'Bourbon Barrel Red' and their new 'Belle's Blush' made especially for the Belle's Centennial. Join Old 502 and its staff for a wine tasting cruise that can't be missed! Must be 21 years of age with valid ID to sample.",
-			"wine",
-			"Bring your curiosity as you climb aboard a historic tour of the Louisville harbor. Cruise back in time and learn about the river, steamboats and the history of the surrounding cities on this enlightening trip through time.",
-			"Imagine 90% of Southern Indiana and 70% of Louisville under water as you learn about the worst flood ever to hit the Ohio River and Louisville area_The Great Flood of 1937.",
-			"As you cruise past rich scenery and through the McAlpine Lock and Dam system, learn about its history and how its operation continues to make it possible to safely bypass the Falls of the Ohio.",
-			"NEWLO"
+			"Spirit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -690,32 +738,30 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/_header.html.erb",
+					"file": "app/views/blogs/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 648,
+						"buffer_size": 832,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8,
-								8
+								744,
+								744
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -726,18 +772,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/pages/contact.html.erb",
+					"file": "app/views/blogs/_original_roll.html.erb",
 					"settings":
 					{
-						"buffer_size": 1260,
+						"buffer_size": 582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1227,
-								1227
+								388,
+								388
 							]
 						],
 						"settings":
@@ -757,18 +803,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/_locations.html.erb",
+					"file": "app/controllers/blogs_controller.rb",
 					"settings":
 					{
-						"buffer_size": 626,
+						"buffer_size": 969,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								360,
-								360
+								964,
+								964
 							]
 						],
 						"settings":
@@ -776,7 +822,67 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/stylesheets/pages/_strategy.scss",
+					"settings":
+					{
+						"buffer_size": 6264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								204
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/pages/_culture.scss",
+					"settings":
+					{
+						"buffer_size": 3002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								93
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -793,19 +899,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
-					"file": "app/assets/stylesheets/_header.scss",
+					"buffer": 5,
+					"file": "app/assets/stylesheets/_global.scss",
 					"settings":
 					{
-						"buffer_size": 3356,
+						"buffer_size": 3925,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1256,
-								1256
+								775,
+								939
 							]
 						],
 						"settings":
@@ -818,69 +924,36 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 67.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/assets/stylesheets/pages/_contact.scss",
+					"buffer": 6,
+					"file": "app/assets/stylesheets/blog/_blog.scss",
 					"settings":
 					{
-						"buffer_size": 1294,
+						"buffer_size": 6603,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								692
+								2577,
+								2577
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 464.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/_normalize.scss",
-					"settings":
-					{
-						"buffer_size": 7760,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7048,
-								7048
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5309.0,
+						"translation.y": 15.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

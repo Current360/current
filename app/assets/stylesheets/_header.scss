@@ -1,7 +1,23 @@
+.blogs-index header nav .nav-form, .blogs-show header nav .nav-form, .blogs-category header nav .nav-form {
+    background: asset-url("bg/bright_squares.jpg", image) repeat-x left -2px;
+    @include hidpi(1.5) {
+        background: asset-url("bg/bright_squares_@2X.jpg", image) repeat-x left -2px;
+    }
+
+    &:hover {
+        background: asset-url("bg/bright_squares.jpg", image) repeat-x left -2px;
+        @include hidpi(1.5) {
+            background: asset-url("bg/bright_squares_@2X.jpg", image) repeat-x left -2px;
+        }
+    }
+}
+
 header {
     background: $text asset-url('logos/Current360-mark-header.png') center center no-repeat;
     min-height: em(72px);
     margin-bottom: 3em;
+
+    .wrapper { padding: 0; }
 
     #open {
         @include hide-text;

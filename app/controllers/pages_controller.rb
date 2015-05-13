@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
     def index
+        @featuredBlog = Blog.find(23)
     end
 
     def strategy

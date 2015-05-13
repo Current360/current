@@ -3,12 +3,12 @@
       CULTURE PAGE STYLES
 
 ----------------------------- */
-.wrapper {
+.pages-culture .wrapper {
   .culture-text {
     background: #fff;
     float: left;
     margin-bottom: 4em;
-    @include pad(2em 10%);
+    padding: 2em 10.28426% 4em 10.28426%;
     @include media($tablet) {
       width: 70%;
     }

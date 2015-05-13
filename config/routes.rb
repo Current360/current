@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :projects
+  match '/blogs/category' => 'blogs#category', via: [:get]
   resources :blogs
   resources :bios
   resources :posts

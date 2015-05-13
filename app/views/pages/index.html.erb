@@ -279,11 +279,11 @@
     <section class="featured-blog">
         <h3>Hot of the blog</h3>
         <article>
-            <figure class="author-pic"><img src="http://placehold.it/120x120" alt=""></figure>
-            <h2>Ruby on Rails Chapter 4: Rails Flavored Ruby</h2>
-            <p class="snippet">This is the chapter where the real fun starts. Your introduction to the Rails Console. Consider this console as the worry-free sandbox you used to play in as a child. If you built your mote &hellip;
+            <figure><%= link_to(image_tag('http://lorempixel.com/120/120/'), @featuredBlog) %></figure>
+            <h2><%= link_to(@featuredBlog.title, @featuredBlog) %></h2>
+            <p class="snippet"><p><%= truncate(strip_tags(@featuredBlog.content), length: 300) %></p>
             </p>
-            <a href="" class="button">Continue</a>
+            <%= link_to('Continue', @featuredBlog, :class => 'button') %>
         </article>
     </section>
 

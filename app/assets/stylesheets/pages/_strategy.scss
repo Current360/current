@@ -16,7 +16,7 @@
   @include media( $tablet ) {
     padding: 0;
     .strategy {
-      padding-left: 7.28426%;
+      padding-left: 10.28426%;
       width: 59.86297%;
     }
   }
@@ -59,7 +59,7 @@
       article {
         @include span-columns(6);
         @include omega;
-        padding: 2em 0 2em 7.5%;
+        padding: 2em 10.28426% 2em 10.28426%;
         p {
           width: 82%;
         }

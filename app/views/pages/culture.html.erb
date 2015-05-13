@@ -37,15 +37,9 @@
       </div>
       <article class='recent-posts' id="culture-recent-posts">
         <header>
-          <h2>Hot off the Blog</h2>
+            <h2>Hot off the Blog</h2>
         </header>
-        <%# render 'layouts/recent_posts' %>
-        <!-- PLACEHODER STUFF FOR STYLING -->
-        <ul>
-          <li><img src="http://lorempixel.com/50/50/" alt=""><a href="">Really long blog titles will look kinda like this if the browser doesn’t round up the values. Stupid browser.</a></li>
-          <li><img src="http://lorempixel.com/50/50/" alt=""><a href="">Sometimes, the title may only run two lines. Which is prolly the average.</a></li>
-          <li><img src="http://lorempixel.com/50/50/" alt=""><a href="">There’s a 6 pixel white border at the top of each of these panels.</a></li>
-        </ul>
+        <%= render 'blogs/recent_posts' %>
       </article>
   </aside>
 </div>

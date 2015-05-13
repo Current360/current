@@ -30,6 +30,9 @@ gem 'spring',        group: :development
 # Use unicorn as the app server
 # gem 'unicorn'
 
+# TEST BLOG CONTENT
+gem 'betterlorem'
+
 
 # DEPLOYMENT AND ERRORS
 gem 'dotenv-rails'

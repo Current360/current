@@ -1,5 +1,4 @@
 .pages-index {
-
     header {
         margin-bottom: 0;
     }
@@ -112,10 +111,19 @@ main.home {
         font-family: 'Arvo', serif;
         font-size: em(20);
         text-transform: none;
+
+        a {
+            color: $headers;
+            &:hover, &:focus {
+                color: $text;
+            }
+        }
     }
     h3 { font-size: 0.875em; }
     figure {
         margin: 3em 0 1.5em 0;
+
+        a { padding: 0; }
     }
     img {
         display: block;
