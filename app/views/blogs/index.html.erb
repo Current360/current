@@ -1,0 +1,22 @@
+<%= content_for :page_title, 'Marketing Blogs | Read What The Experts Have To Say | Current360' %>
+<%= content_for :description, "We’ve assembled a team of talented professionals who frequently provide their thoughts about current marketing-related topics and trends through our blog." %>
+
+<div class='blog-wrapper'>
+  <main>
+    <!-- <h1>Expert Marketing Blog</h1> -->
+    <% if @category.blank? %>
+      <%= render 'original_roll' %>
+    <% end %>
+  </main>
+<%# if user_signed_in? %>
+  <!-- <aside class='recent-posts form'> -->
+    <%# render 'form' %>
+    <!-- <br><br><br> -->
+    <%# link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  <!-- </aside> -->
+<%# else %>
+  <aside class='recent-posts'>
+    <%= render 'blog_categories' %>
+  </aside>
+<%# end %>
+</div>

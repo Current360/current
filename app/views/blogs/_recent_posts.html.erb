@@ -1,0 +1,7 @@
+<%# render 'layouts/recent_posts' %>
+<!-- PLACEHODER STUFF FOR STYLING -->
+<ul>
+    <% @relatedPosts.each do | related | %>
+        <li><%= link_to(image_tag('http://lorempixel.com/50/50/'), related, :class => 'recent-thumb') %><%= link_to(related.title, related) %></li>
+    <% end %>
+</ul>
