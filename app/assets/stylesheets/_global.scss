@@ -47,6 +47,11 @@ figure, ul { margin: 0; padding: 0; }
     @include outer-container;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 /* ---------------------------
 
         LINKS

@@ -1,0 +1,219 @@
+.bios-show {
+    main, .social, section {
+        @include outer-container;
+        background: #fff;
+        margin: 0 2em;
+    }
+
+    main, section {
+        padding: 2em;
+    }
+
+    main {
+        @include row('block','RTL');
+        padding-top: 14em;
+        article {
+            margin-bottom: 2em;
+        }
+        h1 {
+            color: $mediumgrey;
+            font-size: em(35);
+            margin-top: 0;
+            span {
+                color: $text;
+                display: block;
+                font-size: 1.35em;
+            }
+        }
+
+        .title {
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            span {
+                color: $headers;
+                font-size: 1.4em;
+            }
+        }
+    }
+
+    main aside {
+        ul {
+            margin: 0;
+            li:before { display: none; }
+        }
+
+        li {
+            margin-bottom: 2em;
+
+            &:last-child { margin-bottom: 0; }
+        }
+
+        svg, span {
+            display: inline-block;
+            max-width: 50;
+            vertical-align: middle;
+        }
+        svg {
+            margin-right: 1em;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .question {
+        font-weight: bold;
+        margin-bottom: 0;
+        span {
+            display: block;
+            font-weight: normal;
+        }
+    }
+
+    .social {
+
+        padding: 0;
+        ul {
+            margin: 0;
+        }
+        li {
+            float: left;
+            margin: 0;
+            position: relative;
+            width: 50%;
+
+            .meta {
+                overflow: hidden;
+                position: absolute;
+                z-index: 1;
+            }
+            img {
+                height: auto;
+                position: relative;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+        li:before { display: none; }
+        li:last-child { display: none; }
+    }
+    @include reset-all;
+
+    // BLOGS AREA
+    section {
+        @include row;
+
+        & > h2 {
+            color: $headers;
+            font-size: 1em;
+        }
+        article {
+            margin-bottom: 2em;
+            h2 {
+                font-family: 'Arvo', serif;
+                font-size: em(26);
+                text-transform: none;
+                a {
+                    color: $text;
+                    padding: 0;
+                }
+            }
+        }
+
+        article figure {
+            img {
+                border-radius: em(25);
+                height: em(50);
+                width: em(50);
+            }
+            a { padding: 0; }
+        }
+
+        .wrapper { padding: 0; }
+    }
+
+    @include media( $tablet ) {
+        main {
+            @include row('block', 'RTL');
+            article, aside {
+                @include span-columns(5);
+            }
+        }
+        .social {
+            @include outer-container;
+            background: transparent;
+            margin: 0;
+            ul {
+                @include row('table');
+                margin-bottom: 0;
+            }
+            li {
+                @include span-columns(2.5);
+
+            }
+        }
+        section {
+            @include row;
+            article {
+                @include span-columns(5);
+                @include omega(2n);
+            }
+
+            article h2, article figure {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            article figure {
+                margin-right: 2em;
+            }
+            sub {
+                display: block;
+                padding: 2em 0;
+            }
+        }
+    }
+
+    @include media( $laptop ) {
+        main {
+            padding-top: 8em;
+
+            h1 span {
+                display: inline;
+                margin-bottom: 0.5em;
+            }
+
+
+            .title {
+                font-size: em(19);
+                margin: 0;
+            }
+        }
+    }
+
+    @include media( $large ) {
+        main, section, .social { margin: 0 auto; }
+
+        .social {
+            background: #fff;
+            li {
+                @include span-columns(2);
+                &:last-child {
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}
+
+// CHANGE BACKGROUND IMAGES BASED ON FIRST NAME OF EMPLOYEE
+
+#Current {
+    background: #fff asset-url('headshots/mobile/chaney-given.jpg') no-repeat left top;
+
+    @include media( $laptop ) {
+        background: #fff asset-url('headshots/chaney-given.jpg') no-repeat left top;
+    }
+    // background-size: contain;
+}

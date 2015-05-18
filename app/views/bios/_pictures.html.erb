@@ -1,0 +1,11 @@
+<ul>
+    <% @pictures.each do |picture| %>
+        <li>
+            <div class="meta">
+                <span class='caption'><%= picture.caption %></span>
+                <span class='likes'><%= picture.likes %></span>
+            </div>
+            <%= image_tag picture.url %>
+        </li>
+    <% end %>
+</ul>

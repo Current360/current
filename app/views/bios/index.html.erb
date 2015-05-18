@@ -1,0 +1,13 @@
+<main>
+    <h1>Team Page</h1>
+    <% @bios.each do | bio | %>
+    <% name = bio.first_name + ' ' + bio.last_name %>
+        <article>
+            <h2><%= link_to(name, bio) %></h2>
+
+        </article>
+    <% end %>
+</main>
+<aside>
+
+</aside>

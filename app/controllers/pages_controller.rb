@@ -19,8 +19,6 @@ class PagesController < ApplicationController
                    Dribbble::Player.find('DBonifer').shots
 
         @pictures = InstagramPictureMaker.new(instagram).pictures #+ DribbblePictureMaker.new(dribbble).pictures
-    end
-
-    def work
+        @relatedPosts = Blog.all.limit(3)
     end
 end
