@@ -1,7 +1,8 @@
 class Blog < ActiveRecord::Base
 
     # Used as the Category Dropdowns
-    enum category: [  :banking_and_financial,   # 0
+    enum category: [
+                    :banking_and_financial,   # 0
                     :adult_beverages,   # 1
                     :casual_dining,     # 2
                     :healthcare,    # 3
@@ -14,12 +15,4 @@ class Blog < ActiveRecord::Base
                     :festivals_and_events,    #10
                     :other    #11
     ]
-
-    # def self.category_filter( category )
-    #     @blogs = Blog.where(category: category)
-    # end
-
-
-
-
 end

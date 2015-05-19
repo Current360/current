@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513194337) do
+ActiveRecord::Schema.define(version: 20150519133248) do
 
   create_table "bios", force: true do |t|
     t.datetime "created_at"
@@ -41,6 +41,24 @@ ActiveRecord::Schema.define(version: 20150513194337) do
     t.integer  "author"
     t.string   "blog_picture"
     t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "title"
+    t.text     "challenge"
+    t.text     "insight"
+    t.text     "solution"
+    t.text     "results"
+    t.string   "quote"
+    t.string   "cite"
+    t.integer  "category"
+    t.string   "main_image"
+    t.string   "side_image1"
+    t.string   "side_image2"
+    t.string   "logo"
+    t.integer  "capabilities"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
