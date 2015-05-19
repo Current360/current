@@ -1,0 +1,5 @@
+<ul>
+    <% @categories.each do | category | %>
+        <li><%= link_to(category[0].humanize, blogs_category_path(category: category[1])) %></li>
+    <% end %>
+</ul>

@@ -1,0 +1,22 @@
+<% content_for :content do %>
+<div class="wrapper">
+    <div class="content">
+        <main>
+            <%= yield :case_study_content %>
+        </main>
+        <%= render 'case_study' %>
+        <%= render 'blogs' %>
+    </div>
+    <aside>
+        <div class="categories">
+            <%= render 'categorySection' %>
+        </div>
+        <%= render 'bio' %>
+        <div class="process">
+            <h2>Strategic Process</h2>
+            <p>Read how Current360 will apply a proven methodology to your project.</p>
+            <a href="<%= strategy_path %>" class="button">C360 Strategy</a>
+        </div>
+    </aside>
+</div>
+<% end %>

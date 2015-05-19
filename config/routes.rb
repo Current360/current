@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-
+  match '/work/additional_projects' => 'projects#other', via: [:get]
+  match '/work/festivals_events' => 'projects#festivals', via: [:get]
+  match '/work/fitness_wellness' => 'projects#fitness', via: [:get]
+  match '/work/education' => 'projects#education', via: [:get]
+  match '/work/philanthropic' => 'projects#philanthropic', via: [:get]
+  match '/work/pet_care' => 'projects#pet', via: [:get]
+  match '/work/home_improvement' => 'projects#improvement', via: [:get]
+  match '/work/high_impact_retail' => 'projects#retail', via: [:get]
+  match '/work/healthcare' => 'projects#healthcare', via: [:get]
+  match '/work/casual_dining' => 'projects#dining', via: [:get]
+  match '/work/adult_beverages' => 'projects#beverages', via: [:get]
+  match '/work/banking_financial' => 'projects#banking', via: [:get]
   resources :projects, :path => :work
   match '/blogs/category' => 'blogs#category', via: [:get]
   resources :blogs

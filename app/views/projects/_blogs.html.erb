@@ -1,8 +1,8 @@
 <ul class="blogs">
     <% @blogs.each do | blog | %>
-    <li>
-        <h4>Related Blogs</h4>
-        <%= link_to( blog.title, blog) %>
-    </li>
+        <li>
+            <h5>Related Blog</h5>
+            <%= link_to( blog.title, blog) %>
+        </li>
     <% end %>
 </ul>

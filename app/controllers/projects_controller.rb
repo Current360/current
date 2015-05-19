@@ -46,6 +46,104 @@ class ProjectsController < ApplicationController
         @projects = Project.where(category: params[:category])
     end
 
+    # LANDING PAGES ACTIONS
+    def banking
+        @blogs = Blog.where(category: 0).limit(4)
+        @caseStudy = Project.where(category: 0).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def beverages
+        @blogs = Blog.where(category: 1).limit(4)
+        @caseStudy = Project.where(category: 1).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def dining
+        @blogs = Blog.where(category: 2).limit(4)
+        @caseStudy = Project.where(category: 2).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def healthcare
+        @blogs = Blog.where(category: 3).limit(4)
+        @caseStudy = Project.where(category: 3).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def retail
+        @blogs = Blog.where(category: 4).limit(4)
+        @caseStudy = Project.where(category: 4).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def improvement
+        @blogs = Blog.where(category: 5).limit(4)
+        @caseStudy = Project.where(category: 5).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def pet
+        @blogs = Blog.where(category: 6).limit(4)
+        @caseStudy = Project.where(category: 6).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def philanthropic
+        @blogs = Blog.where(category: 7).limit(4)
+        @caseStudy = Project.where(category: 7).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def education
+        @blogs = Blog.where(category: 8).limit(4)
+        @caseStudy = Project.where(category: 8).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def fitness
+        @blogs = Blog.where(category: 9).limit(4)
+        @caseStudy = Project.where(category: 9).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def festivals
+        @blogs = Blog.where(category: 10).limit(4)
+        @caseStudy = Project.where(category: 10).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+    def other
+        @blogs = Blog.where(category: 11).limit(4)
+        @caseStudy = Project.where(category: 11).limit(1)
+        @categories = Project.categories
+        @bio = Bio.find(1)
+
+    end
+
+
     private
         def project_params
             params.require(:project).permit(:title, :challenge, :insight, :solution, :results, :quote, :cite, :category, :main_image, :side_image1, :side_image2, :capability, :logo)

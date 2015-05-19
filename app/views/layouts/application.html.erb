@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title><%= full_title(yield(:page_title)) %></title>
-  <meta name="description" content="<%= yield(:description) %>">
-  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyB7cwx6do_Gh29duX-Iw5wQAWTn7md9tj0", 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag :modernizr %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
-  <%= csrf_meta_tags %>
-</head>
+<%= render 'layouts/head' %>
 <body class="<%= controller.controller_name %> <%= controller.controller_name %>-<%= controller.action_name %>">
     <span class="bg"></span>
 
     <%= render 'layouts/header' %>
-    <%= yield %>
+    <%= content_for(:content) ? yield(:content) : yield %>
     <%= render 'layouts/footer' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>

@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  challenge: MyText
+  insight: MyText
+  solution: MyText
+  results: MyText
+  quote: MyString
+  cite: MyString
+  category: 1
+  main_image: MyString
+  side_image1: MyString
+  side_image2: MyString
+  logo: MyString
+  capabilities: 1
+
+two:
+  title: MyString
+  challenge: MyText
+  insight: MyText
+  solution: MyText
+  results: MyText
+  quote: MyString
+  cite: MyString
+  category: 1
+  main_image: MyString
+  side_image1: MyString
+  side_image2: MyString
+  logo: MyString
+  capabilities: 1
