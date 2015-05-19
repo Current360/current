@@ -49,7 +49,7 @@ class ProjectsController < ApplicationController
     # LANDING PAGES ACTIONS
     def banking
         @blogs = Blog.where(category: 0).limit(4)
-        @caseStudy = Project.where(category: 0).limit(1)
+        @caseStudy = Project.where(category: 0).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -57,7 +57,7 @@ class ProjectsController < ApplicationController
 
     def beverages
         @blogs = Blog.where(category: 1).limit(4)
-        @caseStudy = Project.where(category: 1).limit(1)
+        @caseStudy = Project.where(category: 1).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -65,7 +65,7 @@ class ProjectsController < ApplicationController
 
     def dining
         @blogs = Blog.where(category: 2).limit(4)
-        @caseStudy = Project.where(category: 2).limit(1)
+        @caseStudy = Project.where(category: 2).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -73,7 +73,7 @@ class ProjectsController < ApplicationController
 
     def healthcare
         @blogs = Blog.where(category: 3).limit(4)
-        @caseStudy = Project.where(category: 3).limit(1)
+        @caseStudy = Project.where(category: 3).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -81,7 +81,7 @@ class ProjectsController < ApplicationController
 
     def retail
         @blogs = Blog.where(category: 4).limit(4)
-        @caseStudy = Project.where(category: 4).limit(1)
+        @caseStudy = Project.where(category: 4).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -89,7 +89,7 @@ class ProjectsController < ApplicationController
 
     def improvement
         @blogs = Blog.where(category: 5).limit(4)
-        @caseStudy = Project.where(category: 5).limit(1)
+        @caseStudy = Project.where(category: 5).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -97,7 +97,7 @@ class ProjectsController < ApplicationController
 
     def pet
         @blogs = Blog.where(category: 6).limit(4)
-        @caseStudy = Project.where(category: 6).limit(1)
+        @caseStudy = Project.where(category: 6).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -105,7 +105,7 @@ class ProjectsController < ApplicationController
 
     def philanthropic
         @blogs = Blog.where(category: 7).limit(4)
-        @caseStudy = Project.where(category: 7).limit(1)
+        @caseStudy = Project.where(category: 7).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -113,7 +113,7 @@ class ProjectsController < ApplicationController
 
     def education
         @blogs = Blog.where(category: 8).limit(4)
-        @caseStudy = Project.where(category: 8).limit(1)
+        @caseStudy = Project.where(category: 8).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -121,7 +121,7 @@ class ProjectsController < ApplicationController
 
     def fitness
         @blogs = Blog.where(category: 9).limit(4)
-        @caseStudy = Project.where(category: 9).limit(1)
+        @caseStudy = Project.where(category: 9).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -129,7 +129,7 @@ class ProjectsController < ApplicationController
 
     def festivals
         @blogs = Blog.where(category: 10).limit(4)
-        @caseStudy = Project.where(category: 10).limit(1)
+        @caseStudy = Project.where(category: 10).first
         @categories = Project.categories
         @bio = Bio.find(1)
 
@@ -137,7 +137,7 @@ class ProjectsController < ApplicationController
 
     def other
         @blogs = Blog.where(category: 11).limit(4)
-        @caseStudy = Project.where(category: 11).limit(1)
+        @caseStudy = Project.where(category: 11).first
         @categories = Project.categories
         @bio = Bio.find(1)
 

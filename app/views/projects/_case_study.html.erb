@@ -1,9 +1,7 @@
 <section class="case_study">
-    <a href="<%= %>">
-        <% @caseStudy.each do | caseStudy | %>
-            <span id="heading">Case Study</span>
-            <span class="title"><%= caseStudy.title %></span>
-            <span class="description"><%= caseStudy.challenge %></span>
-        <% end %>
+    <a href="<%= @caseStudy.id %>">
+        <span id="heading">Case Study</span>
+        <span class="title"><%= @caseStudy.title %></span>
+        <span class="description"><%= @caseStudy.challenge %></span>
     </a>
 </section>

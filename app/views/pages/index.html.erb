@@ -7,7 +7,7 @@
     <section>
         <ul>
             <li>
-                <a href="#">
+                <a href="<%= work_banking_financial_path %>">
                     <!-- Financial Icon -->
                     <svg
                         id="financial-icon"
@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_adult_beverages_path %>">
                     <!-- WINE & SPIRITS ICON -->
                     <svg
                         id="sprits-icon"
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_casual_dining_path %>">
                     <!-- CASUAL DINING ICON -->
                     <svg
                         id="casual-icon"
@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_healthcare_path %>">
                     <!-- HEALTHCARE ICON -->
                     <svg
                         id="healthcare-icon"
@@ -75,7 +75,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_high_impact_retail_path %>">
                     <!-- HIGH VOLUME RETAIL ICON -->
                     <svg
                         id="impact-icon"
@@ -95,7 +95,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_home_improvement_path %>">
                     <!-- HOME IMPROVEMENT ICON -->
                     <svg
                         id="improvement-icon"
@@ -114,7 +114,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_pet_care_path %>">
                     <!-- PET CARE ICON -->
                     <svg
                         id="pet-icon"
@@ -134,7 +134,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_philanthropic_path %>">
                     <!-- PHILANTHROPY ICON -->
                     <svg
                         id="philanthropy-icon"
@@ -193,7 +193,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_education_path %>">
                 <!-- EDUCATION ICON -->
                     <svg
                         id="education-icon"
@@ -209,7 +209,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_fitness_wellness_path %>">
                     <!-- HEALTH & WELNESS ICON -->
                     <svg
                         id="health-icon"
@@ -228,7 +228,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_festivals_events_path %>">
                     <!-- FESTIVALS & EVENTS ICON -->
                     <svg
                         id="festival-icon"
@@ -245,7 +245,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<%= work_additional_projects_path %>">
                     <!-- ADDITIONAL PROJECTS ICON -->
                     <svg
                         id="other-icon"
@@ -288,17 +288,15 @@
     </section>
 
     <!-- import Case study -->
-    <%# render 'pages/home/casestudy' %>
     <section class="case-study">
         <h2>Featured Work</h2>
-        <h3>Branding Tex Mex</h3>
-        <blockquote>Current360 has been an instrumental partner in educating the public about what makes Tex Mex special.</blockquote>
-        <cite>Mike Higgins, CEO Tumbleweed</cite>
-        <a href="" class="button">Case Study</a>
+        <h3><%= @caseStudy.title %></h3>
+        <blockquote><%= @caseStudy.quote %></blockquote>
+        <cite><%= @caseStudy.cite %></cite>
+        <%= link_to('Case Study', @caseStudy, :class => "button") %>
     </section>
 </div>
 <!-- import Culture -->
-<%# render 'pages/home/culture' %>
 <section class="culture">
     <h4>Culture at Current360</h4>
     <span id="culture-wrapper">

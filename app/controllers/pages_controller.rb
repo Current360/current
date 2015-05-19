@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
     def index
         @featuredBlog = Blog.find(23)
+        @caseStudy = Project.find(1)
     end
 
     def strategy
