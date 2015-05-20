@@ -1,0 +1,209 @@
+RUBY DEPLOYMENT PROCESS W/
+
+Appache,
+MySql
+Phusion,
+Capistrano,
+Ruby -2.1.1 p76,
+Rails 4.1.0,
+Git
+
+
+first thing we're going to do (inital setup)
+
+    - create new rails project using mysql database
+        rails new {project_name} -d mysql
+
+        setup confiuration for database
+            -set database password
+
+    - Run   rake db:create
+            rake db:migrate
+            rails s
+
+    - Default riding on rails message should now be showing
+
+    - Generate Controller
+        rails g controller {controllerName (plural)}
+
+    - Configure Route
+        config/routes.rb
+            root '{controllerName}#index'
+
+    - Create index method in {controllerName}_controller.rb
+        add to controller
+            def index
+            end
+
+    -Should see template is missing
+
+    - Create a view under app/views/{controllerName}
+        create file index.html.erb (put something to display)
+
+
+    -should see content of index.html.erb
+
+    Goto Gemfile
+    - add   gem 'dotenv-rails'  (at top of gem file) //adding dotenv gem
+    - add   gem 'better_errors'
+    - add   gem 'binding_of_caller'
+    - add   gem 'capistrano'
+    - uncomment gem 'capistrano-rails', group: :development
+
+    Go back to terminal
+
+    - Run   bundle install
+
+Start Configuring Capistrano
+    - Run cap install
+
+    should see this output
+-----------------------------------------
+    mkdir -p config/deploy
+    create config/deploy.rb
+    create config/deploy/staging.rb
+    create config/deploy/production.rb
+    mkdir -p lib/capistrano/tasks
+-----------------------------------------
+
+goto Cap file
+-add    require 'capistrano/rails' (allows access to capistrano gem)
+
+GIT SETUP
+git init
+
+goto .gitignore
+-add /config/secrets.yml
+-add /config/database.yml
+-touch /tmp/restart.txt
+    add code to restart.txt
+-----------------------------------------
+    sudo apachectl configtest
+    sudo apachectl restart
+-----------------------------------------
+
+git add .
+git add -f tmp/restart.txt  (everything inside of tmp is ignored by default this forces it to be tracked)
+
+git commit -m 'initial commit'
+
+
+goto github
+-create repo
+-add remote to local repo
+-rename README to markdown README.md
+-do initial local push
+
+should notice that secrets.yml and database.yml are missing from the repo.
+
+goto config/deploy/production.rb
+-set server
+-set user
+
+goto config/deploy.rb
+-set application {rootFolderNameUrl}
+-set repo_url
+-set deploy_to /home/websites/{projectName}
+-uncomment set :linked_files, %w{config/database.yml}
+    edit second paramater %w{config/database.yml config/secrets.yml .env}
+
+-uncomment execute :touch, release_path.join('tmp/restart.txt')
+-edit path /home/websites/{projectName}/current/tmp/restart.txt
+
+
+Setting up authentication server side (Already setup in our case)
+http://capistranorb.com/documentation/getting-started/authentication-and-authorisation/
+
+ssh to remote server
+- mkdir {projectName}
+
+Check directory structure on the remote machine
+
+
+create access_check.rake in /lib/capistrano/tasks
+    place this code in access_check.rake
+        ------------------------------------------------------
+        desc "Check that we can access everything"
+           task :check_write_permissions do
+             on roles(:all) do |host|
+               if test("[ -w #{fetch(:deploy_to)} ]")
+                 info "#{fetch(:deploy_to)} is writable on #{host}"
+               else
+                 error "#{fetch(:deploy_to)} is not writable on #{host}"
+               end
+             end
+           end
+        ------------------------------------------------------
+for more info at this point go here
+http://capistranorb.com/documentation/getting-started/cold-start/
+
+-run cap production check_write_permissions
+
+should be able to run
+cap production git:check
+    {
+        if you get an error 'agent has no identities'
+
+        in terminal on local machine
+        -run   ssh-add
+    }
+
+
+Creating Agent Forwarding
+    create agent_forwarding.rake in /lib/capistrano/tasks/
+    place this code in agent_forwarding.rake
+        ------------------------------------------------------
+        desc "Check if agent forwarding is working"
+           task :forwarding do
+             on roles(:all) do |h|
+               if test("env | grep SSH_AUTH_SOCK")
+                 info "Agent forwarding is up to #{h}"
+               else
+                 error "Agent forwarding is NOT up to #{h}"
+               end
+             end
+           end
+        ------------------------------------------------------
+    -run cap production forwarding
+
+-run cap production deploy (expected fail @db:migrate moves file structure over to server)
+
+- ssh into server
+
+- cd into {procjectName}/shared
+    - mkdir config
+    - cd into config
+        - touch secrets.yml
+            paste local secrets.yml
+        - touch database.yml
+            paste local database.yml
+            edit database info for server environment
+            set socket (current360 specific)
+            socket: /var/lib/mysql/mysql.sock
+
+- On local machine
+    -run RAILS_ENV=production rake secret;
+        -copy output
+
+- On server
+    -cd {projectName}/shared
+        -touch .env
+        -add SECRET_KEY_BASE: (paste output from RAILS_ENV=production rake secret;)
+        -add PROJECTNAME_DATABASE_PASSWORD:  {DatabasePassword}
+    -cd /releases/(latest release look at timestamp)
+        -run RAILS_ENV=production rake db:create
+
+
+First Deploy
+- on local
+    -run cap production deploy
+
+
+SERVER SETUP
+apache pointing stuff.
+
+useful Capistrono tasks
+production deploy --dry-run
+production deploy --prereqs
+production deploy --prereqs
+https://github.com/capistrano/capistrano/blob/master/README.md

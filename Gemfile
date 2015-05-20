@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+# LOADS ENVIRONMENT VARIABLES
+gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use mysql as the database for Active Record
@@ -31,11 +32,10 @@ gem 'spring',        group: :development
 # gem 'unicorn'
 
 # TEST BLOG CONTENT
-gem 'betterlorem'
+gem 'betterlorem',        group: :development
 
 
 # DEPLOYMENT AND ERRORS
-gem 'dotenv-rails'
 gem 'better_errors'
 gem 'binding_of_caller'
 # Use Capistrano for deployment
@@ -54,3 +54,13 @@ gem 'google-webfonts-rails', '~> 0.0.4'
 gem 'instagram'
 # Dribbble Feed
 gem 'swish'
+
+#IMAGE UPLOAD GEMS
+# Image resizer
+gem 'mini_magick'
+# Image Uploader
+gem 'carrierwave'
+
+#URLS
+# Overwrite URL's
+gem 'friendly_id'
