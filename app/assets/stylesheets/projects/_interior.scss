@@ -1,7 +1,7 @@
 .projects {
 
     & > .wrapper { @include row('table'); }
-    .content {
+    .content, &.projects-show main {
         background: #fff;
     }
 
@@ -18,29 +18,38 @@
         }
         li:nth-child(1) {
             background: asset-url('bg/temp_blur1.jpg') no-repeat center center;
+            background-size: cover;
         }
         li:nth-child(2) {
             background: asset-url('bg/temp_blur2.jpg') no-repeat center center;
+            background-size: cover;
         }
         li:nth-child(3) {
             background: asset-url('bg/temp_blur3.jpg') no-repeat center center;
+            background-size: cover;
         }
         li:nth-child(4) {
             background: asset-url('bg/temp_blur4.jpg') no-repeat center center;
+            background-size: cover;
         }
     }
-    main {
+    .content main {
         padding: 2em;
         position: relative;
 
         & > svg {
             position: absolute;
-            right: 2em;
-            top: 2em;
+            // right: 2em;
+            left: 2em;
+            top: 1em;
 
             & > * {
                 fill: $headers;
             }
+        }
+
+        h1 {
+            padding-top: 1.25em;
         }
     }
     aside a {
@@ -63,7 +72,7 @@
     .case_study a {
         background: asset-url('bg/temp_case_study.jpg') no-repeat left center;
         display: block;
-        padding: 4.8em 4em 3.6em 0;
+        padding: 4.8em 4em 2.8em 0;
 
     }
 
@@ -159,21 +168,53 @@
         padding: 2em;
     }
 
-            .process h2 { color: $text; }
+    .process h2 { color: $text; }
+
+    &.projects-show main {
+        padding: 2em;
+    }
+
+    @include media( 650px ) {
+        .content main  {
+            padding: 2em 10.28426% 4em 10.28426%;
+        }
+        .case_study span {
+            margin: 1em 10.28426%;
+        }
+
+        &.projects-show aside blockquote {
+            margin: 0 10.28426% 4em 10.28426%;
+        }
+    }
 
     @include media( $tablet ) {
-        aside {
+        .content, &.projects-show main {
+            float: left;
+            width: 70%;
+        }
+        &.projects-show main {
+            padding: 2em 10.28426% 4em 10.28426%;
+        }
+        & > .wrapper aside {
+            float: left;
+            margin: 6% 0 0 0;
+            width: 30%;
             a { font-size: 0.875em; }
         }
     }
 
     @include media( $laptop ) {
-        .content {
-            float: left;
-            width: 70%;
-        }
-        main{
+
+        .content main {
             padding-left: 14.28426%;
+            h1 {
+                padding-top: 0;
+            }
+
+            & > svg {
+                left: inherit;
+                right: 2em;
+            }
         }
         .case_study span {
             margin-left: 14.28426%;
@@ -197,14 +238,15 @@
                 max-width: em(220);
             }
         }
-        .categories {
-            padding: 4em 2em 4em 4em;
-        }
 
         aside {
-            float: left;
-            margin: 6% 0 0 0;
-            width: 30%;
+            .categories, .bio, .process {
+                padding: 4em 2em 4em 4em;
+            }
+            .categories {
+                margin-bottom: 2em;
+            }
+
 
             a { font-size: 1em; }
 

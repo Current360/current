@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <main>
+        <figure><%= @project.logo %></figure>
+        <h1><%= @project.title %></h1>
+        <h2>Challenge</h2>
+        <p><%= @project.challenge %></p>
+        <h2>Insight</h2>
+        <p><%= @project.insight %></p>
+        <figure><%= @project.main_image %><img src="" alt=""></figure>
+        <h2>Solution</h2>
+        <p><%= @project.solution %></p>
+        <h2>Results</h2>
+        <p><%= @project.results %></p>
+        <img src="<%= @project.side_image1 %>" alt="<%= @project.side_image1 %>" class="side">
+        <img src="<%= @project.side_image2 %>" alt="<%= @project.side_image2 %>" class="side">
+    </main>
+    <aside>
+        <blockquote><%= @project.quote %><cite><%= @project.cite %></cite></blockquote>
+        <div class="skills">
+            skills placeholder
+        </div>
+        <div class="categories">
+            <%= render 'categorySection' %>
+        </div>
+        <div class="process">
+            <h2>Strategic Process</h2>
+            <p>Read how Current360 will apply a proven methodology to your project.</p>
+            <a href="<%= strategy_path %>" class="button">C360 Strategy</a>
+        </div>
+    </aside>
+</div>
