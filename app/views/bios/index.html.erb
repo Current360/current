@@ -1,12 +1,19 @@
 <main>
-    <h1>Team Page</h1>
-    <% @bios.each do | bio | %>
-    <% name = bio.first_name + ' ' + bio.last_name %>
-        <article>
-            <h2><%= link_to(name, bio) %></h2>
-
-        </article>
-    <% end %>
+    <div class="wrapper">
+        <h1>Team Page</h1>
+        <%= link_to('add', new_bio_path) %>
+    </div>
+    <div class="wrapper">
+        <% @bios.each do | bio | %>
+        <% name = bio.first_name + ' ' + bio.last_name %>
+            <article>
+                <%= link_to image_tag(bio.bio_pic.small_bio_pic), bio %>
+                <h2><%= link_to(name, bio) %></h2>
+                <%= link_to "edit", edit_bio_path(bio) %>
+                <%= link_to "delete", bio_path(bio), method: :delete, data: { confirm: "You Sure?" } %>
+            </article>
+        <% end %>
+    </div>
 </main>
 <aside>
 

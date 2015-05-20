@@ -301,11 +301,11 @@
     <h4>Culture at Current360</h4>
     <span id="culture-wrapper">
         <ul class="bio-list-one no-disc">
-            <li><a href="#"><%= image_tag('headshots/rex-soriano.jpg') %></a></li>
-            <li><a href="#"><%= image_tag('headshots/kati-parrish.jpg') %></a></li>
+            <li><a href="#"><%= link_to image_tag(@bios[0].bio_pic.small_bio_pic), @bios[0] %></a></li>
+            <li><a href="#"><%= link_to image_tag(@bios[1].bio_pic.small_bio_pic), @bios[1] %></a></li>
             <span class="more">
-                <li><a href="#"><%= image_tag('headshots/rex-soriano.jpg') %></a></li>
-                <li><a href="#"><%= image_tag('headshots/kati-parrish.jpg') %></a></li>
+                <li><a href="#"><%= link_to image_tag(@bios[2].bio_pic.small_bio_pic), @bios[2] %></a></li>
+                <li><a href="#"><%= link_to image_tag(@bios[3].bio_pic.small_bio_pic), @bios[3] %></a></li>
             </span>
         </ul>
         <article>
@@ -313,11 +313,11 @@
             <a class="button" href="">More Info</a>
         </article>
         <ul class="bio-list-two no-disc">
-            <li><a href="#"><%= image_tag('headshots/lauren-jones.jpg') %></a></li>
-            <li><a href="#"><%= image_tag('headshots/matt-karaffa.jpg') %></a></li>
+            <li><a href="#"><%= link_to image_tag(@bios[4].bio_pic.small_bio_pic), @bios[4] %></a></li>
+            <li><a href="#"><%= link_to image_tag(@bios[5].bio_pic.small_bio_pic), @bios[5] %></a></li>
             <span class="more">
-                <li><a href="#"><%= image_tag('headshots/rex-soriano.jpg') %></a></li>
-                <li><a href="#"><%= image_tag('headshots/kati-parrish.jpg') %></a></li>
+                <li><a href="#"><%= link_to image_tag(@bios[6].bio_pic.small_bio_pic), @bios[6] %></a></li>
+                <li><a href="#"><%= link_to image_tag(@bios[7].bio_pic.small_bio_pic), @bios[7] %></a></li>
             </span>
         </ul>
     </span>

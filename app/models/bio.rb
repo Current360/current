@@ -1,5 +1,7 @@
 class Bio < ActiveRecord::Base
 
+    mount_uploader :bio_pic, BioUploader
+
     # enum :questions [
     #     :name_your_favorite_sports_team,
     #     :what_brand best reflects your personality and why?,
@@ -28,4 +30,21 @@ class Bio < ActiveRecord::Base
     #      Share one of your hidden talents.,
     #      Is there something you’re not telling me?
     # ]
+
+    def self.homePageBios
+        ids = Bio.pluck(:id).shuffle.sample(8)
+        # max = ids.count
+
+        # ids.map { |id| @bios = Bio.where(:id => id) }
+        bio1 = Bio.where(:id => ids[0])
+        bio2 = Bio.where(:id => ids[1])
+        bio3 = Bio.where(:id => ids[2])
+        bio4 = Bio.where(:id => ids[3])
+        bio5 = Bio.where(:id => ids[4])
+        bio6 = Bio.where(:id => ids[5])
+        bio7 = Bio.where(:id => ids[6])
+        bio8 = Bio.where(:id => ids[7])
+
+        @bios = bio1 + bio2 + bio3 + bio4 + bio5 + bio6 + bio7 + bio8
+    end
 end

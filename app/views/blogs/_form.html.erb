@@ -1,0 +1,11 @@
+<%= form_for @post do |post| %>
+  <%= post.label :title %>
+  <%= post.text_field :title %>
+  <%= post.label :content %>
+  <%= post.text_area :content %>
+  <%= post.label :category %>
+  <%= post.select :category, options_for_select(Post.categories.collect { |k| [k[0].humanize,k[0]] }) %>
+  <%= post.select :author, options_from_collection_for_select(@authors, 'id', 'name') %>
+  <%= post.file_field :blog_picture %>
+  <%= post.submit %>
+<% end %>

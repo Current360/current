@@ -14,4 +14,9 @@ class Project < ActiveRecord::Base
                     :festivals_and_events,    #10
                     :other    #11
     ]
+
+    def self.featuredCaseStudy
+        id = Project.pluck(:id).shuffle.sample
+        @caseStudy = Project.find(id)
+    end
 end

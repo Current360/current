@@ -1,0 +1,6 @@
+.bios-index {
+    article {
+        @include span-columns(2.5);
+        @include omega(4n);
+    }
+}

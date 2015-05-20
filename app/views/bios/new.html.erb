@@ -1,0 +1,45 @@
+<%= form_for @bio, :html => { :multipart => true } do |bio| %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <%= bio.label :first_name %>
+  <%= bio.text_field :first_name %><br>
+  <%= bio.label :last_name %>
+  <%= bio.text_field :last_name %><br>
+  <%= bio.label :real_title %>
+  <%= bio.text_field :real_title %><br>
+  <%= bio.label :funny_title %>
+  <%= bio.text_field :funny_title %><br>
+  <%= bio.label :overview %>
+  <%= bio.text_area :overview %><br>
+  <%= bio.label :question1 %>
+  <%= bio.text_field :question1 %><br>
+  <%= bio.label :answer1 %>
+  <%= bio.text_field :answer1 %><br>
+  <%= bio.label :question2 %>
+  <%= bio.text_field :question2 %><br>
+  <%= bio.label :answer2 %>
+  <%= bio.text_field :answer2 %><br>
+  <%= bio.label :question3 %>
+  <%= bio.text_field :question3 %><br>
+  <%= bio.label :answer3 %>
+  <%= bio.text_field :answer3 %><br>
+  <%= bio.label :question4 %>
+  <%= bio.text_field :question4 %><br>
+  <%= bio.label :answer4 %>
+  <%= bio.text_field :answer4 %><br>
+  <%= bio.label :question5 %>
+  <%= bio.text_field :question5 %><br>
+  <%= bio.label :answer5 %>
+  <%= bio.text_field :answer5 %><br>
+  <%= bio.label :bio_pic %>
+  <%= bio.file_field :bio_pic %><br><br><br>
+  <%= bio.submit %>
+<% end %>

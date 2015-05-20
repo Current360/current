@@ -1,7 +1,18 @@
 class PagesController < ApplicationController
     def index
-        @featuredBlog = Blog.find(23)
-        @caseStudy = Project.find(1)
+        # ENTER BLOG ID FOR STATIC FEATURED BLOG
+        # @featuredBlog = Blog.find(23)
+
+        # WILL RANDOMLY SELECT A BLOG AND DISPLAY IT ON HOMEPAGE
+        @featuredBlog = Blog.featuredBlog
+
+        # ENTER CASESTUDY ID FOR STATIC FEATURED CASESTUDY
+        # @caseStudy = Project.find(1)
+
+        # WILL RANDOMLY SELECT A CASE STUDY TO FEATURE
+        @caseStudy = Project.featuredCaseStudy
+
+        @bios = Bio.homePageBios
     end
 
     def strategy

@@ -15,4 +15,9 @@ class Blog < ActiveRecord::Base
                     :festivals_and_events,    #10
                     :other    #11
     ]
+
+    def self.featuredBlog
+        id = Blog.pluck(:id).shuffle.sample
+        @featuredBlog = Blog.find(id)
+    end
 end

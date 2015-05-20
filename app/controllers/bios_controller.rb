@@ -54,6 +54,11 @@ class BiosController < ApplicationController
     end
   end
 
+  def destroy
+    @bio = Bio.find(params[:id]).destroy
+    redirect_to bios_url
+  end
+
   private
     def bio_params
       params.require(:bio).permit(:first_name, :last_name, :real_title, :funny_title,

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   match '/work/casual_dining' => 'projects#dining', via: [:get]
   match '/work/adult_beverages' => 'projects#beverages', via: [:get]
   match '/work/banking_financial' => 'projects#banking', via: [:get]
+  match '/projects/category' => 'projects#category', via: [:get]
   resources :projects, :path => :work
   match '/blogs/category' => 'blogs#category', via: [:get]
   resources :blogs
