@@ -64,3 +64,6 @@ gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 #URLS
 # Overwrite URL's
 gem 'friendly_id'
+
+# PAGINATION
+gem 'will_paginate', '~> 3.0.6'

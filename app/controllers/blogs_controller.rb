@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
     def index
-        @blogs = Blog.all
+        @blogs = Blog.paginate(:page => params[:page], per_page: 3)
         @blog = Blog.new
         # All post categories
         @categories = Blog.categories
