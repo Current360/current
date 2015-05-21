@@ -33,7 +33,7 @@ header {
         outline: none;
         position: relative;
         width: em(72px);
-
+        z-index: 99;
         span {
             @include triangle(6px, $text, right);
             position: absolute;

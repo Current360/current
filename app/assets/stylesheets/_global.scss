@@ -35,6 +35,7 @@ body {
     background: asset-url("bg/background-c360-grid.jpg", image);
     @include hidpi(1.5) {
         background: asset-url("bg/background-c360-grid-2x.jpg", image);
+        background-size: 100px 100px;
     }
 }
 .row { @include row; }

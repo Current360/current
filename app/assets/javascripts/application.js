@@ -12,8 +12,8 @@
 //
 //= require fonts
 //= require jquery
+//= require nav
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require nav
 //= require map

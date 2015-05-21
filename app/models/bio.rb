@@ -1,6 +1,7 @@
 class Bio < ActiveRecord::Base
 
     mount_uploader :bio_pic, BioUploader
+    mount_uploader :large_bio_pic, LargeBioPicUploader
 
     # enum :questions [
     #     :name_your_favorite_sports_team,
