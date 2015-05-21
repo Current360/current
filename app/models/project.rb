@@ -1,4 +1,7 @@
 class Project < ActiveRecord::Base
+    mount_uploader :main_image, MainImageUploader
+    mount_uploader :logo, LogoUploader
+
     # Used as the Category Dropdowns
     enum category: [
                     :banking_and_financial,   # 0

@@ -12,7 +12,7 @@ class ProjectsController < ApplicationController
 
     def create
         @project = Project.new(project_params)
-        if project.save
+        if @project.save
             redirect_to @project
         else
             redirect_to new_project_path
@@ -49,103 +49,115 @@ class ProjectsController < ApplicationController
     # LANDING PAGES ACTIONS
     def banking
         @blogs = Blog.where(category: 0).limit(4)
-        @caseStudy = Project.where(category: 0).first
+        @caseStudy = Project.where(category: 0).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # HARRY
+        @bio = Bio.find(44)
 
     end
 
     def beverages
         @blogs = Blog.where(category: 1).limit(4)
-        @caseStudy = Project.where(category: 1).first
+        @caseStudy = Project.where(category: 1).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
     def dining
         @blogs = Blog.where(category: 2).limit(4)
-        @caseStudy = Project.where(category: 2).first
+        @caseStudy = Project.where(category: 2).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # HARRY
+        @bio = Bio.find(44)
 
     end
 
     def healthcare
         @blogs = Blog.where(category: 3).limit(4)
-        @caseStudy = Project.where(category: 3).first
+        @caseStudy = Project.where(category: 3).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
     def retail
         @blogs = Blog.where(category: 4).limit(4)
-        @caseStudy = Project.where(category: 4).first
+        @caseStudy = Project.where(category: 4).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # KATI
+        @bio = Bio.find(56)
 
     end
 
     def improvement
         @blogs = Blog.where(category: 5).limit(4)
-        @caseStudy = Project.where(category: 5).first
+        @caseStudy = Project.where(category: 5).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
     def pet
         @blogs = Blog.where(category: 6).limit(4)
-        @caseStudy = Project.where(category: 6).first
+        @caseStudy = Project.where(category: 6).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # HARRY
+        @bio = Bio.find(44)
 
     end
 
     def philanthropic
         @blogs = Blog.where(category: 7).limit(4)
-        @caseStudy = Project.where(category: 7).first
+        @caseStudy = Project.where(category: 7).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
     def education
         @blogs = Blog.where(category: 8).limit(4)
-        @caseStudy = Project.where(category: 8).first
+        @caseStudy = Project.where(category: 8).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
     def fitness
         @blogs = Blog.where(category: 9).limit(4)
-        @caseStudy = Project.where(category: 9).first
+        @caseStudy = Project.where(category: 9).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # HARRY
+        @bio = Bio.find(44)
 
     end
 
     def festivals
         @blogs = Blog.where(category: 10).limit(4)
-        @caseStudy = Project.where(category: 10).first
+        @caseStudy = Project.where(category: 10).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
     def other
         @blogs = Blog.where(category: 11).limit(4)
-        @caseStudy = Project.where(category: 11).first
+        @caseStudy = Project.where(category: 11).last
         @categories = Project.categories
-        @bio = Bio.find(1)
+        # NICK
+        @bio = Bio.find(35)
 
     end
 
 
     private
         def project_params
-            params.require(:project).permit(:title, :challenge, :insight, :solution, :results, :quote, :cite, :category, :main_image, :side_image1, :side_image2, :capability, :logo)
+            params.require(:project).permit(:title, :challenge, :insight, :solution, :results, :quote, :cite, :category, :main_image, :side_image1, :side_image2, :capabilities, :logo)
         end
 end

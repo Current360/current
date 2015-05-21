@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/carrierwaveuploader/carrierwave.git
+  revision: d7b18dd002cc11ef2da76508e0b700c300e3023d
+  specs:
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,11 +59,6 @@ GEM
     capistrano-rails (1.1.2)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
-    carrierwave (0.10.0)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
-      mime-types (>= 1.16)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -187,7 +192,7 @@ DEPENDENCIES
   bourbon
   capistrano
   capistrano-rails
-  carrierwave
+  carrierwave!
   dotenv-rails
   friendly_id
   google-webfonts-rails (~> 0.0.4)

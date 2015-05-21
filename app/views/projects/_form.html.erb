@@ -1,0 +1,28 @@
+<%= form_for @project, :html => { :multipart => true } do |project| %>
+    <%= project.label :title %>
+    <%= project.text_field :title %>
+    <%= project.label :challenge %>
+    <%= project.text_area :challenge %>
+    <%= project.label :insight %>
+    <%= project.text_area :insight %>
+    <%= project.label :solution %>
+    <%= project.text_area :solution %>
+    <%= project.label :results %>
+    <%= project.text_area :results %>
+    <%= project.label :quote %>
+    <%= project.text_field :quote %>
+    <%= project.label :cite %>
+    <%= project.text_field :cite %>
+    <%= project.label :category %>
+    <%= project.select :category,
+                options_for_select( Project.categories.collect { |category| [category[0].humanize, category[0]] }) %>
+    <%= project.label :main_image %>
+    <%= project.file_field :main_image %>
+    <%= project.label :side_image1 %>
+    <%= project.file_field :side_image1 %>
+    <%= project.label :side_image1 %>
+    <%= project.file_field :side_image2 %>
+    <%= project.label :logo %>
+    <%= project.file_field :logo %>
+    <%= project.submit %>
+<% end %>

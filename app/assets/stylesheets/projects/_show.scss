@@ -1,0 +1,22 @@
+.projects-show {
+    .caseStudyLogo {
+        margin: 1em 1em 0 0;
+        float: right;
+    }
+
+    .results {
+        background: $lightgrey;
+    }
+    main p, main h1, main h2, .results {
+        padding: 2em;
+    }
+
+    @include media($tablet) {
+        main p, main h1, main h2 {
+            padding: 0 0 0 14.28426%;
+        }
+        .results {
+            padding: 4em 0;
+        }
+    }
+}

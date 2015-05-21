@@ -249,4 +249,45 @@
     }
 }
 
+
+#slide9 * {
+  fill: $headers; }
+
+#slide8 {
+  .step8 path, .step7 path, .step6 path, .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
+   fill: $headers;
+  }
+}
+#slide7 {
+  .step7 path, .step6 path, .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
+  fill: $headers;
+  }
+}
+#slide6 {
+  .step6 path, .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
+  fill: $headers;
+  }
+}
+#slide5 {
+  .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
+  fill: $headers;
+  }
+}
+#slide4 {
+  .step4 path, .step3 path, .step2 path, .step1 path {
+  fill: $headers;
+  }
+}
+#slide3 {
+  .step3 path, .step2 path, .step1 path {
+  fill: $headers;
+  }
+}
+#slide2 {
+  .step2 path, .step1 path {
+  fill: $headers;
+  }
+}
+
+
 @include reset-display();

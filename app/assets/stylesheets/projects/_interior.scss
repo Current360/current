@@ -43,7 +43,7 @@
             left: 2em;
             top: 1em;
 
-            & > * {
+            * {
                 fill: $headers;
             }
         }
@@ -70,7 +70,7 @@
     }
 
     .case_study a {
-        background: asset-url('bg/temp_case_study.jpg') no-repeat left center;
+        // background: asset-url('bg/temp_case_study.jpg') no-repeat left center;
         display: block;
         padding: 4.8em 4em 2.8em 0;
 
@@ -170,9 +170,9 @@
 
     .process h2 { color: $text; }
 
-    &.projects-show main {
-        padding: 2em;
-    }
+    // &.projects-show main {
+    //     padding: 2em;
+    // }
 
     @include media( 650px ) {
         .content main  {
@@ -192,9 +192,9 @@
             float: left;
             width: 70%;
         }
-        &.projects-show main {
-            padding: 2em 10.28426% 4em 10.28426%;
-        }
+        // &.projects-show main {
+        //     padding: 2em 10.28426% 4em 10.28426%;
+        // }
         & > .wrapper aside {
             float: left;
             margin: 6% 0 0 0;
@@ -240,8 +240,11 @@
         }
 
         aside {
-            .categories, .bio, .process {
+            .categories, .process {
                 padding: 4em 2em 4em 4em;
+            }
+            .bio {
+                padding: 4em;
             }
             .categories {
                 margin-bottom: 2em;

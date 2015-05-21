@@ -59,7 +59,7 @@ gem 'swish'
 # Image resizer
 gem 'mini_magick'
 # Image Uploader
-gem 'carrierwave'
+gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 
 #URLS
 # Overwrite URL's

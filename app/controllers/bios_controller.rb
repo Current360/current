@@ -27,7 +27,7 @@ class BiosController < ApplicationController
     @bios = Bio.all
     @bio = Bio.find(params[:id])
     if @bio.update(bio_params)
-      redirect_to @bios
+      redirect_to bio_path
     else
       redirect_to :edit
     end

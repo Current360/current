@@ -1,5 +1,5 @@
 <article class="bio">
-    <figure><img src="http://lorempixel.com/140/140" alt=""></figure>
+    <figure><img src="<%= @bio.bio_pic.small_bio_pic %>" alt=""></figure>
     <h2><span><%= @bio.first_name %></span> <%= @bio.last_name %></h2>
     <p><%= @bio.overview %></p>
     <a href="<%= @bio %>" class="button">Call <%= @bio.first_name %></a>

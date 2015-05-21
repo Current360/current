@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519133248) do
+ActiveRecord::Schema.define(version: 20150521171850) do
 
   create_table "bios", force: true do |t|
     t.datetime "created_at"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20150519133248) do
     t.text     "insight"
     t.text     "solution"
     t.text     "results"
-    t.string   "quote"
+    t.text     "quote"
     t.string   "cite"
     t.integer  "category"
     t.string   "main_image"
