@@ -1,22 +1,54 @@
 .projects-show {
     .caseStudyLogo {
-        margin: 1em 1em 0 0;
-        float: right;
+        max-width: 50%;
+        margin: 1em auto;
+        padding-top: 1em;
     }
-
     .results {
         background: $lightgrey;
     }
-    main p, main h1, main h2, .results {
+
+    .skills {
+        background: #fff;
         padding: 2em;
+        h2 { font-weight: bold; }
+        li { color: $headers;
+            &:before {
+                display: none; }
+        }
+
+    }
+    blockquote {
+        margin: 2em 0;
+    }
+    main h1 {
+        padding: 0 1em;
+    }
+    main h2 {
+        padding: 0 1.25em;
+    }
+    main p {
+        padding: 0 2em;
+    }
+    .results {
+        padding: 2em 0;
     }
 
     @include media($tablet) {
+        .caseStudyLogo {
+            margin: 1em 1em 0 0;
+            float: right;
+        }
         main p, main h1, main h2 {
-            padding: 0 0 0 14.28426%;
+            padding: 0 4em 0 14.28426%;
         }
         .results {
             padding: 4em 0;
+        }
+    }
+    @include media($laptop ) {
+        main p, main h1, main h2 {
+            padding: 0 0 0 14.28426%;
         }
     }
 }

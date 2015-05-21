@@ -168,7 +168,7 @@
         padding: 2em;
     }
 
-    .process h2 { color: $text; }
+    .process h2, .skills h2 { color: $text; }
 
     // &.projects-show main {
     //     padding: 2em;
@@ -240,7 +240,7 @@
         }
 
         aside {
-            .categories, .process {
+            .categories, .process, .skills {
                 padding: 4em 2em 4em 4em;
             }
             .bio {
