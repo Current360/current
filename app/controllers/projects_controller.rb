@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
         # Blog roll for related post
         # NEED TO SWITCH TO CASESTUDY CATEGORY LOOKUP ONCE POSSIBLE
         @blogs = Blog.all.limit(4)
+        @projects = Project.all
     end
 
     def new

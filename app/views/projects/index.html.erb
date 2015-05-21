@@ -267,4 +267,10 @@
                 </li>
             </ul>
     </section>
+
+    <ul>
+    <% @projects.each do | project | %>
+        <p><%= link_to "Edit: #{project.title}", edit_project_path(project)  %></p>
+    <% end %>
+    </ul>
 </main>

@@ -209,7 +209,7 @@
 
 // CHANGE BACKGROUND IMAGES BASED ON FIRST NAME OF EMPLOYEE
 
-#Current {
+#Chaney {
     background: #fff asset-url('headshots/mobile/chaney-given.jpg') no-repeat left top;
 
     @include media( $laptop ) {

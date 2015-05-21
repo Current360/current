@@ -3,11 +3,11 @@
         <h1><span><%= @bio.first_name %></span> <%= @bio.last_name %></h1>
         <p class="title"><%= @bio.funny_title %> <span>|</span> <%= @bio.real_title %></p>
         <p><%= @bio.overview %></p>
-        <p class="question"><%= @bio.question1 %><span><%= @bio.answer1 %></span></p>
-        <p class="question"><%= @bio.question2 %><span><%= @bio.answer2 %></span></p>
-        <p class="question"><%= @bio.question3 %><span><%= @bio.answer3 %></span></p>
-        <p class="question"><%= @bio.question4 %><span><%= @bio.answer4 %></span></p>
-        <p class="question"><%= @bio.question5 %><span><%= @bio.answer5 %></span></p>
+        <p class="question"><%= @bio.question1 %><span><%= raw @bio.answer1 %></span></p>
+        <p class="question"><%= @bio.question2 %><span><%= raw @bio.answer2 %></span></p>
+        <p class="question"><%= @bio.question3 %><span><%= raw @bio.answer3 %></span></p>
+        <p class="question"><%= @bio.question4 %><span><%= raw @bio.answer4 %></span></p>
+        <p class="question"><%= @bio.question5 %><span><%= raw @bio.answer5 %></span></p>
     </article>
     <aside>
         <ul>
