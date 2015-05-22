@@ -195,7 +195,7 @@ DEPENDENCIES
   capistrano-rails
   carrierwave!
   dotenv-rails
-  friendly_id
+  friendly_id (~> 5.1.0)
   google-webfonts-rails (~> 0.0.4)
   instagram
   jbuilder (~> 2.0)

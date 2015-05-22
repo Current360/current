@@ -20,12 +20,12 @@ class BiosController < ApplicationController
   end
 
   def edit
-    @bio = Bio.find(params[:id])
+    @bio = Bio.friendly.find(params[:id])
   end
 
   def update
     @bios = Bio.all
-    @bio = Bio.find(params[:id])
+    @bio = Bio.friendly.find(params[:id])
     if @bio.update(bio_params)
       redirect_to bio_path
     else
@@ -34,7 +34,7 @@ class BiosController < ApplicationController
   end
 
   def show
-    @bio = Bio.find(params[:id])
+    @bio = Bio.friendly.find(params[:id])
 
     dribbble = #Dribbble::Player.find('Current360').shots( :per_page => 2 ) +
                 Dribbble::Player.find('DonovanSears').shots( :per_page => 2 ) +
@@ -55,7 +55,7 @@ class BiosController < ApplicationController
   end
 
   def destroy
-    @bio = Bio.find(params[:id]).destroy
+    @bio = Bio.friendly.find(params[:id]).destroy
     redirect_to bios_url
   end
 

@@ -23,7 +23,7 @@ class BlogsController < ApplicationController
 
     def show
         # Individual Post Data
-        @blog = Blog.find(params[:id])
+        @blog = Blog.friendly.find(params[:id])
         # 5 posts of the individual post category
         @relatedPosts = Blog.where(category: @blog.category).limit(5).offset(1)
         # All post categories
@@ -32,12 +32,12 @@ class BlogsController < ApplicationController
 
     def edit
         @blogs = Blog.all
-        @blog = Blog.find(params[:id])
+        @blog = Blog.friendly.find(params[:id])
     end
 
     def update
         @blogs = Blog.all
-        @blog = Blog.find(params[:id])
+        @blog = Blog.friendly.find(params[:id])
 
         if @blog.update(blog_params)
             redirect_to :blogs

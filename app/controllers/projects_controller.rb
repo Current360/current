@@ -9,6 +9,8 @@ class ProjectsController < ApplicationController
     def new
         @projects = Project.all
         @project = Project.new
+
+        @categories = Post.categories
     end
 
     def create
@@ -21,19 +23,19 @@ class ProjectsController < ApplicationController
     end
 
     def show
-        @project = Project.find(params[:id])
+        @project = Project.friendly.find(params[:id])
         # @relatedPosts = Project.where(category: @project.category).limit(4)
         @categories = Project.categories
     end
 
     def edit
         @projects = Project.all
-        @project = Project.find(params[:id])
+        @project = Project.friendly.find(params[:id])
     end
 
     def update
         @projects = Project.all
-        @project = Project.find(params[:id])
+        @project = Project.friendly.find(params[:id])
 
         if @project.update(project_params)
             redirect_to :projects
@@ -53,7 +55,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 0).last
         @categories = Project.categories
         # HARRY
-        @bio = Bio.find(44)
+        @bio = Bio.friendly.find(44)
 
     end
 
@@ -62,7 +64,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 1).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 
@@ -71,7 +73,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 2).last
         @categories = Project.categories
         # HARRY
-        @bio = Bio.find(44)
+        @bio = Bio.friendly.find(44)
 
     end
 
@@ -80,7 +82,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 3).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 
@@ -89,7 +91,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 4).last
         @categories = Project.categories
         # KATI
-        @bio = Bio.find(56)
+        @bio = Bio.friendly.find(56)
 
     end
 
@@ -98,7 +100,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 5).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 
@@ -107,7 +109,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 6).last
         @categories = Project.categories
         # HARRY
-        @bio = Bio.find(44)
+        @bio = Bio.friendly.find(44)
 
     end
 
@@ -116,7 +118,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 7).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 
@@ -125,7 +127,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 8).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 
@@ -134,7 +136,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 9).last
         @categories = Project.categories
         # HARRY
-        @bio = Bio.find(44)
+        @bio = Bio.friendly.find(44)
 
     end
 
@@ -143,7 +145,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 10).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 
@@ -152,7 +154,7 @@ class ProjectsController < ApplicationController
         @caseStudy = Project.where(category: 11).last
         @categories = Project.categories
         # NICK
-        @bio = Bio.find(35)
+        @bio = Bio.friendly.find(35)
 
     end
 

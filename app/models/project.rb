@@ -1,4 +1,7 @@
 class Project < ActiveRecord::Base
+    extend FriendlyId
+    friendly_id :title, use: :slugged
+
     mount_uploader :main_image, MainImageUploader
     mount_uploader :logo, LogoUploader
 

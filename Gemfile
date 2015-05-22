@@ -63,7 +63,7 @@ gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 
 #URLS
 # Overwrite URL's
-gem 'friendly_id'
+gem 'friendly_id', '~> 5.1.0'
 
 # PAGINATION
 gem 'will_paginate', '~> 3.0.6'

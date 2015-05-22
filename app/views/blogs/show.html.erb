@@ -3,6 +3,7 @@
         <article>
             <!-- Write conditional for outputing a p.header or an h1 -->
             <h1><%= @blog.title %></h1>
+            <h4><%= link_to 'edit', edit_blog_path(@blog) %></h4>
             <!-- <p class="header1"><%# @blog.title %></p> -->
             <figure>
                 <%# if blog.blog_picture.large.present? %>

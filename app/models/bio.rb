@@ -1,4 +1,6 @@
 class Bio < ActiveRecord::Base
+    extend FriendlyId
+    friendly_id :first_name, use: :slugged
 
     mount_uploader :bio_pic, BioUploader
     mount_uploader :large_bio_pic, LargeBioPicUploader

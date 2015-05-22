@@ -1,11 +1,11 @@
-<%= form_for @post do |post| %>
-  <%= post.label :title %>
-  <%= post.text_field :title %>
-  <%= post.label :content %>
-  <%= post.text_area :content %>
-  <%= post.label :category %>
-  <%= post.select :category, options_for_select(Post.categories.collect { |k| [k[0].humanize,k[0]] }) %>
-  <%= post.select :author, options_from_collection_for_select(@authors, 'id', 'name') %>
-  <%= post.file_field :blog_picture %>
-  <%= post.submit %>
+<%= form_for @blog do |blog| %>
+  <%= blog.label :title %>
+  <%= blog.text_field :title %>
+  <%= blog.label :content %>
+  <%= blog.text_area :content %>
+  <%= blog.label :category %>
+  <%= blog.select :category, options_for_select(Blog.categories.collect { |k| [k[0].humanize,k[0]] }) %>
+  <%# blog.select :author, options_from_collection_for_select(@authors, 'id', 'name') %>
+  <%= blog.file_field :blog_picture %>
+  <%= blog.submit %>
 <% end %>
