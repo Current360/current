@@ -1,6 +1,6 @@
 class Blog < ActiveRecord::Base
     extend FriendlyId
-    friendly_id :title, use: :slugged
+    friendly_id :title, use: [:slugged, :history]
 
     mount_uploader :blog_picture, BlogPictureUploader
 
