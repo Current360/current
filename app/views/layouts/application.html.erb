@@ -3,6 +3,12 @@
     <span class="bg"></span>
 
     <%= render 'layouts/header' %>
+    <% if notice %>
+        <%= notice %>
+    <% end %>
+    <% if alert %>
+        <%= alert %>
+    <% end %>
     <%= content_for(:content) ? yield(:content) : yield %>
     <%= render 'layouts/footer' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

@@ -67,3 +67,6 @@ gem 'friendly_id', '~> 5.1.0'
 
 # PAGINATION
 gem 'will_paginate', '~> 3.0.6'
+
+# USER AUTHENTICATION
+gem 'devise', '~> 3.4.1'

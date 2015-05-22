@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+    before_action :authenicate_user!, except: [:index, :show]
     def index
         # Blog roll for related post
         # NEED TO SWITCH TO CASESTUDY CATEGORY LOOKUP ONCE POSSIBLE

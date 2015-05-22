@@ -1,5 +1,6 @@
 class BiosController < ApplicationController
     respond_to :html, :js
+    before_action :authenicate_user!, except: [:index, :show]
   def index
     @bios = Bio.all
     @bio = Bio.new

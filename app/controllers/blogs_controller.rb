@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+    before_action :authenicate_user!, except: [:index, :show]
     def index
         @blogs = Blog.paginate(:page => params[:page], per_page: 3)
         @blog = Blog.new
