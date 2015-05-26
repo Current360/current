@@ -2,7 +2,7 @@ class BiosController < ApplicationController
     respond_to :html, :js
     before_action :authenticate_user!, except: [:index, :show]
   def index
-    @bios = Bio.all
+    @bios = Bio.all.order(:order)
     @bio = Bio.new
     # @featured = Bio.find(9)
   end
@@ -28,7 +28,7 @@ class BiosController < ApplicationController
     @bios = Bio.all
     @bio = Bio.friendly.find(params[:id])
     if @bio.update(bio_params)
-      redirect_to bio_path
+      redirect_to bios_path
     else
       redirect_to :edit
     end
