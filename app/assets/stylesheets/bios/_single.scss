@@ -51,14 +51,16 @@
 
         svg, span {
             display: inline-block;
-            max-width: 50;
+            max-width: 50%;
             vertical-align: middle;
         }
         svg {
             margin-right: 1em;
         }
         span {
+            font-size: 0.875em;
             font-weight: bold;
+            text-transform: uppercase;
         }
     }
 

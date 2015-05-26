@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150522182608) do
+ActiveRecord::Schema.define(version: 20150526160042) do
 
   create_table "bios", force: true do |t|
     t.datetime "created_at"
@@ -34,6 +34,16 @@ ActiveRecord::Schema.define(version: 20150522182608) do
     t.text     "overview"
     t.string   "large_bio_pic"
     t.string   "slug"
+    t.string   "skill1"
+    t.string   "skill2"
+    t.string   "skill3"
+    t.string   "skill4"
+    t.string   "mobile_bg"
+    t.integer  "order"
+    t.integer  "skill1_value"
+    t.integer  "skill2_value"
+    t.integer  "skill3_value"
+    t.integer  "skill4_value"
   end
 
   add_index "bios", ["slug"], name: "index_bios_on_slug", unique: true, using: :btree

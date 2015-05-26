@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-   before_action :authenicate_user!,
+   before_action :authenticate_user!,
    except: [
         :index, :show, :other, :festivals, :fitness, :education,
         :philanthropic, :pet, :improvement, :retail, :healthcare,

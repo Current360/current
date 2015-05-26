@@ -39,9 +39,31 @@
   <%= bio.text_field :question5 %><br>
   <%= bio.label :answer5 %>
   <%= bio.text_field :answer5 %><br>
+  <p>Enter 1-9 for skill value.</p>
+  <%= bio.label :skill1 %>
+  <%= bio.text_field :skill1 %><br>
+  <%= bio.label :skill1_value %>
+  <%= bio.text_field :skill1_value %><br>
+  <%= bio.label :skill2 %>
+  <%= bio.text_field :skill2 %><br>
+  <%= bio.label :skill2_value %>
+  <%= bio.text_field :skill2_value %><br>
+  <%= bio.label :skill3 %>
+  <%= bio.text_field :skill3 %><br>
+  <%= bio.label :skill3_value %>
+  <%= bio.text_field :skill3_value %><br>
+  <%= bio.label :skill4 %>
+  <%= bio.text_field :skill4 %><br>
+  <%= bio.label :skill4_value %>
+  <%= bio.text_field :skill4_value %><br>
   <%= bio.label :bio_pic %>
   <%= bio.file_field :bio_pic %><br>
+  <%= bio.label :mobile_bg %>
+  <%= bio.file_field :mobile_bg %><br>
   <%= bio.label :large_bio_pic %>
-  <%= bio.file_field :large_bio_pic %><br><br><br>
+  <%= bio.file_field :large_bio_pic %><br>
+  <p>Enter a # to indicate the order to display the record. Rick is 1, Lisa is 2, etc.</p>
+  <%= bio.label :order %>
+  <%= bio.text_field :order %><br><br><br>
   <%= bio.submit %>
 <% end %>

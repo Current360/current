@@ -250,40 +250,40 @@
 }
 
 
-#slide9 * {
+#slide9 *, .skill9 {
   fill: $headers; }
 
-#slide8 {
+#slide8, .skill8 {
   .step8 path, .step7 path, .step6 path, .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
    fill: $headers;
   }
 }
-#slide7 {
+#slide7, .skill7 {
   .step7 path, .step6 path, .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
   fill: $headers;
   }
 }
-#slide6 {
+#slide6, .skill6 {
   .step6 path, .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
   fill: $headers;
   }
 }
-#slide5 {
+#slide5, .skill5 {
   .step5 path, .step4 path, .step3 path, .step2 path, .step1 path {
   fill: $headers;
   }
 }
-#slide4 {
+#slide4, .skill4 {
   .step4 path, .step3 path, .step2 path, .step1 path {
   fill: $headers;
   }
 }
-#slide3 {
+#slide3, .skill3 {
   .step3 path, .step2 path, .step1 path {
   fill: $headers;
   }
 }
-#slide2 {
+#slide2, .skill2 {
   .step2 path, .step1 path {
   fill: $headers;
   }
