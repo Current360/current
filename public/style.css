@@ -3,6 +3,8 @@
 
 body {
     background: #000 url('404-bg.jpg') no-repeat center top;
+    -webkit-background-size: contain;
+        background-size: contain;
 }
 @media screen and (min-width: 769px ) {
     body {
