@@ -2,7 +2,7 @@
 
 
 body {
-    background: #000 url('404-bg.jpg') no-repeat center center;
+    background: #000 url('404-bg.jpg') no-repeat center top;
 }
 @media screen and (min-width: 769px ) {
     body {
