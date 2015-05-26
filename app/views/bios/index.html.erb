@@ -1,12 +1,12 @@
 <main>
     <div class="wrapper" id="bio-copy">
-        <section>
+        <main>
             <h1>Team C360</h1>
             <p>Yes, we’re ad nerds, but we have lives outside of work, too. (Most of us, anyway.) Among our staff you’ll find painters, writers, musicians, needle workers, skaters, gamers, beer geeks, improv comedians and zombie slayers. We think it’s a well-balanced crew.</p>
             <% if user_signed_in? %>
                 <%= link_to('add', new_bio_path) %>
             <% end %>
-        </section>
+        </main>
         <aside>
             <div class="hiring">
                 <h5>Careers</h5>

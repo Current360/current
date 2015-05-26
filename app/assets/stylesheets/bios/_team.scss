@@ -35,7 +35,7 @@
             }
         }
     }
-    section {
+    main {
         background: #fff;
         padding: 2em;
     }
@@ -92,7 +92,7 @@
         #bio-copy {
             @include row('table');
             margin-bottom: 0;
-            section {
+            main {
                 @include span-columns(7);
                 padding-left: 10.42%;
             }
