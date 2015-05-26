@@ -2,9 +2,14 @@
 
 
 body {
-    background: #000 url('404-bg.jpg') no-repeat left top;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: #000 url('404-bg.jpg') no-repeat center center;
+}
+@media screen and (min-width: 769px ) {
+    body {
+        background: #000 url('404-bg.jpg') no-repeat left top;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
 }
 .error404 a {
     background: #f55219;
