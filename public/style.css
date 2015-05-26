@@ -2,14 +2,20 @@
 
 
 body {
-    background: url('404-bg.jpg') no-repeat left top;
-    -webkit-background-size: contain;
-    background-size: contain;
+    background: #000 url('404-bg.jpg') no-repeat left top;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .error404 a {
     background: #f55219;
     color: #fff;
-    margin-top: 50%;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 3em;
+    margin-top: 40%;
+    text-transform: uppercase;
+
 }
 
 .error404 a span {
