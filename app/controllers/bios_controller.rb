@@ -48,7 +48,7 @@ class BiosController < ApplicationController
     #@pictures = InstagramPictureMaker.new(instagram).pictures #+ DribbblePictureMaker.new(dribbble).pictures
     @pictures = DribbblePictureMaker.new(dribbble).pictures
 
-    @blogs = Blog.where(author: 8).limit(4)
+    @blogs = Blog.where(author: @bio.id).limit(4)
   end
 
   def update_featured
