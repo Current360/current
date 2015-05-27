@@ -4,6 +4,110 @@
 		"selected_items":
 		[
 			[
+				"link",
+				"link_to"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bgs",
+				"bgsz-ct	background-size: contain;"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"span",
+				"word-spacing"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"proje",
+				"project"
+			],
+			[
+				"ma",
+				"max-height"
+			],
+			[
+				"Pro",
+				"ProjectUploader"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"ye",
+				"yield"
+			],
+			[
+				"case",
+				"caseStudy"
+			],
+			[
+				"pro",
+				"project_params"
+			],
+			[
+				"proj",
+				"projects"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"feat",
+				"featuredBlog"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"cae",
+				"category"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"Au",
+				"AUTHORNAME"
+			],
+			[
+				"fs",
+				"font-style"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
 				"at",
 				"auto"
 			],
@@ -12,16 +116,8 @@
 				"max-width"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
 				"mar",
 				"margin"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"mr",
@@ -80,14 +176,6 @@
 				"hidden"
 			],
 			[
-				"pos",
-				"pos-r	position: relative;"
-			],
-			[
-				"inl",
-				"inline"
-			],
-			[
 				"no",
 				"no-repeat"
 			],
@@ -108,20 +196,12 @@
 				"background"
 			],
 			[
-				"pad",
-				"padding-left"
-			],
-			[
 				"check",
 				"checkmark-icon"
 			],
 			[
 				"maxs",
 				"maxstrum-logo"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"tal",
@@ -132,20 +212,8 @@
 				"page-id-56"
 			],
 			[
-				"min",
-				"min-height"
-			],
-			[
 				"page-i",
 				"page-id-27"
-			],
-			[
-				"bgs",
-				"bgsz-cv	background-size: cover;"
-			],
-			[
-				"pro",
-				"product-highlight"
 			],
 			[
 				"ge",
@@ -178,10 +246,6 @@
 			[
 				"so",
 				"solid"
-			],
-			[
-				"bor",
-				"border-right"
 			],
 			[
 				"i",
@@ -352,58 +416,42 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/blogs/index.html.erb",
+			"file": "app/models/bio.rb",
 			"settings":
 			{
-				"buffer_size": 832,
+				"buffer_size": 2561,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/blogs/_original_roll.html.erb",
+			"file": "app/controllers/bios_controller.rb",
 			"settings":
 			{
-				"buffer_size": 582,
+				"buffer_size": 2389,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/blogs_controller.rb",
+			"file": "app/views/bios/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 969,
+				"buffer_size": 2537,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/pages/_strategy.scss",
+			"file": "app/controllers/pages_controller.rb",
 			"settings":
 			{
-				"buffer_size": 6264,
+				"buffer_size": 1109,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/pages/_culture.scss",
+			"file": "app/views/bios/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 3002,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/_global.scss",
-			"settings":
-			{
-				"buffer_size": 3925,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/blog/_blog.scss",
-			"settings":
-			{
-				"buffer_size": 6603,
+				"buffer_size": 15245,
 				"line_ending": "Unix"
 			}
 		}
@@ -448,134 +496,134 @@
 	},
 	"file_history":
 	[
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/_form.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/_original_roll.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/projects/_interior.scss",
+		"/Users/jerrodlong/Desktop/current/app/models/blog.rb",
+		"/Users/jerrodlong/Desktop/current/app/controllers/blogs_controller.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/show.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/bio_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/app/classes/author_maker.rb",
+		"/Users/jerrodlong/Desktop/current/app/classes/author.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_categories.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/controllers/bios_controller.rb",
+		"/Users/jerrodlong/Desktop/current/config/routes.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_categories.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/projects/_landing.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/index.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/bios/_team.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_header.html.erb",
+		"/Users/jerrodlong/Desktop/current/public/style.css",
+		"/Users/jerrodlong/Desktop/current/public/500.html",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/blog_picture_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_home.scss",
+		"/Users/jerrodlong/Desktop/current/public/404.html",
+		"/Users/jerrodlong/Desktop/current/app/models/bio.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/index.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_culture.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/culture.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/bios.js",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/application.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/application.js",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/_form.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/show.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_strategy.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/bios/_single.scss",
+		"/Users/jerrodlong/Desktop/current/app/controllers/projects_controller.rb",
+		"/Users/jerrodlong/Desktop/Projects/c360/c360Ruby.sublime-project",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/strategy.html.erb",
+		"/Users/jerrodlong/Desktop/current/db/schema.rb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/mobile_bg_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150526160042_add_skill_values_to_bios.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150526154855_drop_skill5_from_bios.rb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_icons.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/application.css.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/pages/index.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/models/user.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_case_study.html.erb",
+		"/Users/jerrodlong/Desktop/current/Gemfile",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150511193432_create_blogs.rb",
+		"/Users/jerrodlong/Desktop/current/Gemfile.lock",
+		"/Users/jerrodlong/Desktop/current/app/models/project.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_landingPageTemplate.html.erb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150522150427_make_slug_index_blogs.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/_original_roll.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/index.html.erb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150522153319_make_slug_index_bios.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_form.html.erb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150522140045_add_slug_to_blogs.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150522132041_add_slug_to_blogs.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150522131638_create_friendly_id_slugs.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150521221453_add_large_bio_pic_to_bios.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/edit.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/new.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/large_bio_pic_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_header.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_global.scss",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/projects/_show.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/show.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_head.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_skills.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/bios/_pictures.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/main_image_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/logo_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150521171850_change_quote_on_projects.rb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/project_main_image_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/app/uploaders/project_uploader.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/other.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/edit.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_bio.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/retail.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/philanthropic.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/pet.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/improvement.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/healthcare.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/fitness.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/festivals.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/education.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/beverages.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/banking.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/controllers/pages_controller.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/dining.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_categorySection.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/category.html.erb",
+		"/Users/jerrodlong/Desktop/current/Capfile",
+		"/Users/jerrodlong/Desktop/current/config/database.yml",
+		"/Users/jerrodlong/Desktop/current/lib/capistrano/tasks/agent_forwarding.rake",
+		"/Users/jerrodlong/Desktop/current/RUBY-DEPLOYMENT-PROCESS.txt",
+		"/Users/jerrodlong/Desktop/current/config/deploy.rb",
+		"/Users/jerrodlong/Desktop/current/config/deploy/production.rb",
+		"/Users/jerrodlong/Desktop/current/lib/capistrano/tasks/access_check.rake",
+		"/Users/jerrodlong/Desktop/current/tmp/restart.txt",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/blog/_blog.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_blogs.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/_interior.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_landingPageTemplate.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_application.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/projects/landingPageTemplate.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/landingPageTemplate.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/_blog_categories.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/categories.html.erb",
+		"/Users/jerrodlong/Desktop/current/db/seeds.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footer.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_normalize.scss",
+		"/Users/jerrodlong/Desktop/current/app/views/layouts/_pictures.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/classes/dribbble_picture_maker.rb",
+		"/Users/jerrodlong/Desktop/current/db/migrate/20150513194337_create_bios.rb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/category.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/_recent_posts.html.erb",
+		"/Users/jerrodlong/Desktop/current/app/views/blogs/recent-posts.html.erb",
 		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_footer.scss",
 		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
 		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/SCSS.sublime-settings",
 		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/jerrodlong/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_home.scss",
 		"/Users/jerrodlong/Desktop/current/config/locales/en.yml",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_header.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/application.css.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/strategy.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_global.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_strategy.scss",
-		"/Users/jerrodlong/Desktop/current/Gemfile",
-		"/Users/jerrodlong/Desktop/current/db/seeds.rb",
-		"/Users/jerrodlong/Desktop/current/db/schema.rb",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/nav.js",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footer.html.erb",
 		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_contact.scss",
 		"/Users/jerrodlong/Desktop/current/app/views/pages/contact.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/application.js",
 		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/map.js",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/animations/animate.css",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/application.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/fonts.js",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/icons/icon-compass.svg",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_locations.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/icons/info-angle.svg",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/index.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/bg/info-angle.svg",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_icons.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_header.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/bg/radarLaptop.svg",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_buttons.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/bg/homepage_bg.svg",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/elements/_forms.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/home/case_study_bg_temp.jpg",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_normalize.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/homepage_bg.svg",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/pages/_culture.scss",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/c360-social-icons.html",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/C360 SVGs.html",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/c360-logo-container.html",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/homepage-background.html",
-		"/Users/jerrodlong/Desktop/current/app/assets/images/SVG/c360-footer-logo.html",
-		"/Users/jerrodlong/Desktop/current/app/views/pages/culture.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/_variables.scss",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_pictures.html.erb",
-		"/Users/jerrodlong/Desktop/current/config/initializers/instagram.rb",
-		"/Users/jerrodlong/Desktop/current/config/dribbble.rb",
-		"/Users/jerrodlong/Desktop/current/app/controllers/pages_controller.rb",
-		"/Users/jerrodlong/Desktop/current/app/classes/picture.rb",
-		"/Users/jerrodlong/Desktop/current/config/application.rb",
-		"/Users/jerrodlong/Desktop/current/app/classes/dribbble_picture_maker.rb",
-		"/Users/jerrodlong/Desktop/current/app/classes/instagram_picture_maker.rb",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_contactForm.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/views/layouts/_footerCTA.html.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/pages.js",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/nav.js.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/fonts.js.erb",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/bios.js",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/projects.js",
-		"/Users/jerrodlong/Desktop/current/app/assets/javascripts/blogs.js",
-		"/Users/jerrodlong/Desktop/current/config/routes.rb",
-		"/Users/jerrodlong/Desktop/current/app/helpers/application_helper.rb",
-		"/Users/jerrodlong/Desktop/current/config/database.yml",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/classes/instagram_picture_maker.rb",
-		"/Users/jerrodlong/Desktop/rails/foodInsta/app/models/location_maker.rb",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/javascripts/application.js",
-		"/Users/jerrodlong/Desktop/rails/kaw/Gemfile",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/application.html.erb",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/_header.html.erb",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_nav.scss",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_global.scss",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/controllers/application_controller.rb",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/_footer.html.erb",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/application.css.scss",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_footer.scss",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/views/layouts/_off_nav.html.erb",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/stylesheets/_off_nav.scss",
-		"/Users/jerrodlong/Desktop/rails/kaw/app/assets/javascripts/nav.js",
-		"/Users/jerrodlong/Desktop/sites/cbt/wp-content/themes/boilerplate/css/_normalize.scss",
-		"/Users/jerrodlong/Desktop/sites/cbt/wp-content/themes/boilerplate/interior.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/home.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-includes/js/comment-reply.min.js",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-includes/script-loader.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/header.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/style.scss",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/searchform.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/footer.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/page.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/sidebar.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/mailer.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/home.html",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/loop.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/interior.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/search.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/stylesheets/styles.scss",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-config.php",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/sftp-config-alt.json",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/sftp-config.json",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/plugins/my-calendar/templates/inherit.css",
-		"/Users/jerrodlong/Desktop/sites/maxstrum/wp-content/themes/maxstrum/sftp-config.json",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/interior.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/home.html",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/stylesheets/styles.scss",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/stylesheets/styles.css",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/style.css",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/footer.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/sidebar.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/home.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/header.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/sftp-config.json",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/sftp-config.json",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/.gitignore",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-config.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/searchform.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-livestock.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-cattle.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-content/themes/maxstrum/page.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/header.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/wp-cron.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/footer.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-swine.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-sheep-goats.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-livestock.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/show-cattle.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-swine.php",
-		"/Users/jerrodlong/Desktop/Sites2/maxstrum/production-sheep-goats.php"
+		"/Users/jerrodlong/Desktop/current/app/assets/stylesheets/animations/animate.css"
 	],
 	"find":
 	{
@@ -593,6 +641,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
+			".where",
+			".find",
+			"post",
+			"&",
+			"#step",
+			"<svg",
+			"id=\"step",
+			".label",
+			"rake",
+			"main",
+			".content",
+			"caseStudy",
+			".limit(1)",
+			", layout: 'application'",
+			"render layout: \"landingPageTemplate\"",
+			"projects/",
+			"\"landingPageTemplate\"",
+			"=>",
+			"’",
+			"”",
+			"amp;",
 			"space",
 			".blog-feed",
 			"pad",
@@ -698,32 +768,10 @@
 			".page-id-378",
 			"12:00 AM",
 			"1046",
-			"Peoria",
-			"Wine Tasting",
-			"Ice Cream Social",
-			"Wine C",
-			"Wine Tasting &amp; Dessert Cruise",
-			"Beer Tasting",
-			"River",
-			"am",
-			"special",
-			"Taste the spirit of Kentucky with every sip of Bourbon. Old Forester distillers will walk you through a sampling of some of their finest spirits while you cruise the Ohio River. Experience the rich tradition of Bourbon Country through the rich taste of Kentucky bourbon. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
-			"Bourbon",
-			"Bourbon Tasting",
-			"Spirit of Peoria",
-			"Spirit of Peo",
-			"peor",
-			"Dinner",
-			"1061",
-			"1",
-			"1024",
-			"This cruise is a treat for the whole family. Build your own sundae while you take in all the beautiful sights the Ohio River has to offer. It's sure to be something the whole family will eat up.",
-			"This is not your typical booze cruise. Beer connoisseurs everywhere will appreciate a taste of some of the finest local brews while taking a relaxing cruise down the Ohio River. A representative will be onboard to discuss beer brewing. Light appetizers will be available. Must be 21 years of age with valid ID to sample.",
-			"bourbon",
-			"Spirit"
+			"Peoria"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -738,52 +786,85 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/blogs/index.html.erb",
+					"file": "app/models/bio.rb",
 					"settings":
 					{
-						"buffer_size": 832,
+						"buffer_size": 2561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								744,
-								744
+								260,
+								1871
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 193.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/blogs/_original_roll.html.erb",
+					"file": "app/controllers/bios_controller.rb",
 					"settings":
 					{
-						"buffer_size": 582,
+						"buffer_size": 2389,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								388,
-								388
+								906,
+								914
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/bios/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 2537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2504,
+								2504
 							]
 						],
 						"settings":
@@ -796,54 +877,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/blogs_controller.rb",
-					"settings":
-					{
-						"buffer_size": 969,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								964,
-								964
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 614.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/assets/stylesheets/pages/_strategy.scss",
+					"file": "app/controllers/pages_controller.rb",
 					"settings":
 					{
-						"buffer_size": 6264,
+						"buffer_size": 1109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								204
+								577,
+								642
 							]
 						],
 						"settings":
@@ -851,42 +903,11 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/assets/stylesheets/pages/_culture.scss",
-					"settings":
-					{
-						"buffer_size": 3002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								93
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
+						"translation.x": 35.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -895,23 +916,23 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/_global.scss",
+					"buffer": 4,
+					"file": "app/views/bios/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 3925,
+						"buffer_size": 15245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								775,
-								939
+								0,
+								0
 							]
 						],
 						"settings":
@@ -919,41 +940,12 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 67.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/assets/stylesheets/blog/_blog.scss",
-					"settings":
-					{
-						"buffer_size": 6603,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2577,
-								2577
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 15.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -994,7 +986,7 @@
 		"rows":
 		[
 			0.0,
-			0.426625228102,
+			0.427355688292,
 			1.0
 		]
 	},
@@ -1028,6 +1020,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 292.0,
+	"side_bar_width": 429.0,
 	"status_bar_visible": true
 }
