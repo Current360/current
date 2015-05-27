@@ -9,6 +9,7 @@ class BiosController < ApplicationController
 
   def new
     @bio = Bio.new
+
   end
 
   def create
