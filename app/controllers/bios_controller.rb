@@ -9,6 +9,7 @@ class BiosController < ApplicationController
 
   def new
     @bio = Bio.new
+
   end
 
   def create
@@ -28,7 +29,7 @@ class BiosController < ApplicationController
     @bios = Bio.all
     @bio = Bio.friendly.find(params[:id])
     if @bio.update(bio_params)
-      redirect_to bio_path
+      redirect_to bios_path
     else
       redirect_to :edit
     end

@@ -5,7 +5,7 @@
   <%= blog.text_area :content %>
   <%= blog.label :category %>
   <%= blog.select :category, options_for_select(Blog.categories.collect { |k| [k[0].humanize,k[0]] }) %>
-  <%# blog.select :author, options_from_collection_for_select(@authors, 'id', 'name') %>
+  <%= blog.select :author, options_from_collection_for_select(@authors, 'id', 'name') %>
   <%= blog.file_field :blog_picture %>
   <%= blog.submit %>
 <% end %>

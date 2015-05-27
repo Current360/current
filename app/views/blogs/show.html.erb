@@ -6,14 +6,14 @@
             <h4><%= link_to 'edit', edit_blog_path(@blog) %></h4>
             <!-- <p class="header1"><%# @blog.title %></p> -->
             <figure>
-                <%# if blog.blog_picture.large.present? %>
-                    <%# image_tag blog.blog_picture.large %>
-                <%# else %>
+                <% if @blog.blog_picture.present? %>
+                    <%= image_tag @blog.blog_picture.url %>
+                <% else %>
                     <img src="http://lorempixel.com/600/375/fashion" >
-                <% #end %>
+                <% end %>
             </figure>
             <!-- AUTHORNAME LINKS TO BIO PAGE -->
-            <sub>Written <%= time_ago_in_words(@blog.created_at) %> ago by <a>AUTHORNAME</a></sub>
+            <sub>Written <%= time_ago_in_words(@blog.created_at) %> ago by <%= link_to @author.first_name, bio_path(@author.id) %></sub>
             <div class="shareables">
                 <h3>Shareables</h3>
                 <ul>
@@ -44,10 +44,10 @@
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </section>
             <div class="author">
-                <%= link_to(image_tag('http://lorempixel.com/114/114'), '', :class => 'author-pic') %>
+                <%= link_to(image_tag(@author.bio_pic.small_bio_pic), bio_path(@author.id), :class => 'author-pic') %>
                 <div>
                     <sub>Written by:</sub>
-                    <%= raw link_to( 'AUTHORNAME', '') %>
+                    <%= raw link_to( @author.first_name, bio_path(@author.id)) %>
                 </div>
             </div>
         </article>

@@ -3,11 +3,11 @@
     <!-- Write conditional for outputing a p.header or an h1 -->
 
     <figure>
-    <%# if blog.blog_picture.large.present? %>
-      <%# image_tag blog.blog_picture.large %>
-    <%# else %>
+    <% if blog.blog_picture.present? %>
+      <%= image_tag blog.blog_picture.url %>
+    <% else %>
       <%= link_to(image_tag('http://lorempixel.com/600/375/fashion'), blog) %>
-    <% #end %>
+    <% end %>
     </figure>
     <h2 class="blog-header"><%= raw link_to blog.title, blog %></h2>
     <sub>Written <%= time_ago_in_words(blog.created_at) %> ago</sub>

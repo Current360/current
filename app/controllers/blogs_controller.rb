@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
     before_action :authenticate_user!, except: [:index, :show]
     def index
-        @blogs = Blog.paginate(:page => params[:page], per_page: 3)
+        @blogs = Blog.paginate(:page => params[:page], per_page: 3).order('created_at DESC')
         @blog = Blog.new
         # All post categories
         @categories = Blog.categories
@@ -10,10 +10,14 @@ class BlogsController < ApplicationController
     def new
         @blogs = Blog.all
         @blog = Blog.new
+        author = Bio.all
+        @authors = AuthorMaker.new(author).build
     end
 
     def create
         @blog = Blog.new(blog_params)
+        author = Bio.all
+        @authors = AuthorMaker.new(author).build
         if @blog.save
             flash['Blog Saved']
             redirect_to @blog
@@ -29,6 +33,7 @@ class BlogsController < ApplicationController
         @relatedPosts = Blog.where(category: @blog.category).limit(5).offset(1)
         # All post categories
         @categories = Blog.categories
+        @author = Bio.find_by_id(@blog.author)
     end
 
     def edit

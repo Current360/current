@@ -14,10 +14,10 @@ class Blog < ActiveRecord::Base
                     :home_improvement,  # 5
                     :pet_care,  # 6
                     :philanthropic,    # 7
-                    :education,   # 8
+                    # :education,   # 8
                     :fitness_and_wellness ,    # 9
                     :festivals_and_events,    #10
-                    :other    #11
+                    # :other    #11
     ]
 
     def self.featuredBlog
