@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  match '/work/additional_projects' => 'projects#other', via: [:get]
-  match '/work/festivals_events' => 'projects#festivals', via: [:get]
-  match '/work/fitness_wellness' => 'projects#fitness', via: [:get]
+  match '/work/additional-projects' => 'projects#other', via: [:get]
+  match '/work/festivals-events' => 'projects#festivals', via: [:get]
+  match '/work/fitness-wellness' => 'projects#fitness', via: [:get]
   match '/work/education' => 'projects#education', via: [:get]
   match '/work/philanthropic' => 'projects#philanthropic', via: [:get]
-  match '/work/pet_care' => 'projects#pet', via: [:get]
+  match '/work/pet-care' => 'projects#pet', via: [:get]
   match '/work/home-improvement' => 'projects#improvement', via: [:get]
   match '/work/high-impact-retail' => 'projects#retail', via: [:get]
   match '/work/healthcare' => 'projects#healthcare', via: [:get]

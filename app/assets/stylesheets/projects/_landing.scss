@@ -1,0 +1,44 @@
+.projects-index {
+    & > .wrapper article {
+        background: #fff;
+        padding: 3em 2em;
+    }
+    .categories {
+        background: $darkgrey;
+        padding: 2em;
+
+        li {
+            padding-left: 0.75em;
+            margin-bottom: 0.75em;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    @include media( $tablet ) {
+        & > .wrapper article {
+            float: left;
+            padding-left: 10.42%;
+            width: 70%;
+        }
+        main.home {
+            padding: 0;
+            ul {
+                margin-top: 0;
+            }
+        }
+        .wrapper {
+            margin-bottom: 0;
+        }
+    }
+    @include media( $laptop ) {
+        .categories {
+            padding: 4em 2em 4em 4em;
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+    }
+}

@@ -1,9 +1,19 @@
+<div class="wrapper">
+    <article>
+        <h1>Digital and Traditional</h1>
+        <h2>Subhead goes right here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem facere quia, sunt unde! Unde dolorum est delectus consequuntur nostrum, nisi quos inventore expedita, officiis quae atque, rerum voluptatum doloribus non!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum, nostrum nisi repudiandae voluptatum facilis enim explicabo necessitatibus distinctio quo voluptates eveniet! Sunt possimus distinctio debitis ad molestiae. A, laboriosam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum, nostrum nisi repudiandae voluptatum facilis enim explicabo necessitatibus distinctio quo voluptates eveniet! Sunt possimus distinctio debitis ad molestiae. A, laboriosam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum, nostrum nisi repudiandae voluptatum facilis enim explicabo necessitatibus distinctio quo voluptates eveniet! Sunt possimus distinctio debitis ad molestiae. A, laboriosam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum, nostrum nisi repudiandae voluptatum facilis enim explicabo necessitatibus distinctio quo voluptates eveniet! Sunt possimus distinctio debitis ad molestiae. A, laboriosam!</p>
+    </article>
+    <aside class="categories">
+        <h2>Categories</h2>
+        <%= render 'categories' %>
+    </aside>
+</div>
 <main class="home">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <%= link_to "add", new_project_path %>
     <section>
         <ul>
@@ -269,10 +279,11 @@
             </li> -->
         </ul>
     </section>
-
-    <ul>
-    <% @projects.each do | project | %>
-        <p><%= link_to "Edit: #{project.title}", edit_project_path(project)  %></p>
+    <% if user_signed_in? %>
+        <ul>
+        <% @projects.each do | project | %>
+            <p><%= link_to "Edit: #{project.title}", edit_project_path(project)  %></p>
+        <% end %>
+        </ul>
     <% end %>
-    </ul>
 </main>
