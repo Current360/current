@@ -6,34 +6,40 @@ class Bio < ActiveRecord::Base
     mount_uploader :large_bio_pic, LargeBioPicUploader
     mount_uploader :mobile_bg, MobileBgUploader
 
-    # enum :questions [
+    # enum questions: [
     #     :name_your_favorite_sports_team,
     #     :what_brand best reflects your personality and why?,
-    #     Share one of your favorite quotes.  ,
-    #     If you could make the whole world listen to one album, what would it be? ,
-    #     Have you ever been attacked by a ferret? Do tell.  ,
-    #     Share either your proudest or most embarrassing moment from school.  ,
-    #     If you were a genre of music, what genre would you be? ,
-    #     How long can you hold your breath? (Please check now.) ,
-    #     Pirate vs Ninja: Who wins and why? ,
-    #      What’s your favorite piece of technology? ,
-    #      What’s your game plan for the Zombie Apocalypse? ,
-    #      What’s your favorite sound?,
-    #      If you could choose a different name for yourself, what would it be?,
-    #      What word or expression do you use far too often?,
-    #      What will your posthumous biography be titled?,
-    #      Who would win in a fight between Pat Sajak, Bob Barker and Alex Trebek? Explain. ,
-    #      If you could institute any frivolous law, what would it be? ,
-    #      Who’s your favorite Muppet?,
-    #      What’s the weirdest thing that’s ever happened to you?  ,
-    #      Fist bump, handshake or high five? ,
-    #      Have you ever fallen in love with an object? Explain.  ,
-    #      Who built the pyramids? ,
-    #      Do you want the funk? Explain why or why not in 10 words or less. ,
-    #      Who’s your favorite superhero and why?,
-    #      Share one of your hidden talents.,
-    #      Is there something you’re not telling me?
+    #     :Share_one_of_your_favorite_quotes.  ,
+    #     :If_you_could_make_the_whole_world_listen_to_one_album,_what_would_it_be?_,
+    #     :Have_you_ever_been_attacked_by_a_ferret?_Do_tell.__,
+    #     :Share_either_your_proudest_or_most_embarrassing_moment_from_school.__,
+    #     :If_you_were_a_genre_of_music,_what_genre_would_you_be?_,
+    #     :How_long_can_you_hold_your_breath?_(Please_check_now.)_,
+    #     :Pirate_vs_Ninja:_Who_wins_and_why?_,
+    #     :What_is_your_favorite_piece_of_technology?_,
+    #     :What_is_your_game_plan_for_the_Zombie_Apocalypse?_,
+    #     :What_is_your_favorite_sound?,
+    #     :If_you_could_choose_a_different_name_for_yourself,_what_would_it_be?,
+    #     :What_word_or_expression_do_you_use_far_too_often?,
+    #     :What_will_your_posthumous_biography_be_titled?,
+    #     :Who_would_win_in_a_fight_between_Pat_Sajak,_Bob_Barker_and_Alex_Trebek?_Explain._,
+    #     :If_you_could_institute_any_frivolous_law,_what_would_it_be?_,
+    #     :Who_is_your_favorite_Muppet?,
+    #     :What_is_the_weirdest_thing_that_has_ever_happened_to_you?,
+    #     :Fist_bump_handshake_or_high_five?,
+    #     :Have_you_ever_fallen_in_love_with_an_object_Explain.,
+    #     :Who_built_the_pyramids?,
+    #     :Do_you_want_the_funk?_Explain_why_or_why_not_in_10_words_or_less.,
+    #     :Who’s_your_favorite_superhero_and_why?,
+    #     :Share_one_of_your_hidden_talents.,
+    #     :Is_there_something_you’re_not_telling_me?
     # ]
+
+    # USED TO TOGGLE DRIBBBLE SHOTS / INSTAGRAM ON THE INDIVIDUAL BIOS PAGES
+    enum artist: [
+        :no,
+        :yes
+    ]
 
     def self.homePageBios
         ids = Bio.pluck(:id).shuffle.sample(8)

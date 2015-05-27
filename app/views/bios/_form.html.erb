@@ -9,6 +9,7 @@
 <br>
 <br>
 <br>
+<h2>Personal Info</h2>
   <%= bio.label :first_name %>
   <%= bio.text_field :first_name %><br>
   <%= bio.label :last_name %>
@@ -19,6 +20,7 @@
   <%= bio.text_field :funny_title %><br>
   <%= bio.label :overview %>
   <%= bio.text_area :overview %><br>
+  <h2>Questions</h2>
   <%= bio.label :question1 %>
   <%= bio.text_field :question1 %><br>
   <%= bio.label :answer1 %>
@@ -39,6 +41,7 @@
   <%= bio.text_field :question5 %><br>
   <%= bio.label :answer5 %>
   <%= bio.text_field :answer5 %><br>
+  <h2>Skills</h2>
   <p>Enter 1-9 for skill value.</p>
   <%= bio.label :skill1 %>
   <%= bio.text_field :skill1 %><br>
@@ -56,14 +59,22 @@
   <%= bio.text_field :skill4 %><br>
   <%= bio.label :skill4_value %>
   <%= bio.text_field :skill4_value %><br>
+  <h2>Pictures</h2>
   <%= bio.label :bio_pic %>
   <%= bio.file_field :bio_pic %><br>
   <%= bio.label :mobile_bg %>
   <%= bio.file_field :mobile_bg %><br>
   <%= bio.label :large_bio_pic %>
   <%= bio.file_field :large_bio_pic %><br>
+  <h2>Ordering</h2>
   <p>Enter a # to indicate the order to display the record. Rick is 1, Lisa is 2, etc.</p>
   <%= bio.label :order %>
   <%= bio.text_field :order %><br><br><br>
+  <h2>Artist</h2>
+  <p>Select Yes if the Bio is an artist then enter the Dribbble ID in the field after it.</p>
+  <%= bio.label :artist %>
+  <%= bio.select :artist, options_for_select(Bio.artists.collect{ |artist| [artist[0].humanize, artist[0]]}) %>
+  <%= bio.label :dribbble %>
+  <%= bio.text_field :dribbble %>
   <%= bio.submit %>
 <% end %>

@@ -38,16 +38,26 @@ class BiosController < ApplicationController
   def show
     @bio = Bio.friendly.find(params[:id])
 
-    logger.debug(@bio.skill1)
+    # CURRENT TEAM MEMBER DRIBBLE PROFILE NAMES
+                # Current360 Team Profile - Current360
+                # Arica - aljohnson
+                # Chaney - chaneygiven
+                # Dennis - DBonifer
+                # Jim - JimDeweese
+                # Donovan - DonovanSears
+    # BIO IS AN ARTIST SO GET THEIR DRIBBLE SHOTS
+    artist = @bio.artist
+    logger.debug("Artist is: #{artist}")
+    if artist == 'yes'
+      dribbble = Dribbble::Player.find(@bio.dribbble).shots( :per_page => 5 )
+      @pictures = DribbblePictureMaker.new(dribbble).pictures
+    else
+    # BIO IS NOT AN ARTIST SO LONG INSTAGRAM
+      instagram = Instagram.user_recent_media("4641505", {:count => 5})
+      @pictures = InstagramPictureMaker.new(instagram).pictures
+    end
 
-    dribbble = #Dribbble::Player.find('Current360').shots( :per_page => 2 ) +
-                Dribbble::Player.find('DonovanSears').shots( :per_page => 2 ) +
-                Dribbble::Player.find('JimDeweese').shots( :per_page => 2 ) +
-                Dribbble::Player.find('JRodd32').shots( :per_page => 1 )
-
-    #@pictures = InstagramPictureMaker.new(instagram).pictures #+ DribbblePictureMaker.new(dribbble).pictures
-    @pictures = DribbblePictureMaker.new(dribbble).pictures
-
+    # LOAD BLOGS RELATED TO THAT BIO
     @blogs = Blog.where(author: @bio.id).limit(4)
   end
 
@@ -70,6 +80,6 @@ class BiosController < ApplicationController
                                   :answer1, :answer2, :answer3, :answer4, :answer5, :bio_pic,
                                   :overview, :large_bio_pic, :skill1, :skill2, :skill3, :skill4,
                                   :skill5, :skill1_value, :skill2_value, :skill3_value, :skill4_value,
-                                  :skill5_value, :order, :mobile_bg)
+                                  :skill5_value, :order, :mobile_bg, :dribbble, :artist)
     end
 end
