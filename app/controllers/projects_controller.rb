@@ -16,7 +16,7 @@ class ProjectsController < ApplicationController
         @projects = Project.all
         @project = Project.new
 
-        @categories = Post.categories
+        @categories = Project.categories
     end
 
     def create

@@ -1,9 +1,10 @@
+MANDRILL_API_KEY = "0IS80ngs5LxYG7s8AClYCw"
 ActionMailer::Base.smtp_settings = {
     address: "smtp.mandrillapp.com",
     port: 587,
     enable_starttls_auto: true,
-    user_name: "me@jerrodlong.com",
-    password: "7nXakkXuRGuq7yWimMnnGg",
+    user_name: "current@current360.com",
+    password: MANDRILL_API_KEY,
     authentication: "login"
 }
 

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  match '/forms/job_form' => 'forms#job_form', via: [:post]
+  match '/forms/contact_form' => 'forms#contact_form', via: [:post]
+  match '/forms/newsletter' => 'forms#newsletter', via: [:post]
   match '/circuit' => 'pages#admin', via: [:get]
   devise_for :users, :path => :circuit
   match '/work/additional-projects' => 'projects#other', via: [:get]
@@ -19,6 +22,7 @@ Rails.application.routes.draw do
   resources :blogs
   resources :bios
   resources :posts
+  match '/careers' => 'pages#careers', via: [:get]
   match '/strategy' => 'pages#strategy', via: [:get]
   match '/contact' => 'pages#contact', via: [:get]
   match '/culture' => 'pages#culture', via: [:get]

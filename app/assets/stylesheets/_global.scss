@@ -207,10 +207,13 @@ ol {
 }
 
 .alert, .notice {
-    margin: 0 auto;
+    border-radius: 5px;
+    margin: 0 4em;
+    padding: 2em 4em;
     position: fixed;
     top: 4em;
-    width: 50%;
+    z-index: 9999;
+    width: 92.5%;
 }
 
 .alert {
@@ -223,6 +226,8 @@ ol {
 }
 
 .admin {
+    background: $headers;
+    border-radius: 5px;
     right: 4em;
     position: fixed;
     top: 4em;
@@ -230,8 +235,6 @@ ol {
 
 
     a {
-        background: $headers;
-        border-radius: 5px;
         color: #fff;
         display: block;
         padding: 1em;

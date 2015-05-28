@@ -72,4 +72,4 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'devise', '~> 3.4.1'
 
 # EMAIL
-gem 'mandrill-api'
+gem 'mandrill-api', require: "mandrill"

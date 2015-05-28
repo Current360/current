@@ -312,7 +312,7 @@
         </ul>
         <article>
             <h5>Looking for a career?</h5>
-            <a class="button" href="">More Info</a>
+            <%= link_to "More Info", careers_path, :class => "button" %>
         </article>
         <ul class="bio-list-two no-disc">
             <li><a href="#"><%= link_to image_tag(@bios[4].bio_pic.small_bio_pic), @bios[4] %></a></li>
@@ -324,23 +324,4 @@
         </ul>
     </span>
 </section>
-
-
-
-
-
-<form class="home-newsletter">
-    <h3>Want the Skinny?</h3>
-    <label for='newsletter'>Sign up for our newsletter.</label>
-    <fieldset>
-        <input type="email" name="newsletter" id="newsletter" placeholder="Your email here.">
-        <input type="submit" value="GO">
-    </fieldset>
-    <br class="clear">
-</form>
-<script type="text/javascript">
-    var __ss_noform = __ss_noform || [];
-    __ss_noform.push(['baseURI', 'https://app-IZ1MFA.sharpspring.com/webforms/receivePostback/szQyBQA/']);
-    __ss_noform.push(['endpoint', 'aa2fab0c-2f58-463a-8fa5-5da6ad13f300']);
-</script>
-<script type="text/javascript" src="https://koi-IZ1MFA.sharpspring.comclient/noform.js?ver=1.0" ></script>
+<%= render 'forms/newsletter' %>

@@ -1,21 +1,30 @@
 .pages-admin {
     main {
         background: #fff;
+        padding: 2em;
+        width: 100%;
     }
     aside {
         background: $text;
         color: #fff;
     }
 
+    .column {
+        h2 { color: $headers; }
+    }
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+
     @include media($tablet) {
         main {
             float: left;
             padding-left: 10.42%;
-            width: 70%;
         }
-        aside {
-            float: left;
-            width: 30%;
+        .column {
+           float: left;
+           width: 33.3%;
         }
     }
 }

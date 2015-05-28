@@ -14,7 +14,9 @@
     </aside>
 </div>
 <main class="home">
-    <%= link_to "add", new_project_path %>
+    <% if user_signed_in? %>
+        <%= link_to "add", new_project_path %>
+    <% end %>
     <section>
         <ul>
             <li>
@@ -279,11 +281,4 @@
             </li> -->
         </ul>
     </section>
-    <% if user_signed_in? %>
-        <ul>
-        <% @projects.each do | project | %>
-            <p><%= link_to "Edit: #{project.title}", edit_project_path(project)  %></p>
-        <% end %>
-        </ul>
-    <% end %>
 </main>

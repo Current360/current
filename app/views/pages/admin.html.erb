@@ -2,9 +2,32 @@
     <main>
         <h1>Welcome to Master Control</h1>
         <h2>Don't Fuck it up!</h2>
-    </main>
-    <aside>
-        Edit shit
-    </aside>
 
+        <div class="column">
+            <h2>Blogs</h2>
+            <ol>
+                <% @blogs.each do |blog| %>
+                    <li><%= link_to blog.title, edit_blog_path(blog) %></li>
+                <% end %>
+            </ol>
+            <br>
+            <%= will_paginate @blogs %>
+        </div>
+        <div class="column">
+            <h2>Bios</h2>
+            <ol>
+                <% @bios.each do |bio| %>
+                    <li><%= link_to bio.first_name, edit_bio_path(bio) %></li>
+                <% end %>
+            </ol>
+        </div>
+        <div class="column">
+            <h2>Work</h2>
+            <ol>
+                <% @projects.each do |project| %>
+                    <li><%= link_to project.title, edit_project_path(project) %></li>
+                <% end %>
+            </ol>
+        </div>
+    </main>
 </div>

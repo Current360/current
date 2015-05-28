@@ -12,7 +12,12 @@
     <% end %>
 
     <% if user_signed_in? %>
-        <div class="admin"><%= link_to "Sign Out", destroy_user_session_path %></div>
+        <div class="admin">
+            <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            <%= link_to "Admin Page", circuit_path %>
+            <%= link_to "Edit Account", edit_user_registration_path %>
+        </div>
+
     <% end %>
 
     <%= content_for(:content) ? yield(:content) : yield %>

@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+    before_action :authenticate_user!, except: [:index, :strategy, :contact, :culture, :careers]
     def index
         # ENTER BLOG ID FOR STATIC FEATURED BLOG
         # @featuredBlog = Blog.find(23)
@@ -35,6 +36,11 @@ class PagesController < ApplicationController
     end
 
     def admin
+        @blogs = Blog.paginate(:page => params[:page], per_page: 25).order('created_at DESC')
+        @projects = Project.all
+        @bios = Bio.all
+    end
 
+    def careers
     end
 end
