@@ -9,7 +9,6 @@ class BiosController < ApplicationController
 
   def new
     @bio = Bio.new
-
   end
 
   def create
@@ -47,7 +46,6 @@ class BiosController < ApplicationController
                 # Donovan - DonovanSears
     # BIO IS AN ARTIST SO GET THEIR DRIBBLE SHOTS
     artist = @bio.artist
-    logger.debug("Artist is: #{artist}")
     if artist == 'yes'
       dribbble = Dribbble::Player.find(@bio.dribbble).shots( :per_page => 5 )
       @pictures = DribbblePictureMaker.new(dribbble).pictures
@@ -59,13 +57,6 @@ class BiosController < ApplicationController
 
     # LOAD BLOGS RELATED TO THAT BIO
     @blogs = Blog.where(author: @bio.id).limit(4)
-  end
-
-  def update_featured
-    @selected = Bio.where(:id => params[:id])
-    respond_to do |format|
-      format.js
-    end
   end
 
   def destroy

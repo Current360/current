@@ -258,7 +258,7 @@ main.home {
         margin: 0 auto;
         width: 300px;
     }
-    input[type="email"] {
+    input[type="email"], input[type=text] {
         background-color: #959595; /* layer fill content */
         border: none;
         float: left;

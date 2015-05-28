@@ -34,11 +34,15 @@ class BlogsController < ApplicationController
         # All post categories
         @categories = Blog.categories
         @author = Bio.find_by_id(@blog.author)
+
     end
 
     def edit
         @blogs = Blog.all
         @blog = Blog.friendly.find(params[:id])
+        @author = Bio.find_by_id(@blog.author)
+        author = Bio.all
+        @authors = AuthorMaker.new(author).build
     end
 
     def update
