@@ -1,0 +1,21 @@
+input[type="text"] {
+  background-color: #959595;
+  border: none;
+  float: left;
+  height: 2.1875em;
+  margin-bottom: 0;
+  max-width: 15.3125em;
+  text-indent: 0.5em;
+  width: 15.3125em;
+}
+
+input[type="submit"] {
+  background: #fec130;
+  border: none;
+  border-radius: 0;
+  float: left;
+  height: 2.1875em;
+  margin: 0;
+  min-width: initial;
+  width: 2.1875em;
+}
