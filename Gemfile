@@ -70,3 +70,6 @@ gem 'will_paginate', '~> 3.0.6'
 
 # USER AUTHENTICATION
 gem 'devise', '~> 3.4.1'
+
+# EMAIL
+gem 'mandrill-api'

@@ -4,11 +4,17 @@
 
     <%= render 'layouts/header' %>
     <% if notice %>
-        <%= notice %>
+        <div class="notice"><%= notice %></div>
     <% end %>
+
     <% if alert %>
-        <%= alert %>
+        <div class="alert"><%= alert %></div>
     <% end %>
+
+    <% if user_signed_in? %>
+        <div class="admin"><%= link_to "Sign Out", destroy_user_session_path %></div>
+    <% end %>
+
     <%= content_for(:content) ? yield(:content) : yield %>
     <%= render 'layouts/footer' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

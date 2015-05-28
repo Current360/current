@@ -33,4 +33,8 @@ class PagesController < ApplicationController
         @pictures = InstagramPictureMaker.new(instagram).pictures #+ DribbblePictureMaker.new(dribbble).pictures
         @relatedPosts = Blog.all.limit(3)
     end
+
+    def admin
+
+    end
 end

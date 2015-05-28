@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  match '/circuit' => 'pages#admin', via: [:get]
   devise_for :users, :path => :circuit
   match '/work/additional-projects' => 'projects#other', via: [:get]
   match '/work/festivals-events' => 'projects#festivals', via: [:get]

@@ -1,0 +1,21 @@
+.pages-admin {
+    main {
+        background: #fff;
+    }
+    aside {
+        background: $text;
+        color: #fff;
+    }
+
+    @include media($tablet) {
+        main {
+            float: left;
+            padding-left: 10.42%;
+            width: 70%;
+        }
+        aside {
+            float: left;
+            width: 30%;
+        }
+    }
+}

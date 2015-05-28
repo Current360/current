@@ -9,6 +9,12 @@ input[type="text"] {
   width: 15.3125em;
 }
 
+input[type="text"]:focus {
+    border: 2px solid $links;
+    border-right: none;
+    background-color: #fff;
+}
+
 input[type="submit"] {
   background: #fec130;
   border: none;
