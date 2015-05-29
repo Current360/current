@@ -9,15 +9,7 @@
     <% end %>
     <%= will_paginate @blogs %>
   </main>
-<%# if user_signed_in? %>
-  <!-- <aside class='recent-posts form'> -->
-    <%# render 'form' %>
-    <!-- <br><br><br> -->
-    <%# link_to('Logout', destroy_user_session_path, :method => :delete) %>
-  <!-- </aside> -->
-<%# else %>
   <aside class='recent-posts'>
     <%= render 'blog_categories' %>
   </aside>
-<%# end %>
 </div>

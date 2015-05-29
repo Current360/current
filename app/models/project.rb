@@ -24,18 +24,14 @@ class Project < ActiveRecord::Base
                     # :other    #11
     ]
 
-    enum competency: [
-                    :traditional_media,
-                    :digital_media,
-                    :social_media,
-                    :web_development,
-                    :branding,
-                    :marketing_automation,
-                    :video_production
-    ]
-
     def self.featuredCaseStudy
         id = Project.pluck(:id).shuffle.sample
         @caseStudy = Project.find(id)
+    end
+
+    # Creating a search method
+    def self.search(search)
+        search_condition = '%' + search + '%'
+        where('title LIKE ? OR content LIKE ? or category LIKE ?', search_condition, search_condition, search_condition)
     end
 end

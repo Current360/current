@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150529144503) do
+ActiveRecord::Schema.define(version: 20150529200629) do
 
   create_table "bios", force: true do |t|
     t.datetime "created_at"
@@ -99,11 +99,11 @@ ActiveRecord::Schema.define(version: 20150529144503) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
-    t.integer  "comp1"
-    t.integer  "comp2"
-    t.integer  "comp3"
-    t.integer  "comp4"
-    t.integer  "comp5"
+    t.string   "comp1"
+    t.string   "comp2"
+    t.string   "comp3"
+    t.string   "comp4"
+    t.string   "comp5"
     t.string   "landing_image"
   end
 

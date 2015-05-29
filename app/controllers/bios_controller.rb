@@ -66,6 +66,11 @@ class BiosController < ApplicationController
     redirect_to bios_url
   end
 
+  # Define search path
+  def search
+      @search_result = Project.search params[:search]
+  end
+
   private
     def bio_params
       params.require(:bio).permit(:first_name, :last_name, :real_title, :funny_title,

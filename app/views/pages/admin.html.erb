@@ -8,7 +8,8 @@
             <h4><%= link_to "Add A Blog", new_blog_path %></h4>
             <ol>
                 <% @blogs.each do |blog| %>
-                    <li><%= link_to blog.title, edit_blog_path(blog) %></li>
+                    <li><%= link_to blog.title, edit_blog_path(blog) %><br><%= link_to 'Delete', blog_path(blog), method: :delete, data: { confirm: "Are you sure?" } %></li>
+
                 <% end %>
             </ol>
             <br>
@@ -19,7 +20,7 @@
             <h4><%= link_to "Add A Bio", new_bio_path %></h4>
             <ol>
                 <% @bios.each do |bio| %>
-                    <li><%= link_to bio.first_name, edit_bio_path(bio) %></li>
+                    <li><%= link_to bio.first_name, edit_bio_path(bio) %><br><%= link_to 'Delete', bio_path(bio), method: :delete, data: { confirm: "Are you sure?" } %></li>
                 <% end %>
             </ol>
         </div>
@@ -28,14 +29,14 @@
             <h4><%= link_to "Add A Case Study", new_project_path %></h4>
             <ol>
                 <% @projects.each do |project| %>
-                    <li><%= link_to project.title, edit_project_path(project) %></li>
+                    <li><%= link_to project.title, edit_project_path(project) %><br><%= link_to 'Delete', project_path(project), method: :delete, data: { confirm: "Are you sure?" } %></li>
                 <% end %>
             </ol>
             <h2>Home Page Quotes</h2>
             <h4><%= link_to "Add A Quote", new_quote_path %></h4>
             <ol>
                 <% @quotes.each do |quote| %>
-                    <li><%= link_to quote.cite, edit_quote_path(quote) %></li>
+                    <li><%= link_to quote.cite, edit_quote_path(quote) %><br><%= link_to 'Delete', quote_path(quote), method: :delete, data: { confirm: "Are you sure?" } %></li>
                 <% end %>
             </ol>
         </div>

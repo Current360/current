@@ -28,4 +28,10 @@ class Blog < ActiveRecord::Base
         id = Blog.pluck(:id).shuffle.sample
         @featuredBlog = Blog.find(id)
     end
+
+    # Creating a search method
+    def self.search(search)
+        search_condition = '%' + search + '%'
+        where('title LIKE ? OR content LIKE ? or category LIKE ?', search_condition, search_condition, search_condition)
+    end
 end

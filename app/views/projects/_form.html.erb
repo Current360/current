@@ -31,22 +31,15 @@
     <%= project.file_field :landing_image %>
     <h2>Competencies</h2>
     <%= project.label :comp1 %>
-    <%= project.select :comp1,
-                options_for_select( Project.competencies.collect { |comp1| [comp1[0].humanize, comp1[0]] }) %>
-
+    <%= project.text_field :comp1 %>
     <%= project.label :comp2 %>
-    <%= project.select :comp2,
-                options_for_select( Project.competencies.collect { |comp2| [comp2[0].humanize, comp2[0]] }) %>
-
+    <%= project.text_field :comp2 %>
     <%= project.label :comp3 %>
-    <%= project.select :comp3,
-                options_for_select( Project.competencies.collect { |comp3| [comp3[0].humanize, comp3[0]] }) %>
+    <%= project.text_field :comp3 %>
     <%= project.label :comp4 %>
-    <%= project.select :comp4,
-                options_for_select( Project.competencies.collect { |comp4| [comp4[0].humanize, comp4[0]] }) %>
+    <%= project.text_field :comp4 %>
     <%= project.label :comp5 %>
-    <%= project.select :comp5,
-                options_for_select( Project.competencies.collect { |comp5| [comp5[0].humanize, comp5[0]] }) %>
+    <%= project.text_field :comp5 %>
 
     <%= project.submit %>
 <% end %>

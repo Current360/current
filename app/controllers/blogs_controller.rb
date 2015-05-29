@@ -66,7 +66,12 @@ class BlogsController < ApplicationController
     def destroy
         @blog = Blog.friendly.find(params[:id]).destroy
         redirect_to blogs_url
-      end
+    end
+
+    # Define search path
+    def search
+        @search_result = Project.search params[:search]
+    end
 
     def category
 

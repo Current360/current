@@ -30,6 +30,8 @@ class ProjectsController < ApplicationController
 
     def show
         @project = Project.friendly.find(params[:id])
+
+        logger.debug(@project.comp1)
         # @relatedPosts = Project.where(category: @project.category).limit(4)
         @categories = Project.categories
     end
@@ -48,6 +50,16 @@ class ProjectsController < ApplicationController
         else
             redirect_to :edit
         end
+    end
+
+    def destroy
+        @project = Project.friendly.find(params[:id]).destroy
+        redirect_to projects_url
+      end
+
+    # Define search path
+    def search
+        @search_result = Project.search params[:search]
     end
 
     def category
