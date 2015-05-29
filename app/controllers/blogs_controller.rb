@@ -56,6 +56,11 @@ class BlogsController < ApplicationController
         end
     end
 
+    def destroy
+        @blog = Blog.friendly.find(params[:id]).destroy
+        redirect_to blogs_url
+      end
+
     def category
 
         @categories = Blog.categories

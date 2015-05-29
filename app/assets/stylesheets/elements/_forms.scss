@@ -1,4 +1,22 @@
+.form-wrapper {
+  @include outer-container;
+  main {
+    background: #fff;
+    padding: 2em;
+  }
+  aside {
+    background: $darkgrey;
+    padding: 2em;
+  }
 
+  input[type=submit] { margin-top: 2em; }
+
+  @include media( $tablet ) {
+    main {
+      padding-left: 10.42%;
+    }
+  }
+}
 
 form {
   label {
