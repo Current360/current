@@ -1,0 +1,7 @@
+<%= form_for @quote do |quote| %>
+    <%= quote.label :title %>
+    <%= quote.text_field :title %>
+    <%= quote.label :content %>
+    <%= quote.text_area :content %>
+    <%= quote.submit %>
+<% end %>

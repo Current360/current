@@ -2,7 +2,9 @@ class BiosController < ApplicationController
     respond_to :html, :js
     before_action :authenticate_user!, except: [:index, :show]
   def index
-    @bios = Bio.all.order(:order)
+    # @bios = Bio.all.order(:order)
+    # All BIOS except the generic c360 bio
+    @bios = Bio.where("id != 59").order(:order)
     @bio = Bio.new
     # @featured = Bio.find(9)
   end
@@ -71,6 +73,6 @@ class BiosController < ApplicationController
                                   :answer1, :answer2, :answer3, :answer4, :answer5, :bio_pic,
                                   :overview, :large_bio_pic, :skill1, :skill2, :skill3, :skill4,
                                   :skill5, :skill1_value, :skill2_value, :skill3_value, :skill4_value,
-                                  :skill5_value, :order, :mobile_bg, :dribbble, :artist)
+                                  :skill5_value, :order, :mobile_bg, :dribbble, :artist, :phone, :email, :cell, :slug)
     end
 end

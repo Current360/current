@@ -13,7 +13,11 @@ class PagesController < ApplicationController
         # WILL RANDOMLY SELECT A CASE STUDY TO FEATURE
         @caseStudy = Project.featuredCaseStudy
 
+        # RANDOMLY SELECTS 8 BIOS AND DISPLAYS THEM
         @bios = Bio.homePageBios
+
+        # RANDOMLY SELECT A QUOTE
+        @quote = Quote.homePageQuote
     end
 
     def strategy
@@ -39,6 +43,7 @@ class PagesController < ApplicationController
         @blogs = Blog.paginate(:page => params[:page], per_page: 25).order('created_at DESC')
         @projects = Project.all
         @bios = Bio.all
+        @quotes = Quote.all
     end
 
     def careers

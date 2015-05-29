@@ -1,5 +1,5 @@
 .bios-index {
-    article {
+    #bio-wrapper article {
         float: left;
         position: relative;
         width: 50%;
@@ -59,7 +59,7 @@
         }
     }
 
-    h5 {
+    aside h5 {
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease;
@@ -74,19 +74,19 @@
     }
 
     @include media( 450px ) {
-        article {
+       #bio-wrapper article {
             width: 33.3%;
         }
     }
 
     @include media( 620px ) {
-        article {
+       #bio-wrapper article {
             width: 25%;
         }
     }
 
     @include media( $tablet ) {
-        article {
+       #bio-wrapper article {
             width: 20%;
         }
         #bio-copy {
@@ -105,13 +105,13 @@
     }
 
     @include media( 800px ) {
-        article {
+       #bio-wrapper article {
             width: 14%;
         }
     }
 
     @include media( $laptop ) {
-        article {
+       #bio-wrapper article {
             width: 10%;
         }
     }

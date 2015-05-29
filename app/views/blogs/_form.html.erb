@@ -3,11 +3,18 @@
   <%= blog.text_field :title %>
   <%= blog.label :content %>
   <%= blog.text_area :content %>
+  <%= blog.label "Sharable 1" %>
+  <%= blog.text_field :share1 %>
+  <%= blog.label "Sharable 2" %>
+  <%= blog.text_field :share2 %>
   <%= blog.label :category %>
   <%= blog.select :category, options_for_select(Blog.categories.collect { |k| [k[0].humanize,k[0]] }) %>
   <%= blog.label :author %>
   <%= blog.select :author, options_from_collection_for_select(@authors, 'id', 'name') %>
   <%= blog.label :blog_picture %>
   <%= blog.file_field :blog_picture %>
+  <%= blog.label :blurred_image %>
+  <%= blog.file_field :blurred_image %>
   <%= blog.submit %>
+
 <% end %>

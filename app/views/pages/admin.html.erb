@@ -5,6 +5,7 @@
 
         <div class="column">
             <h2>Blogs</h2>
+            <h4><%= link_to "Add A Blog", new_blog_path %></h4>
             <ol>
                 <% @blogs.each do |blog| %>
                     <li><%= link_to blog.title, edit_blog_path(blog) %></li>
@@ -15,6 +16,7 @@
         </div>
         <div class="column">
             <h2>Bios</h2>
+            <h4><%= link_to "Add A Bio", new_bio_path %></h4>
             <ol>
                 <% @bios.each do |bio| %>
                     <li><%= link_to bio.first_name, edit_bio_path(bio) %></li>
@@ -23,9 +25,17 @@
         </div>
         <div class="column">
             <h2>Work</h2>
+            <h4><%= link_to "Add A Case Study", new_project_path %></h4>
             <ol>
                 <% @projects.each do |project| %>
                     <li><%= link_to project.title, edit_project_path(project) %></li>
+                <% end %>
+            </ol>
+            <h2>Home Page Quotes</h2>
+            <h4><%= link_to "Add A Quote", new_quote_path %></h4>
+            <ol>
+                <% @quotes.each do |quote| %>
+                    <li><%= link_to quote.cite, edit_quote_path(quote) %></li>
                 <% end %>
             </ol>
         </div>

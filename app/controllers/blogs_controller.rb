@@ -65,6 +65,6 @@ class BlogsController < ApplicationController
     # Defining accessible parameters of Blog model
     private
         def blog_params
-          params.require(:blog).permit(:title, :content, :category, :id, :author, :blog_picture, :slug)
+          params.require(:blog).permit(:title, :content, :category, :id, :author, :blog_picture, :slug, :blurred_image, :share1, :share2)
         end
 end

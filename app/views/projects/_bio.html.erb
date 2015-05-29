@@ -2,5 +2,5 @@
     <figure><img src="<%= @bio.bio_pic.small_bio_pic %>" alt=""></figure>
     <h2><span><%= @bio.first_name %></span> <%= @bio.last_name %></h2>
     <p><%= @bio.overview %></p>
-    <a href="<%= @bio %>" class="button">Call <%= @bio.first_name %></a>
+    <a href="tel:<%= @bio.phone %>" class="button">Call <%= @bio.first_name %></a>
 </article>

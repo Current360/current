@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :quotes
   match '/forms/job_form' => 'forms#job_form', via: [:post]
   match '/forms/contact_form' => 'forms#contact_form', via: [:post]
   match '/forms/newsletter' => 'forms#newsletter', via: [:post]

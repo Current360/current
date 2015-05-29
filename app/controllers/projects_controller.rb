@@ -128,18 +128,18 @@ class ProjectsController < ApplicationController
 
     end
 
-    def education
-        @blogs = Blog.where(category: 8).limit(4)
-        @caseStudy = Project.where(category: 8).last
-        @categories = Project.categories
-        # NICK
-        @bio = Bio.friendly.find(35)
+    # def education
+    #     @blogs = Blog.where(category: 8).limit(4)
+    #     @caseStudy = Project.where(category: 8).last
+    #     @categories = Project.categories
+    #     # NICK
+    #     @bio = Bio.friendly.find(35)
 
-    end
+    # end
 
     def fitness
         @blogs = Blog.where(category: 9).limit(4)
-        @caseStudy = Project.where(category: 9).last
+        @caseStudy = Project.where(category: 8).last
         @categories = Project.categories
         # HARRY
         @bio = Bio.friendly.find(44)
@@ -148,25 +148,25 @@ class ProjectsController < ApplicationController
 
     def festivals
         @blogs = Blog.where(category: 10).limit(4)
-        @caseStudy = Project.where(category: 10).last
+        @caseStudy = Project.where(category: 9).last
         @categories = Project.categories
         # NICK
         @bio = Bio.friendly.find(35)
 
     end
 
-    def other
-        @blogs = Blog.where(category: 11).limit(4)
-        @caseStudy = Project.where(category: 11).last
-        @categories = Project.categories
-        # NICK
-        @bio = Bio.friendly.find(35)
+    # def other
+    #     @blogs = Blog.where(category: 11).limit(4)
+    #     @caseStudy = Project.where(category: 11).last
+    #     @categories = Project.categories
+    #     # NICK
+    #     @bio = Bio.friendly.find(35)
 
-    end
+    # end
 
 
     private
         def project_params
-            params.require(:project).permit(:title, :challenge, :insight, :solution, :results, :quote, :cite, :category, :main_image, :side_image1, :side_image2, :capabilities, :logo)
+            params.require(:project).permit(:title, :challenge, :insight, :solution, :results, :quote, :cite, :category, :main_image, :side_image1, :side_image2, :capabilities, :logo, :comp1, :comp2, :comp3, :comp4, :comp5,:slug, :landing_image)
         end
 end
