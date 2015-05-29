@@ -27,8 +27,8 @@
     <section class="case-study">
         <h2>Featured Work</h2>
         <h3><%= @caseStudy.title %></h3>
-        <blockquote><%= @caseStudy.quote %></blockquote>
-        <cite><%= @caseStudy.cite %></cite>
+        <blockquote><%= raw @caseStudy.quote %></blockquote>
+        <cite><%= raw @caseStudy.cite %></cite>
         <%= link_to('Case Study', @caseStudy, :class => "button") %>
     </section>
 </div>

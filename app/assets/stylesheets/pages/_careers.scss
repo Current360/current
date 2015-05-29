@@ -1,0 +1,42 @@
+.pages-careers {
+    main {
+        background: #fff;
+        padding: 2em;
+    }
+    & > .wrapper aside {
+        background: $darkgrey;
+        padding: 2em;
+
+        label {
+            color: #fff;
+        }
+        input,textarea {
+            margin-bottom: 1em;
+        }
+        input[type=submit] {
+            border-color: $links;
+            color: #fff;
+
+            &:hover, &:focus {
+                background: $links;
+            }
+        }
+    }
+
+    @include media( $tablet ) {
+        main {
+            float: left;
+            width: 70%;
+        }
+        aside {
+            float: left;
+            width: 30%;
+        }
+    }
+
+    @include media( $laptop ) {
+        main {
+            padding-left: 10.42%;
+        }
+    }
+}
