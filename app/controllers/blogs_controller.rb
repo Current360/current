@@ -34,6 +34,9 @@ class BlogsController < ApplicationController
         # All post categories
         @categories = Blog.categories
         @author = Bio.find_by_id(@blog.author)
+        if @author.nil?
+            @author = Bio.find_by_id(59)
+        end
 
     end
 
@@ -48,6 +51,10 @@ class BlogsController < ApplicationController
     def update
         @blogs = Blog.all
         @blog = Blog.friendly.find(params[:id])
+
+        if @blog.first_name.nil?
+           @blog.author = 53
+        end
 
         if @blog.update(blog_params)
             redirect_to :blogs
