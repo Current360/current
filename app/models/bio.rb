@@ -14,9 +14,14 @@ class Bio < ActiveRecord::Base
 
     def self.homePageBios
         ids = Bio.pluck(:id).shuffle.sample(8)
-        # max = ids.count
 
-        # ids.map { |id| @bios = Bio.where(:id => id) }
+        # FILTER OUT THE PLACEHOLDER CURRENT360 BIO
+        if ids.include?(59)
+            ids.delete_if { |x| x == 59 }
+            ids.push(Bio.pluck(:id).sample)
+        end
+
+
         bio1 = Bio.where(:id => ids[0])
         bio2 = Bio.where(:id => ids[1])
         bio3 = Bio.where(:id => ids[2])
