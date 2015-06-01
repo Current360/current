@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <main>
+        <h1><%= raw @press.title %></h1>
+        <%= raw @press.content %>
+    </main>
+    <aside>
+        <h2>Press Releases</h2>
+        <ul>
+            <% @recent.each do |recent| %>
+                <li><%= link_to recent.title, release_path(recent) %></li>
+            <% end %>
+        </ul>
+    </aside>
+</div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150529200629) do
+ActiveRecord::Schema.define(version: 20150601180006) do
 
   create_table "bios", force: true do |t|
     t.datetime "created_at"
@@ -105,6 +105,7 @@ ActiveRecord::Schema.define(version: 20150529200629) do
     t.string   "comp4"
     t.string   "comp5"
     t.string   "landing_image"
+    t.string   "front_image"
   end
 
   add_index "projects", ["slug"], name: "index_projects_on_slug", unique: true, using: :btree

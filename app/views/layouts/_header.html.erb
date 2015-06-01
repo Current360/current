@@ -97,8 +97,10 @@
                 <li><%= link_to 'Blog', blogs_path %></li>
                 <li><%= link_to 'Culture', culture_path %></a></li>
                 <li class="nav-form">
-                    <form action="">
-                        <input type="text">
+
+                    <form action="/search" method="POST">
+                        <div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="post"><input name="authenticity_token" type="hidden" value="wAQ3Vccfk9HcdvoWDv5jYnawA1g8dYbjsT336mlyN/w="></div>
+                        <input type="text" name="search">
                         <input type="submit" value="Submit Search">
                     </form>
                 </li>

@@ -511,3 +511,48 @@
         }
     }
 }
+
+
+// PRESS RELEASE STUFF
+// SIDEBAR ON BLOG ROLL PAGE
+.press {
+    color: #fff;
+    margin-top: 2em;
+
+    .button {
+        color: #fff;
+        margin: 0 auto;
+
+        &:hover {
+            color: $text;
+        }
+    }
+}
+
+.releases {
+    main {
+        background: #fff;
+        padding-right: 0;
+        padding: 2em;
+    }
+    aside {
+        background: $darkgrey;
+        padding: 2em;
+    }
+
+    @include media( $tablet ) {
+        main {
+            float: left;
+            width: 70%;
+        }
+        aside {
+            float: left;
+            width: 30%;
+        }
+    }
+    @include media( $laptop ) {
+        main {
+            padding-left: 10.42%;
+        }
+    }
+}

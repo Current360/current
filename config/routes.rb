@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :releases
+  match '/search' => 'searches#index', via: [:get, :post]
   resources :quotes
   match '/forms/job_form' => 'forms#job_form', via: [:post]
   match '/forms/contact_form' => 'forms#contact_form', via: [:post]
@@ -12,9 +14,9 @@ Rails.application.routes.draw do
   match '/work/philanthropic' => 'projects#philanthropic', via: [:get]
   match '/work/pet-care' => 'projects#pet', via: [:get]
   match '/work/home-improvement' => 'projects#improvement', via: [:get]
-  match '/work/high-impact-retail' => 'projects#retail', via: [:get]
+  match '/work/retail' => 'projects#retail', via: [:get]
   match '/work/healthcare' => 'projects#healthcare', via: [:get]
-  match '/work/casual-dining' => 'projects#dining', via: [:get]
+  match '/work/restaurants' => 'projects#dining', via: [:get]
   match '/work/adult-beverages' => 'projects#beverages', via: [:get]
   match '/work/banking-financial' => 'projects#banking', via: [:get]
   match '/projects/category' => 'projects#category', via: [:get]

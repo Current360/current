@@ -24,6 +24,15 @@
     </section>
 
     <!-- import Case study -->
+    <% if @caseStudy.landing_image.url.present? %>
+    <section class="case-study" style="background: url(<%= @caseStudy.landing_image.url %>) no-repeat left top; background-size: cover; -moz-background-size: cover;">
+        <h2>Featured Work</h2>
+        <h3><%= @caseStudy.title %></h3>
+        <blockquote><%= raw @caseStudy.quote %></blockquote>
+        <cite><%= raw @caseStudy.cite %></cite>
+        <%= link_to('Case Study', @caseStudy, :class => "button") %>
+    </section>
+    <% else %>
     <section class="case-study">
         <h2>Featured Work</h2>
         <h3><%= @caseStudy.title %></h3>
@@ -31,6 +40,7 @@
         <cite><%= raw @caseStudy.cite %></cite>
         <%= link_to('Case Study', @caseStudy, :class => "button") %>
     </section>
+    <% end %>
 </div>
 <!-- import Culture -->
 <section class="culture">

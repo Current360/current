@@ -78,6 +78,7 @@ class BiosController < ApplicationController
                                   :answer1, :answer2, :answer3, :answer4, :answer5, :bio_pic,
                                   :overview, :large_bio_pic, :skill1, :skill2, :skill3, :skill4,
                                   :skill5, :skill1_value, :skill2_value, :skill3_value, :skill4_value,
-                                  :skill5_value, :order, :mobile_bg, :dribbble, :artist, :phone, :email, :cell, :slug)
+                                  :skill5_value, :order, :mobile_bg, :dribbble, :artist, :phone, :email,
+                                  :cell, :slug)
     end
 end

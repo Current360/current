@@ -1,0 +1,43 @@
+<main class="columns-<%= @count %>">
+    <h1>Search Results for: <%= @search %></h1>
+    <% if @blogs.present? %>
+        <article>
+            <h2>Blogs</h2>
+            <ul>
+                <% @blogs.each do |blog| %>
+                    <li><%= link_to blog.title, blog_path(blog) %></li>
+                <% end %>
+            </ul>
+        </article>
+    <% end %>
+    <% if @bios.present? %>
+        <article>
+            <h2>Current360 Team</h2>
+            <ul>
+                <% @bios.each do |bio| %>
+                    <li><%= link_to bio.first_name, bio_path(bio) %></li>
+                <% end %>
+            </ul>
+        </article>
+    <% end %>
+    <% if @projects.present? %>
+        <article>
+            <h2>Case Studies</h2>
+            <ul>
+                <% @projects.each do |project| %>
+                    <li><%= link_to project.title, project_path(project) %></li>
+                <% end %>
+            </ul>
+        </article>
+    <% end %>
+    <% if @releases.present? %>
+        <article>
+            <h2>Press Releases</h2>
+            <ul>
+              <% @releases.each do |release| %>
+                    <li><%= link_to release.title, release_path(release) %></li>
+              <% end %>
+            </ul>
+        </article>
+    <% end %>
+</main>

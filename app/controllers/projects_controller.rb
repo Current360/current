@@ -46,7 +46,7 @@ class ProjectsController < ApplicationController
         @project = Project.friendly.find(params[:id])
 
         if @project.update(project_params)
-            redirect_to :projects
+            redirect_to @project
         else
             redirect_to :edit
         end

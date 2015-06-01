@@ -1,0 +1,29 @@
+.searches main {
+    @include outer-container;
+    background: #fff;
+    padding: 2em;
+
+    @include media( $tablet ) {
+        article { float: left; }
+
+        &.columns-2 {
+            article {
+                width: 50%;
+            }
+        }
+        &.columns-3 {
+            article {
+                width: 33%;
+            }
+        }
+        &.columns-4 {
+            article {
+                width: 25%;
+            }
+        }
+    }
+
+    @include media( $laptop ) {
+        padding-left: 8.24%;
+    }
+}

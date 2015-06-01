@@ -1,4 +1,9 @@
 class ReleasesController < ApplicationController
+    def index
+        @press = Release.last
+        @recent = Release.all.offset(1)
+    end
+
     def new
         @release = Release.new
     end
@@ -7,7 +12,7 @@ class ReleasesController < ApplicationController
         @release = Release.new(release_params)
         if @release.save
            # flash
-            redirect_to @release
+            redirect_to releases_path
         else
            # flash
             redirect_to :new
@@ -16,17 +21,18 @@ class ReleasesController < ApplicationController
 
     def edit
         @release = Release.find(params[:id])
+    end
+
+    def update
+        @release = Release.find(params[:id])
 
         if @release.update(release_params)
             # flash
-            redirect_to @release
+            redirect_to releases_path
         else
             # flash
             redirect_to :edit
         end
-    end
-
-    def update
     end
 
     private
